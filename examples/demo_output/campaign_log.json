@@ -1,0 +1,940 @@
+{
+  "best_value": 80.58993946882286,
+  "best_mix": {
+    "cement": 227.7,
+    "slag": 251.66,
+    "fly_ash": 200.0,
+    "water": 215.52,
+    "superplasticizer": 18.75,
+    "coarse_agg": 817.29,
+    "fine_agg": 620.15,
+    "age": 365.0
+  },
+  "reference_optimum": 77.74571294882062,
+  "history_best": [
+    62.37650457148354,
+    62.61488919099298,
+    62.61488919099298,
+    62.61488919099298,
+    64.67025574224495,
+    64.67025574224495,
+    71.65387831928243,
+    71.65387831928243,
+    71.65387831928243,
+    71.65387831928243,
+    71.65387831928243,
+    71.65387831928243,
+    71.65387831928243,
+    71.65387831928243,
+    71.65387831928243,
+    71.65387831928243,
+    71.65387831928243,
+    71.7396855040193,
+    75.39126305179092,
+    75.39126305179092,
+    75.39126305179092,
+    75.39126305179092,
+    75.39126305179092,
+    75.39126305179092,
+    75.39126305179092,
+    75.39126305179092,
+    75.39126305179092,
+    75.39126305179092,
+    75.39126305179092,
+    75.39126305179092,
+    75.39126305179092,
+    75.39126305179092,
+    75.39126305179092,
+    75.39126305179092,
+    75.39126305179092,
+    75.39126305179092,
+    75.39126305179092,
+    75.39126305179092,
+    75.39126305179092,
+    75.39126305179092,
+    75.39126305179092,
+    75.39126305179092,
+    75.39126305179092,
+    75.39126305179092,
+    75.39126305179092,
+    75.39126305179092,
+    75.39126305179092,
+    80.58993946882286,
+    80.58993946882286,
+    80.58993946882286
+  ],
+  "baseline_best": [
+    50.53664528501097,
+    50.53664528501097,
+    50.53664528501097,
+    50.53664528501097,
+    50.53664528501097,
+    56.642826925585894,
+    59.204390149192704,
+    59.204390149192704,
+    59.204390149192704,
+    65.27178327231782,
+    65.27178327231782,
+    68.44897873322955,
+    73.95855422213064,
+    73.95855422213064,
+    73.95855422213064,
+    73.95855422213064,
+    73.95855422213064,
+    73.95855422213064,
+    73.95855422213064,
+    73.95855422213064,
+    73.95855422213064,
+    73.95855422213064,
+    73.95855422213064,
+    73.95855422213064,
+    73.95855422213064,
+    73.95855422213064,
+    73.95855422213064,
+    73.95855422213064,
+    73.95855422213064,
+    73.95855422213064,
+    73.95855422213064,
+    73.95855422213064,
+    73.95855422213064,
+    73.95855422213064,
+    73.95855422213064,
+    73.95855422213064,
+    73.95855422213064,
+    73.95855422213064,
+    73.95855422213064,
+    73.95855422213064,
+    73.95855422213064,
+    73.95855422213064,
+    73.95855422213064,
+    73.95855422213064,
+    73.95855422213064,
+    73.95855422213064,
+    73.95855422213064,
+    73.95855422213064,
+    73.95855422213064,
+    73.95855422213064
+  ],
+  "rounds": [
+    {
+      "round_idx": 0,
+      "budget_used": 13,
+      "best_value": 71.65387831928243,
+      "decision": {
+        "acquisition": "ucb",
+        "surrogate": "gaussian_process",
+        "kappa": 2.0,
+        "batch_size": 3,
+        "rationale": "early phase: map the space, so explore with a high UCB kappa; using gaussian_process (n=10 observations); batch=3.",
+        "source": "heuristic"
+      },
+      "selected": [
+        {
+          "x": {
+            "cement": 227.45,
+            "slag": 305.42,
+            "fly_ash": 154.24,
+            "water": 226.44,
+            "superplasticizer": 28.24,
+            "coarse_agg": 846.71,
+            "fine_agg": 896.14,
+            "age": 313.86
+          },
+          "predicted_mean": 65.84,
+          "predicted_std": 10.14,
+          "acq_score": 86.124,
+          "measured": 60.13
+        },
+        {
+          "x": {
+            "cement": 373.29,
+            "slag": 281.68,
+            "fly_ash": 183.95,
+            "water": 229.66,
+            "superplasticizer": 28.14,
+            "coarse_agg": 883.28,
+            "fine_agg": 926.48,
+            "age": 356.06
+          },
+          "predicted_mean": 66.74,
+          "predicted_std": 9.66,
+          "acq_score": 86.056,
+          "measured": 65.7
+        },
+        {
+          "x": {
+            "cement": 247.81,
+            "slag": 17.65,
+            "fly_ash": 174.48,
+            "water": 226.77,
+            "superplasticizer": 29.82,
+            "coarse_agg": 877.53,
+            "fine_agg": 769.35,
+            "age": 295.85
+          },
+          "predicted_mean": 64.77,
+          "predicted_std": 10.59,
+          "acq_score": 85.937,
+          "measured": 36.58
+        }
+      ]
+    },
+    {
+      "round_idx": 1,
+      "budget_used": 16,
+      "best_value": 71.65387831928243,
+      "decision": {
+        "acquisition": "ucb",
+        "surrogate": "gaussian_process",
+        "kappa": 2.0,
+        "batch_size": 3,
+        "rationale": "early phase: map the space, so explore with a high UCB kappa; using gaussian_process (n=13 observations); batch=3.",
+        "source": "heuristic"
+      },
+      "selected": [
+        {
+          "x": {
+            "cement": 219.23,
+            "slag": 309.15,
+            "fly_ash": 195.41,
+            "water": 221.77,
+            "superplasticizer": 14.32,
+            "coarse_agg": 856.82,
+            "fine_agg": 907.57,
+            "age": 341.33
+          },
+          "predicted_mean": 65.57,
+          "predicted_std": 10.05,
+          "acq_score": 85.671,
+          "measured": 67.56
+        },
+        {
+          "x": {
+            "cement": 186.33,
+            "slag": 313.69,
+            "fly_ash": 187.39,
+            "water": 213.33,
+            "superplasticizer": 14.25,
+            "coarse_agg": 850.11,
+            "fine_agg": 901.28,
+            "age": 337.19
+          },
+          "predicted_mean": 65.4,
+          "predicted_std": 10.1,
+          "acq_score": 85.609,
+          "measured": 65.68
+        },
+        {
+          "x": {
+            "cement": 168.83,
+            "slag": 329.72,
+            "fly_ash": 199.02,
+            "water": 230.23,
+            "superplasticizer": 14.28,
+            "coarse_agg": 902.74,
+            "fine_agg": 886.0,
+            "age": 331.68
+          },
+          "predicted_mean": 65.16,
+          "predicted_std": 10.22,
+          "acq_score": 85.597,
+          "measured": 65.01
+        }
+      ]
+    },
+    {
+      "round_idx": 2,
+      "budget_used": 19,
+      "best_value": 75.39126305179092,
+      "decision": {
+        "acquisition": "ucb",
+        "surrogate": "gaussian_process",
+        "kappa": 2.5,
+        "batch_size": 3,
+        "rationale": "stalled for 2 rounds: one exploration burst (raise kappa) to escape the current basin; using gaussian_process (n=16 observations); batch=3.",
+        "source": "heuristic"
+      },
+      "selected": [
+        {
+          "x": {
+            "cement": 472.89,
+            "slag": 319.59,
+            "fly_ash": 166.73,
+            "water": 243.96,
+            "superplasticizer": 20.7,
+            "coarse_agg": 831.1,
+            "fine_agg": 734.28,
+            "age": 309.08
+          },
+          "predicted_mean": 80.59,
+          "predicted_std": 6.24,
+          "acq_score": 96.2,
+          "measured": 67.97
+        },
+        {
+          "x": {
+            "cement": 386.87,
+            "slag": 321.84,
+            "fly_ash": 189.49,
+            "water": 250.0,
+            "superplasticizer": 21.9,
+            "coarse_agg": 904.05,
+            "fine_agg": 864.33,
+            "age": 365.0
+          },
+          "predicted_mean": 78.84,
+          "predicted_std": 5.28,
+          "acq_score": 92.029,
+          "measured": 71.74
+        },
+        {
+          "x": {
+            "cement": 290.45,
+            "slag": 349.14,
+            "fly_ash": 195.31,
+            "water": 249.58,
+            "superplasticizer": 20.12,
+            "coarse_agg": 827.62,
+            "fine_agg": 863.04,
+            "age": 312.88
+          },
+          "predicted_mean": 78.77,
+          "predicted_std": 5.25,
+          "acq_score": 91.903,
+          "measured": 75.39
+        }
+      ]
+    },
+    {
+      "round_idx": 3,
+      "budget_used": 22,
+      "best_value": 75.39126305179092,
+      "decision": {
+        "acquisition": "ucb",
+        "surrogate": "gaussian_process",
+        "kappa": 2.0,
+        "batch_size": 3,
+        "rationale": "early phase: map the space, so explore with a high UCB kappa; using gaussian_process (n=19 observations); batch=3.",
+        "source": "heuristic"
+      },
+      "selected": [
+        {
+          "x": {
+            "cement": 528.75,
+            "slag": 4.54,
+            "fly_ash": 192.86,
+            "water": 214.65,
+            "superplasticizer": 11.94,
+            "coarse_agg": 946.92,
+            "fine_agg": 625.12,
+            "age": 273.49
+          },
+          "predicted_mean": 65.53,
+          "predicted_std": 10.63,
+          "acq_score": 86.796,
+          "measured": 63.23
+        },
+        {
+          "x": {
+            "cement": 530.27,
+            "slag": 2.79,
+            "fly_ash": 148.19,
+            "water": 234.97,
+            "superplasticizer": 13.77,
+            "coarse_agg": 1121.78,
+            "fine_agg": 899.04,
+            "age": 142.76
+          },
+          "predicted_mean": 67.59,
+          "predicted_std": 9.1,
+          "acq_score": 85.787,
+          "measured": 53.56
+        },
+        {
+          "x": {
+            "cement": 498.18,
+            "slag": 41.42,
+            "fly_ash": 198.77,
+            "water": 190.63,
+            "superplasticizer": 12.57,
+            "coarse_agg": 881.06,
+            "fine_agg": 606.93,
+            "age": 58.47
+          },
+          "predicted_mean": 66.17,
+          "predicted_std": 9.56,
+          "acq_score": 85.283,
+          "measured": 54.88
+        }
+      ]
+    },
+    {
+      "round_idx": 4,
+      "budget_used": 26,
+      "best_value": 75.39126305179092,
+      "decision": {
+        "acquisition": "ucb",
+        "surrogate": "gaussian_process",
+        "kappa": 1.0,
+        "batch_size": 4,
+        "rationale": "mid phase: balance explore/exploit with a moderate UCB kappa; using gaussian_process (n=22 observations); batch=4.",
+        "source": "heuristic"
+      },
+      "selected": [
+        {
+          "x": {
+            "cement": 392.0,
+            "slag": 357.67,
+            "fly_ash": 177.89,
+            "water": 250.0,
+            "superplasticizer": 21.27,
+            "coarse_agg": 922.52,
+            "fine_agg": 922.73,
+            "age": 365.0
+          },
+          "predicted_mean": 75.5,
+          "predicted_std": 2.78,
+          "acq_score": 78.283,
+          "measured": 69.87
+        },
+        {
+          "x": {
+            "cement": 280.5,
+            "slag": 360.0,
+            "fly_ash": 200.0,
+            "water": 239.97,
+            "superplasticizer": 21.22,
+            "coarse_agg": 805.41,
+            "fine_agg": 900.93,
+            "age": 281.31
+          },
+          "predicted_mean": 75.59,
+          "predicted_std": 2.69,
+          "acq_score": 78.28,
+          "measured": 71.11
+        },
+        {
+          "x": {
+            "cement": 286.31,
+            "slag": 346.15,
+            "fly_ash": 200.0,
+            "water": 250.0,
+            "superplasticizer": 23.67,
+            "coarse_agg": 810.0,
+            "fine_agg": 912.83,
+            "age": 306.95
+          },
+          "predicted_mean": 75.41,
+          "predicted_std": 2.77,
+          "acq_score": 78.176,
+          "measured": 72.0
+        },
+        {
+          "x": {
+            "cement": 295.6,
+            "slag": 360.0,
+            "fly_ash": 200.0,
+            "water": 249.06,
+            "superplasticizer": 21.39,
+            "coarse_agg": 859.92,
+            "fine_agg": 896.84,
+            "age": 303.26
+          },
+          "predicted_mean": 75.61,
+          "predicted_std": 2.56,
+          "acq_score": 78.17,
+          "measured": 72.93
+        }
+      ]
+    },
+    {
+      "round_idx": 5,
+      "budget_used": 29,
+      "best_value": 75.39126305179092,
+      "decision": {
+        "acquisition": "ucb",
+        "surrogate": "gaussian_process",
+        "kappa": 2.5,
+        "batch_size": 3,
+        "rationale": "stalled for 2 rounds: one exploration burst (raise kappa) to escape the current basin; using gaussian_process (n=26 observations); batch=3.",
+        "source": "heuristic"
+      },
+      "selected": [
+        {
+          "x": {
+            "cement": 182.15,
+            "slag": 25.96,
+            "fly_ash": 92.23,
+            "water": 182.54,
+            "superplasticizer": 18.5,
+            "coarse_agg": 1125.3,
+            "fine_agg": 885.63,
+            "age": 349.27
+          },
+          "predicted_mean": 65.92,
+          "predicted_std": 11.69,
+          "acq_score": 95.136,
+          "measured": 31.89
+        },
+        {
+          "x": {
+            "cement": 207.56,
+            "slag": 21.96,
+            "fly_ash": 8.75,
+            "water": 150.01,
+            "superplasticizer": 17.31,
+            "coarse_agg": 836.49,
+            "fine_agg": 985.79,
+            "age": 357.64
+          },
+          "predicted_mean": 65.46,
+          "predicted_std": 11.85,
+          "acq_score": 95.088,
+          "measured": 24.25
+        },
+        {
+          "x": {
+            "cement": 138.07,
+            "slag": 119.58,
+            "fly_ash": 46.77,
+            "water": 249.84,
+            "superplasticizer": 18.44,
+            "coarse_agg": 807.45,
+            "fine_agg": 599.48,
+            "age": 282.75
+          },
+          "predicted_mean": 71.47,
+          "predicted_std": 9.02,
+          "acq_score": 94.013,
+          "measured": 23.29
+        }
+      ]
+    },
+    {
+      "round_idx": 6,
+      "budget_used": 33,
+      "best_value": 75.39126305179092,
+      "decision": {
+        "acquisition": "ucb",
+        "surrogate": "gaussian_process",
+        "kappa": 1.0,
+        "batch_size": 4,
+        "rationale": "mid phase: balance explore/exploit with a moderate UCB kappa; using gaussian_process (n=29 observations); batch=4.",
+        "source": "heuristic"
+      },
+      "selected": [
+        {
+          "x": {
+            "cement": 352.01,
+            "slag": 355.52,
+            "fly_ash": 159.24,
+            "water": 240.45,
+            "superplasticizer": 18.11,
+            "coarse_agg": 1138.5,
+            "fine_agg": 704.48,
+            "age": 90.12
+          },
+          "predicted_mean": 74.88,
+          "predicted_std": 5.73,
+          "acq_score": 80.608,
+          "measured": 61.88
+        },
+        {
+          "x": {
+            "cement": 320.83,
+            "slag": 331.59,
+            "fly_ash": 184.01,
+            "water": 223.64,
+            "superplasticizer": 13.44,
+            "coarse_agg": 1095.57,
+            "fine_agg": 848.07,
+            "age": 190.85
+          },
+          "predicted_mean": 75.51,
+          "predicted_std": 4.33,
+          "acq_score": 79.842,
+          "measured": 61.54
+        },
+        {
+          "x": {
+            "cement": 249.05,
+            "slag": 348.36,
+            "fly_ash": 184.95,
+            "water": 237.97,
+            "superplasticizer": 20.31,
+            "coarse_agg": 1026.01,
+            "fine_agg": 638.88,
+            "age": 147.91
+          },
+          "predicted_mean": 74.62,
+          "predicted_std": 4.02,
+          "acq_score": 78.637,
+          "measured": 70.07
+        },
+        {
+          "x": {
+            "cement": 208.6,
+            "slag": 352.57,
+            "fly_ash": 154.34,
+            "water": 210.84,
+            "superplasticizer": 18.21,
+            "coarse_agg": 1103.83,
+            "fine_agg": 602.93,
+            "age": 275.94
+          },
+          "predicted_mean": 74.54,
+          "predicted_std": 3.62,
+          "acq_score": 78.161,
+          "measured": 73.16
+        }
+      ]
+    },
+    {
+      "round_idx": 7,
+      "budget_used": 36,
+      "best_value": 75.39126305179092,
+      "decision": {
+        "acquisition": "ucb",
+        "surrogate": "gaussian_process",
+        "kappa": 2.5,
+        "batch_size": 3,
+        "rationale": "stalled for 4 rounds: one exploration burst (raise kappa) to escape the current basin; using gaussian_process (n=33 observations); batch=3.",
+        "source": "heuristic"
+      },
+      "selected": [
+        {
+          "x": {
+            "cement": 529.45,
+            "slag": 20.26,
+            "fly_ash": 98.6,
+            "water": 178.38,
+            "superplasticizer": 2.03,
+            "coarse_agg": 947.63,
+            "fine_agg": 663.34,
+            "age": 302.78
+          },
+          "predicted_mean": 58.75,
+          "predicted_std": 12.06,
+          "acq_score": 88.907,
+          "measured": 56.99
+        },
+        {
+          "x": {
+            "cement": 426.6,
+            "slag": 18.12,
+            "fly_ash": 37.58,
+            "water": 140.44,
+            "superplasticizer": 0.32,
+            "coarse_agg": 849.02,
+            "fine_agg": 632.92,
+            "age": 321.57
+          },
+          "predicted_mean": 51.86,
+          "predicted_std": 14.14,
+          "acq_score": 87.203,
+          "measured": 51.99
+        },
+        {
+          "x": {
+            "cement": 499.69,
+            "slag": 240.29,
+            "fly_ash": 13.15,
+            "water": 199.81,
+            "superplasticizer": 0.37,
+            "coarse_agg": 870.32,
+            "fine_agg": 771.93,
+            "age": 356.44
+          },
+          "predicted_mean": 50.55,
+          "predicted_std": 14.1,
+          "acq_score": 85.809,
+          "measured": 59.91
+        }
+      ]
+    },
+    {
+      "round_idx": 8,
+      "budget_used": 40,
+      "best_value": 75.39126305179092,
+      "decision": {
+        "acquisition": "ei",
+        "surrogate": "gaussian_process",
+        "kappa": 0.0,
+        "batch_size": 4,
+        "rationale": "late phase: refine the best region with Expected Improvement; using gaussian_process (n=36 observations); batch=4.",
+        "source": "heuristic"
+      },
+      "selected": [
+        {
+          "x": {
+            "cement": 225.02,
+            "slag": 331.32,
+            "fly_ash": 178.94,
+            "water": 210.88,
+            "superplasticizer": 21.09,
+            "coarse_agg": 868.67,
+            "fine_agg": 634.23,
+            "age": 355.88
+          },
+          "predicted_mean": 73.87,
+          "predicted_std": 2.6,
+          "acq_score": 0.445,
+          "measured": 73.86
+        },
+        {
+          "x": {
+            "cement": 134.19,
+            "slag": 331.61,
+            "fly_ash": 190.2,
+            "water": 174.97,
+            "superplasticizer": 24.43,
+            "coarse_agg": 932.71,
+            "fine_agg": 719.24,
+            "age": 113.76
+          },
+          "predicted_mean": 68.87,
+          "predicted_std": 5.97,
+          "acq_score": 0.415,
+          "measured": 60.81
+        },
+        {
+          "x": {
+            "cement": 343.36,
+            "slag": 274.45,
+            "fly_ash": 151.31,
+            "water": 194.6,
+            "superplasticizer": 19.1,
+            "coarse_agg": 1006.53,
+            "fine_agg": 942.86,
+            "age": 326.92
+          },
+          "predicted_mean": 72.85,
+          "predicted_std": 3.14,
+          "acq_score": 0.37,
+          "measured": 69.72
+        },
+        {
+          "x": {
+            "cement": 208.44,
+            "slag": 356.6,
+            "fly_ash": 158.67,
+            "water": 203.38,
+            "superplasticizer": 19.58,
+            "coarse_agg": 1099.32,
+            "fine_agg": 595.79,
+            "age": 279.01
+          },
+          "predicted_mean": 73.7,
+          "predicted_std": 2.26,
+          "acq_score": 0.293,
+          "measured": 74.05
+        }
+      ]
+    },
+    {
+      "round_idx": 9,
+      "budget_used": 43,
+      "best_value": 75.39126305179092,
+      "decision": {
+        "acquisition": "ucb",
+        "surrogate": "random_forest",
+        "kappa": 2.5,
+        "batch_size": 3,
+        "rationale": "stalled for 6 rounds: one exploration burst (raise kappa) to escape the current basin; using random_forest (n=40 observations); batch=3.",
+        "source": "heuristic"
+      },
+      "selected": [
+        {
+          "x": {
+            "cement": 129.65,
+            "slag": 350.6,
+            "fly_ash": 64.13,
+            "water": 241.7,
+            "superplasticizer": 19.49,
+            "coarse_agg": 885.64,
+            "fine_agg": 764.05,
+            "age": 351.56
+          },
+          "predicted_mean": 55.88,
+          "predicted_std": 21.45,
+          "acq_score": 109.51,
+          "measured": 45.96
+        },
+        {
+          "x": {
+            "cement": 187.0,
+            "slag": 345.28,
+            "fly_ash": 83.91,
+            "water": 219.16,
+            "superplasticizer": 20.65,
+            "coarse_agg": 829.38,
+            "fine_agg": 723.58,
+            "age": 232.76
+          },
+          "predicted_mean": 55.8,
+          "predicted_std": 19.66,
+          "acq_score": 104.944,
+          "measured": 65.37
+        },
+        {
+          "x": {
+            "cement": 191.5,
+            "slag": 340.26,
+            "fly_ash": 53.26,
+            "water": 191.75,
+            "superplasticizer": 20.13,
+            "coarse_agg": 881.77,
+            "fine_agg": 882.26,
+            "age": 204.24
+          },
+          "predicted_mean": 53.84,
+          "predicted_std": 20.28,
+          "acq_score": 104.54,
+          "measured": 72.14
+        }
+      ]
+    },
+    {
+      "round_idx": 10,
+      "budget_used": 47,
+      "best_value": 75.39126305179092,
+      "decision": {
+        "acquisition": "ei",
+        "surrogate": "random_forest",
+        "kappa": 0.0,
+        "batch_size": 4,
+        "rationale": "late phase: refine the best region with Expected Improvement; using random_forest (n=43 observations); batch=4.",
+        "source": "heuristic"
+      },
+      "selected": [
+        {
+          "x": {
+            "cement": 207.0,
+            "slag": 331.06,
+            "fly_ash": 47.46,
+            "water": 236.02,
+            "superplasticizer": 18.87,
+            "coarse_agg": 810.42,
+            "fine_agg": 698.36,
+            "age": 288.63
+          },
+          "predicted_mean": 62.55,
+          "predicted_std": 13.91,
+          "acq_score": 1.336,
+          "measured": 51.9
+        },
+        {
+          "x": {
+            "cement": 362.09,
+            "slag": 349.7,
+            "fly_ash": 89.47,
+            "water": 205.82,
+            "superplasticizer": 5.18,
+            "coarse_agg": 802.91,
+            "fine_agg": 591.33,
+            "age": 361.93
+          },
+          "predicted_mean": 64.59,
+          "predicted_std": 12.3,
+          "acq_score": 1.283,
+          "measured": 65.11
+        },
+        {
+          "x": {
+            "cement": 192.62,
+            "slag": 336.26,
+            "fly_ash": 50.94,
+            "water": 207.83,
+            "superplasticizer": 15.8,
+            "coarse_agg": 1082.9,
+            "fine_agg": 819.26,
+            "age": 327.14
+          },
+          "predicted_mean": 63.73,
+          "predicted_std": 12.44,
+          "acq_score": 1.164,
+          "measured": 60.99
+        },
+        {
+          "x": {
+            "cement": 274.92,
+            "slag": 341.21,
+            "fly_ash": 12.2,
+            "water": 230.12,
+            "superplasticizer": 24.73,
+            "coarse_agg": 1008.17,
+            "fine_agg": 609.72,
+            "age": 362.82
+          },
+          "predicted_mean": 64.62,
+          "predicted_std": 11.67,
+          "acq_score": 1.122,
+          "measured": 61.57
+        }
+      ]
+    },
+    {
+      "round_idx": 11,
+      "budget_used": 50,
+      "best_value": 80.58993946882286,
+      "decision": {
+        "acquisition": "ucb",
+        "surrogate": "random_forest",
+        "kappa": 2.5,
+        "batch_size": 3,
+        "rationale": "stalled for 8 rounds: one exploration burst (raise kappa) to escape the current basin; using random_forest (n=47 observations); batch=3.",
+        "source": "heuristic"
+      },
+      "selected": [
+        {
+          "x": {
+            "cement": 227.7,
+            "slag": 251.66,
+            "fly_ash": 200.0,
+            "water": 215.52,
+            "superplasticizer": 18.75,
+            "coarse_agg": 817.29,
+            "fine_agg": 620.15,
+            "age": 365.0
+          },
+          "predicted_mean": 57.24,
+          "predicted_std": 15.74,
+          "acq_score": 96.587,
+          "measured": 80.59
+        },
+        {
+          "x": {
+            "cement": 120.0,
+            "slag": 360.0,
+            "fly_ash": 183.69,
+            "water": 189.11,
+            "superplasticizer": 19.84,
+            "coarse_agg": 836.74,
+            "fine_agg": 621.51,
+            "age": 313.61
+          },
+          "predicted_mean": 62.92,
+          "predicted_std": 13.23,
+          "acq_score": 96.005,
+          "measured": 76.39
+        },
+        {
+          "x": {
+            "cement": 172.12,
+            "slag": 250.94,
+            "fly_ash": 173.09,
+            "water": 209.95,
+            "superplasticizer": 22.12,
+            "coarse_agg": 877.51,
+            "fine_agg": 642.76,
+            "age": 344.15
+          },
+          "predicted_mean": 56.15,
+          "predicted_std": 15.75,
+          "acq_score": 95.517,
+          "measured": 69.11
+        }
+      ]
+    }
+  ]
+}
