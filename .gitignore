@@ -11,3 +11,6 @@ env/
 # Keep the committed demo in examples/demo_output/, but ignore ad-hoc runs:
 out/
 runs/
+# Checkpoints are transient run state, not artefacts to commit.
+checkpoint.json
+checkpoint.json.tmp

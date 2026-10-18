@@ -1,13 +1,15 @@
-"""Reporting: a convergence plot and a Markdown write-up with rationales.
+"""Reporting: convergence plot, Markdown write-up and machine-readable log.
 
-The report is deliberately "evidence-based": for every round it records what
-the agent decided, why, and what the chosen experiments actually measured.
-That is the transparent, auditable trail a screening campaign needs.
+The report is deliberately an *audit trail*, not a summary. It records the
+configuration and environment the result depended on, which tools ran and for
+how long, and -- for every round -- what the planner decided, why, and what the
+chosen experiments actually measured.
 """
 
 from __future__ import annotations
 
 import json
+from dataclasses import asdict
 from pathlib import Path
 
 import matplotlib
@@ -15,27 +17,26 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt  # noqa: E402
 
-from . import oracle  # noqa: E402
 from .campaign import CampaignResult  # noqa: E402
 
 
-def plot_convergence(res: CampaignResult, path: Path) -> None:
+def plot_convergence(
+    res: CampaignResult, path: Path, baseline: CampaignResult | None = None
+) -> None:
     fig, ax = plt.subplots(figsize=(7.5, 4.5), dpi=130)
-    agent_x = range(1, len(res.history_best) + 1)
-    ax.plot(agent_x, res.history_best, lw=2.2, label="agent (active learning)")
-    base_x = range(1, len(res.baseline_best) + 1)
-    ax.plot(base_x, res.baseline_best, lw=1.8, ls="--", label="random baseline")
-    if res.reference_optimum == res.reference_optimum:  # not NaN
-        ax.axhline(
-            res.reference_optimum,
-            color="grey",
-            lw=1.0,
-            ls=":",
-            label=f"brute-force optimum ≈ {res.reference_optimum:.1f} MPa",
-        )
+    ax.plot(range(1, len(res.history_best) + 1), res.history_best, lw=2.2,
+            label=f"{res.planner_name} (active learning)")
+    if baseline is not None:
+        ax.plot(range(1, len(baseline.history_best) + 1), baseline.history_best,
+                lw=1.8, ls="--", label=f"{baseline.planner_name} baseline")
+    ref = res.reference_optimum
+    if ref == ref:  # not NaN
+        ax.axhline(ref, color="grey", lw=1.0, ls=":",
+                   label=f"reference optimum ≈ {ref:.3g}")
+    unit = f" ({res.value_unit})" if res.value_unit else ""
     ax.set_xlabel("experiments run (budget spent)")
-    ax.set_ylabel("best strength found so far (MPa)")
-    ax.set_title("Agentic active learning vs random search")
+    ax.set_ylabel(f"best value found so far{unit}")
+    ax.set_title(f"{res.objective_name}: agentic active learning vs baseline")
     ax.legend(frameon=False, fontsize=9)
     ax.grid(alpha=0.25)
     fig.tight_layout()
@@ -43,79 +44,114 @@ def plot_convergence(res: CampaignResult, path: Path) -> None:
     plt.close(fig)
 
 
-def write_report(res: CampaignResult, out_dir: Path) -> None:
+def write_report(
+    res: CampaignResult, out_dir: Path, baseline: CampaignResult | None = None
+) -> None:
+    out_dir = Path(out_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
-    plot_convergence(res, out_dir / "convergence.png")
+    plot_convergence(res, out_dir / "convergence.png", baseline)
 
-    best_mix = {n: round(float(v), 2) for n, v in zip(oracle.VAR_NAMES, res.best_x)}
+    unit = f" {res.value_unit}" if res.value_unit else ""
     ref = res.reference_optimum
-    pct = f"{100 * res.best_value / ref:.1f}%" if ref == ref and ref > 0 else "n/a"
-    base_final = res.baseline_best[-1] if res.baseline_best else float("nan")
+    frac = res.fraction_of_reference()
+    pct = f"{100 * frac:.1f}%" if frac == frac else "n/a"
+    man = res.manifest
 
-    lines = []
-    lines.append("# Campaign report\n")
-    lines.append(
-        "An LLM/heuristic agent chose which experiments to run, round by round, "
-        "to maximise concrete compressive strength under a fixed experiment budget.\n"
+    L: list[str] = []
+    L.append(f"# Campaign report — {res.objective_name}\n")
+    L.append(
+        f"Planner **{res.planner_name}** chose which experiments to run, round by "
+        f"round, to maximise the objective under a fixed budget of "
+        f"{res.budget_used} experiments.\n"
     )
-    lines.append("## Result\n")
-    lines.append(f"- **Best strength found:** {res.best_value:.2f} MPa")
-    lines.append(f"- **Random baseline (same budget):** {base_final:.2f} MPa")
-    lines.append(f"- **Brute-force reference optimum (noise-free):** {ref:.2f} MPa")
-    lines.append(f"- **Fraction of reference reached:** {pct}")
-    lines.append(f"- **Experiments spent:** {res.rounds[-1].budget_used if res.rounds else 0}")
-    lines.append(
-        "\n> The reference optimum is the *noise-free* ground-truth maximum from a "
-        "200k-point brute-force scan. Measured values include experimental noise "
-        "(σ = 1.5 MPa), so a single measurement can sit slightly above it. The point "
-        "is the gap to the random baseline, found with the same number of experiments.\n"
-    )
-    lines.append("\n**Best mix design found:**\n")
-    lines.append("| variable | value | unit |")
-    lines.append("|---|---:|---|")
-    for (name, _, _, unit), v in zip(oracle.SEARCH_SPACE, res.best_x):
-        lines.append(f"| {name} | {v:.2f} | {unit} |")
+    if res.resumed_from_round is not None:
+        L.append(f"> This campaign was **resumed** from a checkpoint at round "
+                 f"{res.resumed_from_round}.\n")
 
-    lines.append("\n## Per-round decisions (the explainable trail)\n")
+    L.append("## Result\n")
+    L.append(f"- **Best value found:** {res.best_value:.4g}{unit}")
+    if baseline is not None:
+        delta = res.best_value - baseline.best_value
+        L.append(f"- **{baseline.planner_name} baseline (same budget):** "
+                 f"{baseline.best_value:.4g}{unit}  (**{delta:+.4g}{unit}**)")
+    L.append(f"- **Reference optimum (noise-free):** {ref:.4g}{unit}")
+    L.append(f"- **Fraction of reference reached:** {pct}")
+    L.append(f"- **Experiments spent:** {res.budget_used}")
+    L.append(
+        "\n> The reference optimum is the noise-free ground-truth maximum. "
+        "Measurements include experimental noise, so a single measurement can sit "
+        "slightly above it. The meaningful comparison is against the baseline at "
+        "the same budget.\n"
+    )
+
+    L.append("**Best design found:**\n")
+    L.append("| variable | value | unit |")
+    L.append("|---|---:|---|")
+    for name, value, u in zip(res.var_names, res.best_x, res.units):
+        L.append(f"| {name} | {value:.4g} | {u} |")
+
+    # -- provenance --------------------------------------------------------
+    if man is not None:
+        L.append("\n## Provenance\n")
+        L.append(f"- **Config hash:** `{man.config_hash}`")
+        L.append(f"- **Started / finished (UTC):** {man.started_at} → {man.finished_at}")
+        if man.git_commit:
+            L.append(f"- **Git commit:** `{man.git_commit}`")
+        env = man.environment
+        L.append(f"- **Python:** {env.get('python')} on {env.get('platform')}")
+        pkgs = ", ".join(f"{k} {v}" for k, v in (env.get("packages") or {}).items())
+        L.append(f"- **Packages:** {pkgs}")
+        L.append("\n<details><summary>Full configuration</summary>\n")
+        L.append("```json")
+        L.append(json.dumps(man.config, indent=2))
+        L.append("```\n</details>\n")
+
+    # -- tool usage --------------------------------------------------------
+    if res.tool_summary:
+        L.append("## Tool usage\n")
+        L.append("| tool | calls | total ms | failures |")
+        L.append("|---|---:|---:|---:|")
+        for name, st in sorted(res.tool_summary.items()):
+            L.append(f"| `{name}` | {int(st['calls'])} | {st['total_ms']:.1f} "
+                     f"| {int(st['failures'])} |")
+        L.append("")
+
+    # -- the decision trail ------------------------------------------------
+    L.append("## Per-round decisions (the explainable trail)\n")
     for rl in res.rounds:
         d = rl.decision
-        lines.append(
-            f"### Round {rl.round_idx} — best so far {rl.best_value:.2f} MPa "
-            f"(budget used {rl.budget_used})"
-        )
-        lines.append(
-            f"- **Decision [{d['source']}]:** acquisition=`{d['acquisition']}`, "
-            f"surrogate=`{d['surrogate']}`, kappa={d['kappa']}, batch={d['batch_size']}"
-        )
-        lines.append(f"- **Rationale:** {d['rationale']}")
-        lines.append("- **Selected experiments:**\n")
-        lines.append("  | predicted (MPa) | uncertainty ± | acq score | measured (MPa) |")
-        lines.append("  |---:|---:|---:|---:|")
+        L.append(f"### Round {rl.round_idx} — best so far {rl.best_value:.4g}{unit} "
+                 f"(budget used {rl.budget_used})")
+        L.append(f"- **Decision [{d['source']}]:** acquisition=`{d['acquisition']}`, "
+                 f"surrogate=`{d['surrogate']}`, kappa={d['kappa']}, batch={d['batch_size']}")
+        L.append(f"- **Rationale:** {d['rationale']}")
+        L.append("- **Selected experiments:**\n")
+        L.append("  | predicted | uncertainty ± | acq score | measured |")
+        L.append("  |---:|---:|---:|---:|")
         for s in rl.selected:
-            lines.append(
-                f"  | {s['predicted_mean']} | {s['predicted_std']} | "
-                f"{s['acq_score']} | {s['measured']} |"
-            )
-        lines.append("")
+            L.append(f"  | {s['predicted_mean']:.4g} | {s['predicted_std']:.4g} "
+                     f"| {s['acq_score']:.4g} | {s['measured']:.4g} |")
+        L.append("")
 
-    (out_dir / "report.md").write_text("\n".join(lines))
+    (out_dir / "report.md").write_text("\n".join(L))
 
-    # Machine-readable log for downstream analysis.
     payload = {
+        "objective": res.objective_name,
+        "planner": res.planner_name,
         "best_value": res.best_value,
-        "best_mix": best_mix,
+        "best_design": {n: float(v) for n, v in zip(res.var_names, res.best_x)},
         "reference_optimum": ref,
+        "fraction_of_reference": frac,
+        "budget_used": res.budget_used,
         "history_best": res.history_best,
-        "baseline_best": res.baseline_best,
-        "rounds": [
-            {
-                "round_idx": rl.round_idx,
-                "budget_used": rl.budget_used,
-                "best_value": rl.best_value,
-                "decision": rl.decision,
-                "selected": rl.selected,
-            }
-            for rl in res.rounds
-        ],
+        "baseline": None if baseline is None else {
+            "planner": baseline.planner_name,
+            "best_value": baseline.best_value,
+            "history_best": baseline.history_best,
+        },
+        "manifest": None if man is None else asdict(man),
+        "tool_summary": res.tool_summary,
+        "rounds": [vars(r) for r in res.rounds],
     }
-    (out_dir / "campaign_log.json").write_text(json.dumps(payload, indent=2))
+    (out_dir / "campaign_log.json").write_text(json.dumps(payload, indent=2, default=str))
+    (out_dir / "tool_calls.json").write_text(json.dumps(res.tool_calls, indent=2, default=str))

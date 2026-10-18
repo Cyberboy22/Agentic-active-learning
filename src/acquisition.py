@@ -2,8 +2,8 @@
 
 Each function scores a pool of candidates so the top-k can be selected for the
 next round. They trade off exploitation (high predicted value) against
-exploration (high uncertainty). The agent chooses which one to use, and how
-hard to explore, each round.
+exploration (high uncertainty). A planner chooses which one to use, and how hard
+to explore, each round.
 """
 
 from __future__ import annotations
@@ -37,15 +37,38 @@ def pure_explore(mean: np.ndarray, std: np.ndarray, **_) -> np.ndarray:
     return std
 
 
+def random_score(
+    mean: np.ndarray, std: np.ndarray, *, rng: np.random.Generator | None = None, **_
+) -> np.ndarray:
+    """Ignore the model entirely -- the random-search baseline, inside the same loop.
+
+    Scoring randomly makes the top-k selection a uniform random draw from the
+    pool, so random search goes through exactly the same machinery (pool
+    sampling, batching, budget accounting) as every other planner. That keeps
+    the comparison fair: the only thing that differs is the decision rule.
+    """
+    rng = rng or np.random.default_rng()
+    return rng.random(len(mean))
+
+
 ACQUISITIONS = {
     "ucb": ucb,
     "ei": expected_improvement,
     "greedy": greedy,
     "explore": pure_explore,
+    "random": random_score,
 }
 
 
-def score(name: str, mean, std, *, best: float, kappa: float = 1.5) -> np.ndarray:
+def score(
+    name: str,
+    mean,
+    std,
+    *,
+    best: float,
+    kappa: float = 1.5,
+    rng: np.random.Generator | None = None,
+) -> np.ndarray:
     if name not in ACQUISITIONS:
         raise ValueError(f"unknown acquisition {name!r}; choose from {list(ACQUISITIONS)}")
-    return ACQUISITIONS[name](mean, std, kappa=kappa, best=best)
+    return ACQUISITIONS[name](mean, std, kappa=kappa, best=best, rng=rng)

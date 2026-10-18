@@ -1,79 +1,71 @@
 #!/usr/bin/env python3
-"""Honest multi-seed benchmark: agent vs random search.
+"""Compare planners across objectives and seeds, with paired statistics.
 
-Runs the campaign across several seeds and reports, for each strategy:
-  - mean final best value (± std),
-  - mean number of experiments to reach 95% of the brute-force optimum
-    (sample efficiency -- the metric that actually matters when each
-    experiment is expensive).
+Examples
+--------
+Default comparison (random vs classical BO vs the adaptive heuristic):
+    python benchmark.py --seeds 10
 
-Usage:
-    python benchmark.py --seeds 10 --budget 50
+A quick smoke run:
+    python benchmark.py --seeds 3 --budget 30 --objectives concrete
+
+Include the Claude-driven planner (needs ANTHROPIC_API_KEY; makes one API call
+per round, so keep the seed count small):
+    python benchmark.py --seeds 5 --planners random classical_bo heuristic llm
 """
 
 from __future__ import annotations
 
 import argparse
+from pathlib import Path
 
-import numpy as np
-
-from src import oracle
-from src.campaign import run_campaign
-
-
-def experiments_to_threshold(history: list[float], threshold: float) -> float:
-    for i, v in enumerate(history, start=1):
-        if v >= threshold:
-            return i
-    return float("nan")  # never reached within budget
+from src.benchmark import (
+    DEFAULT_OBJECTIVES,
+    DEFAULT_PLANNERS,
+    plot_benchmark,
+    run_benchmark,
+    summarise,
+    write_csv,
+)
+from src.objective import available_objectives
+from src.objectives import *  # noqa: F401,F403
+from src.planners import available_planners
 
 
 def main() -> None:
-    p = argparse.ArgumentParser()
-    p.add_argument("--seeds", type=int, default=10)
-    p.add_argument("--budget", type=int, default=50)
-    p.add_argument("--agent", choices=["auto", "llm", "heuristic"], default="heuristic")
+    p = argparse.ArgumentParser(
+        description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter
+    )
+    p.add_argument("--objectives", nargs="+", default=DEFAULT_OBJECTIVES,
+                   help=f"objectives to test; available: {available_objectives()}")
+    p.add_argument("--planners", nargs="+", default=DEFAULT_PLANNERS,
+                   help=f"planners to compare; available: {available_planners()}")
+    p.add_argument("--seeds", type=int, default=10, help="independent runs per cell")
+    p.add_argument("--budget", type=int, default=50, help="experiment budget per run")
+    p.add_argument("--n-init", type=int, default=10, help="size of the initial design")
+    p.add_argument("--n-rounds", type=int, default=12, help="active-learning rounds")
+    p.add_argument("--reference", default="classical_bo",
+                   help="planner the paired tests compare against")
+    p.add_argument("--out", type=Path, default=Path("examples/benchmark_output"))
     args = p.parse_args()
 
-    ref = oracle.Oracle(seed=0).reference_optimum()
-    thresh = 0.95 * ref
+    print(f"Running {len(args.objectives) * len(args.planners) * args.seeds} campaigns "
+          f"({len(args.objectives)} objectives x {len(args.planners)} planners x "
+          f"{args.seeds} seeds)...")
 
-    agent_final, base_final = [], []
-    agent_eff, base_eff = [], []
+    records = run_benchmark(
+        objectives=args.objectives, planners=args.planners, seeds=args.seeds,
+        budget=args.budget, n_init=args.n_init, n_rounds=args.n_rounds,
+    )
 
-    for s in range(args.seeds):
-        res = run_campaign(
-            budget=args.budget, n_init=10, n_rounds=12, pool_size=1500,
-            max_batch=6, agent_kind=args.agent, seed=s, verbose=False,
-        )
-        agent_final.append(res.best_value)
-        base_final.append(res.baseline_best[-1])
-        agent_eff.append(experiments_to_threshold(res.history_best, thresh))
-        base_eff.append(experiments_to_threshold(res.baseline_best, thresh))
+    report = summarise(records, reference_planner=args.reference)
+    args.out.mkdir(parents=True, exist_ok=True)
+    (args.out / "benchmark.md").write_text(report)
+    write_csv(records, args.out / "benchmark_runs.csv")
+    plot_benchmark(records, args.out / "benchmark.png")
 
-    def success_rate(xs):
-        reached = [x for x in xs if x == x]
-        return len(reached), len(xs)
-
-    def mean_eff(xs):
-        reached = [x for x in xs if x == x]
-        return f"{np.mean(reached):.1f}" if reached else "–"
-
-    a_hit, n = success_rate(agent_eff)
-    b_hit, _ = success_rate(base_eff)
-
-    print(f"Reference optimum (brute force): {ref:.2f} MPa")
-    print(f"95% threshold:                   {thresh:.2f} MPa")
-    print(f"Seeds: {args.seeds} | budget: {args.budget} | agent: {args.agent}\n")
-    print(f"{'strategy':<10} {'final best (MPa)':<20} {'reached 95%':<16} {'mean exp. to 95%':<16}")
-    print("-" * 66)
-    print(f"{'agent':<10} {np.mean(agent_final):6.2f} ± {np.std(agent_final):<11.2f}"
-          f"{a_hit}/{n} runs{'':<8} {mean_eff(agent_eff)}")
-    print(f"{'random':<10} {np.mean(base_final):6.2f} ± {np.std(base_final):<11.2f}"
-          f"{b_hit}/{n} runs{'':<8} {mean_eff(base_eff)}")
-    gain = np.mean(agent_final) - np.mean(base_final)
-    print(f"\nMean uplift from active learning: {gain:+.2f} MPa over random search "
-          f"at the same budget ({n} seeds).")
+    print("\n" + report)
+    print(f"Written: {args.out / 'benchmark.md'}, benchmark_runs.csv, benchmark.png")
 
 
 if __name__ == "__main__":

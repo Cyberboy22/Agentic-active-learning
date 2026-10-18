@@ -1,16 +1,20 @@
 {
-  "best_value": 80.58993946882286,
-  "best_mix": {
-    "cement": 227.7,
-    "slag": 251.66,
-    "fly_ash": 200.0,
-    "water": 215.52,
-    "superplasticizer": 18.75,
-    "coarse_agg": 817.29,
-    "fine_agg": 620.15,
-    "age": 365.0
+  "objective": "concrete",
+  "planner": "heuristic",
+  "best_value": 77.8073305012195,
+  "best_design": {
+    "cement": 141.42463784122168,
+    "slag": 129.1392459819772,
+    "fly_ash": 186.65676945354278,
+    "water": 143.012911838863,
+    "superplasticizer": 21.287798227796415,
+    "coarse_agg": 977.2096995168504,
+    "fine_agg": 860.7708288728243,
+    "age": 296.7731626182223
   },
   "reference_optimum": 77.74571294882062,
+  "fraction_of_reference": 1.0007925524130112,
+  "budget_used": 50,
   "history_best": [
     62.37650457148354,
     62.61488919099298,
@@ -29,92 +33,151 @@
     71.65387831928243,
     71.65387831928243,
     71.65387831928243,
-    71.7396855040193,
-    75.39126305179092,
-    75.39126305179092,
-    75.39126305179092,
-    75.39126305179092,
-    75.39126305179092,
-    75.39126305179092,
-    75.39126305179092,
-    75.39126305179092,
-    75.39126305179092,
-    75.39126305179092,
-    75.39126305179092,
-    75.39126305179092,
-    75.39126305179092,
-    75.39126305179092,
-    75.39126305179092,
-    75.39126305179092,
-    75.39126305179092,
-    75.39126305179092,
-    75.39126305179092,
-    75.39126305179092,
-    75.39126305179092,
-    75.39126305179092,
-    75.39126305179092,
-    75.39126305179092,
-    75.39126305179092,
-    75.39126305179092,
-    75.39126305179092,
-    75.39126305179092,
-    75.39126305179092,
-    80.58993946882286,
-    80.58993946882286,
-    80.58993946882286
+    71.65387831928243,
+    72.40370247386981,
+    72.830504084536,
+    75.45552262359034,
+    75.45552262359034,
+    75.45552262359034,
+    75.45552262359034,
+    75.45552262359034,
+    75.45552262359034,
+    75.45552262359034,
+    75.45552262359034,
+    75.45552262359034,
+    75.45552262359034,
+    75.45552262359034,
+    75.45552262359034,
+    75.45552262359034,
+    75.45552262359034,
+    75.45552262359034,
+    75.45552262359034,
+    75.45552262359034,
+    75.45552262359034,
+    75.45552262359034,
+    75.45552262359034,
+    75.45552262359034,
+    76.87482865531281,
+    77.12191149771361,
+    77.12191149771361,
+    77.12191149771361,
+    77.12191149771361,
+    77.12191149771361,
+    77.8073305012195,
+    77.8073305012195,
+    77.8073305012195
   ],
-  "baseline_best": [
-    50.53664528501097,
-    50.53664528501097,
-    50.53664528501097,
-    50.53664528501097,
-    50.53664528501097,
-    56.642826925585894,
-    59.204390149192704,
-    59.204390149192704,
-    59.204390149192704,
-    65.27178327231782,
-    65.27178327231782,
-    68.44897873322955,
-    73.95855422213064,
-    73.95855422213064,
-    73.95855422213064,
-    73.95855422213064,
-    73.95855422213064,
-    73.95855422213064,
-    73.95855422213064,
-    73.95855422213064,
-    73.95855422213064,
-    73.95855422213064,
-    73.95855422213064,
-    73.95855422213064,
-    73.95855422213064,
-    73.95855422213064,
-    73.95855422213064,
-    73.95855422213064,
-    73.95855422213064,
-    73.95855422213064,
-    73.95855422213064,
-    73.95855422213064,
-    73.95855422213064,
-    73.95855422213064,
-    73.95855422213064,
-    73.95855422213064,
-    73.95855422213064,
-    73.95855422213064,
-    73.95855422213064,
-    73.95855422213064,
-    73.95855422213064,
-    73.95855422213064,
-    73.95855422213064,
-    73.95855422213064,
-    73.95855422213064,
-    73.95855422213064,
-    73.95855422213064,
-    73.95855422213064,
-    73.95855422213064,
-    73.95855422213064
-  ],
+  "baseline": {
+    "planner": "random",
+    "best_value": 75.75411603699946,
+    "history_best": [
+      62.37650457148354,
+      62.61488919099298,
+      62.61488919099298,
+      62.61488919099298,
+      64.67025574224495,
+      64.67025574224495,
+      71.65387831928243,
+      71.65387831928243,
+      71.65387831928243,
+      71.65387831928243,
+      71.65387831928243,
+      71.65387831928243,
+      71.65387831928243,
+      71.65387831928243,
+      71.65387831928243,
+      71.65387831928243,
+      71.65387831928243,
+      71.65387831928243,
+      71.65387831928243,
+      71.65387831928243,
+      71.65387831928243,
+      71.65387831928243,
+      71.65387831928243,
+      71.65387831928243,
+      71.884968997169,
+      71.884968997169,
+      71.884968997169,
+      71.884968997169,
+      71.884968997169,
+      72.21853175802802,
+      72.21853175802802,
+      72.21853175802802,
+      72.21853175802802,
+      73.50539608109709,
+      73.50539608109709,
+      73.50539608109709,
+      73.50539608109709,
+      73.50539608109709,
+      73.50539608109709,
+      73.50539608109709,
+      73.50539608109709,
+      73.99543988277388,
+      73.99543988277388,
+      73.99543988277388,
+      73.99543988277388,
+      73.99543988277388,
+      75.75411603699946,
+      75.75411603699946,
+      75.75411603699946,
+      75.75411603699946
+    ]
+  },
+  "manifest": {
+    "config": {
+      "objective": "concrete",
+      "dim": 8,
+      "planner": "heuristic",
+      "budget": 50,
+      "n_init": 10,
+      "n_rounds": 12,
+      "pool_size": 1500,
+      "max_batch": 6,
+      "seed": 0
+    },
+    "config_hash": "57632e0ae082",
+    "started_at": "2026-10-18T19:22:33+00:00",
+    "finished_at": "2026-10-18T19:22:35+00:00",
+    "environment": {
+      "python": "3.13.16",
+      "platform": "Linux-6.18.44-fc-v139-x86_64-with-glibc2.39",
+      "packages": {
+        "numpy": "2.5.3",
+        "scipy": "1.18.1",
+        "scikit-learn": "1.9.1",
+        "matplotlib": "3.11.2",
+        "anthropic": "1.15.0"
+      }
+    },
+    "git_commit": null
+  },
+  "tool_summary": {
+    "run_experiment": {
+      "calls": 13,
+      "total_ms": 0.7,
+      "failures": 0
+    },
+    "fit_surrogate": {
+      "calls": 12,
+      "total_ms": 1282.09,
+      "failures": 0
+    },
+    "propose_candidates": {
+      "calls": 12,
+      "total_ms": 22.77,
+      "failures": 0
+    },
+    "predict": {
+      "calls": 12,
+      "total_ms": 150.56,
+      "failures": 0
+    },
+    "score_candidates": {
+      "calls": 12,
+      "total_ms": 1.14,
+      "failures": 0
+    }
+  },
   "rounds": [
     {
       "round_idx": 0,
@@ -131,51 +194,51 @@
       "selected": [
         {
           "x": {
-            "cement": 227.45,
-            "slag": 305.42,
-            "fly_ash": 154.24,
-            "water": 226.44,
-            "superplasticizer": 28.24,
-            "coarse_agg": 846.71,
-            "fine_agg": 896.14,
-            "age": 313.86
+            "cement": 227.4542,
+            "slag": 305.4213,
+            "fly_ash": 154.2412,
+            "water": 226.4429,
+            "superplasticizer": 28.2403,
+            "coarse_agg": 846.7082,
+            "fine_agg": 896.1413,
+            "age": 313.8643
           },
-          "predicted_mean": 65.84,
-          "predicted_std": 10.14,
+          "predicted_mean": 65.8377,
+          "predicted_std": 10.1431,
           "acq_score": 86.124,
-          "measured": 60.13
+          "measured": 60.132
         },
         {
           "x": {
-            "cement": 373.29,
-            "slag": 281.68,
-            "fly_ash": 183.95,
-            "water": 229.66,
-            "superplasticizer": 28.14,
-            "coarse_agg": 883.28,
-            "fine_agg": 926.48,
-            "age": 356.06
+            "cement": 373.2853,
+            "slag": 281.6768,
+            "fly_ash": 183.9524,
+            "water": 229.6552,
+            "superplasticizer": 28.1388,
+            "coarse_agg": 883.2838,
+            "fine_agg": 926.4833,
+            "age": 356.064
           },
-          "predicted_mean": 66.74,
-          "predicted_std": 9.66,
-          "acq_score": 86.056,
-          "measured": 65.7
+          "predicted_mean": 66.737,
+          "predicted_std": 9.6593,
+          "acq_score": 86.0557,
+          "measured": 65.6978
         },
         {
           "x": {
-            "cement": 247.81,
-            "slag": 17.65,
-            "fly_ash": 174.48,
-            "water": 226.77,
-            "superplasticizer": 29.82,
-            "coarse_agg": 877.53,
-            "fine_agg": 769.35,
-            "age": 295.85
+            "cement": 247.8118,
+            "slag": 17.6535,
+            "fly_ash": 174.4818,
+            "water": 226.7699,
+            "superplasticizer": 29.8184,
+            "coarse_agg": 877.5315,
+            "fine_agg": 769.3467,
+            "age": 295.851
           },
-          "predicted_mean": 64.77,
-          "predicted_std": 10.59,
-          "acq_score": 85.937,
-          "measured": 36.58
+          "predicted_mean": 64.7657,
+          "predicted_std": 10.5858,
+          "acq_score": 85.9373,
+          "measured": 36.5809
         }
       ]
     },
@@ -194,58 +257,58 @@
       "selected": [
         {
           "x": {
-            "cement": 219.23,
-            "slag": 309.15,
-            "fly_ash": 195.41,
-            "water": 221.77,
-            "superplasticizer": 14.32,
-            "coarse_agg": 856.82,
-            "fine_agg": 907.57,
-            "age": 341.33
+            "cement": 268.7858,
+            "slag": 306.9462,
+            "fly_ash": 200.0,
+            "water": 218.3467,
+            "superplasticizer": 14.3324,
+            "coarse_agg": 885.5979,
+            "fine_agg": 945.4787,
+            "age": 341.7341
           },
-          "predicted_mean": 65.57,
-          "predicted_std": 10.05,
-          "acq_score": 85.671,
-          "measured": 67.56
+          "predicted_mean": 65.4811,
+          "predicted_std": 10.0934,
+          "acq_score": 85.6679,
+          "measured": 66.6695
         },
         {
           "x": {
-            "cement": 186.33,
-            "slag": 313.69,
-            "fly_ash": 187.39,
-            "water": 213.33,
-            "superplasticizer": 14.25,
-            "coarse_agg": 850.11,
-            "fine_agg": 901.28,
-            "age": 337.19
+            "cement": 159.9468,
+            "slag": 326.2358,
+            "fly_ash": 186.4968,
+            "water": 248.626,
+            "superplasticizer": 14.3576,
+            "coarse_agg": 875.3476,
+            "fine_agg": 910.1843,
+            "age": 343.9503
           },
-          "predicted_mean": 65.4,
-          "predicted_std": 10.1,
-          "acq_score": 85.609,
-          "measured": 65.68
+          "predicted_mean": 66.2399,
+          "predicted_std": 9.6793,
+          "acq_score": 85.5984,
+          "measured": 54.7847
         },
         {
           "x": {
-            "cement": 168.83,
-            "slag": 329.72,
-            "fly_ash": 199.02,
-            "water": 230.23,
-            "superplasticizer": 14.28,
-            "coarse_agg": 902.74,
-            "fine_agg": 886.0,
-            "age": 331.68
+            "cement": 186.3115,
+            "slag": 337.882,
+            "fly_ash": 187.6851,
+            "water": 237.5914,
+            "superplasticizer": 14.3817,
+            "coarse_agg": 921.7825,
+            "fine_agg": 909.0903,
+            "age": 360.8955
           },
-          "predicted_mean": 65.16,
-          "predicted_std": 10.22,
-          "acq_score": 85.597,
-          "measured": 65.01
+          "predicted_mean": 66.3785,
+          "predicted_std": 9.5781,
+          "acq_score": 85.5346,
+          "measured": 65.1108
         }
       ]
     },
     {
       "round_idx": 2,
       "budget_used": 19,
-      "best_value": 75.39126305179092,
+      "best_value": 72.40370247386981,
       "decision": {
         "acquisition": "ucb",
         "surrogate": "gaussian_process",
@@ -257,58 +320,58 @@
       "selected": [
         {
           "x": {
-            "cement": 472.89,
-            "slag": 319.59,
-            "fly_ash": 166.73,
-            "water": 243.96,
-            "superplasticizer": 20.7,
-            "coarse_agg": 831.1,
-            "fine_agg": 734.28,
-            "age": 309.08
+            "cement": 185.2104,
+            "slag": 198.718,
+            "fly_ash": 113.7898,
+            "water": 189.5719,
+            "superplasticizer": 28.1689,
+            "coarse_agg": 898.1275,
+            "fine_agg": 900.6653,
+            "age": 355.758
           },
-          "predicted_mean": 80.59,
-          "predicted_std": 6.24,
-          "acq_score": 96.2,
-          "measured": 67.97
+          "predicted_mean": 68.6306,
+          "predicted_std": 9.8973,
+          "acq_score": 93.3739,
+          "measured": 52.17
         },
         {
           "x": {
-            "cement": 386.87,
-            "slag": 321.84,
-            "fly_ash": 189.49,
-            "water": 250.0,
-            "superplasticizer": 21.9,
-            "coarse_agg": 904.05,
-            "fine_agg": 864.33,
-            "age": 365.0
+            "cement": 402.5026,
+            "slag": 74.6874,
+            "fly_ash": 103.6406,
+            "water": 173.2935,
+            "superplasticizer": 9.5808,
+            "coarse_agg": 840.2962,
+            "fine_agg": 898.3782,
+            "age": 330.6275
           },
-          "predicted_mean": 78.84,
-          "predicted_std": 5.28,
-          "acq_score": 92.029,
-          "measured": 71.74
+          "predicted_mean": 62.0108,
+          "predicted_std": 12.2414,
+          "acq_score": 92.6143,
+          "measured": 56.9908
         },
         {
           "x": {
-            "cement": 290.45,
-            "slag": 349.14,
-            "fly_ash": 195.31,
-            "water": 249.58,
-            "superplasticizer": 20.12,
-            "coarse_agg": 827.62,
-            "fine_agg": 863.04,
-            "age": 312.88
+            "cement": 151.2413,
+            "slag": 149.1377,
+            "fly_ash": 195.9823,
+            "water": 167.8833,
+            "superplasticizer": 21.5861,
+            "coarse_agg": 971.1951,
+            "fine_agg": 884.3738,
+            "age": 352.3518
           },
-          "predicted_mean": 78.77,
-          "predicted_std": 5.25,
-          "acq_score": 91.903,
-          "measured": 75.39
+          "predicted_mean": 60.6806,
+          "predicted_std": 12.7714,
+          "acq_score": 92.609,
+          "measured": 72.4037
         }
       ]
     },
     {
       "round_idx": 3,
       "budget_used": 22,
-      "best_value": 75.39126305179092,
+      "best_value": 75.45552262359034,
       "decision": {
         "acquisition": "ucb",
         "surrogate": "gaussian_process",
@@ -320,58 +383,58 @@
       "selected": [
         {
           "x": {
-            "cement": 528.75,
-            "slag": 4.54,
-            "fly_ash": 192.86,
-            "water": 214.65,
-            "superplasticizer": 11.94,
-            "coarse_agg": 946.92,
-            "fine_agg": 625.12,
-            "age": 273.49
+            "cement": 169.5701,
+            "slag": 143.2448,
+            "fly_ash": 200.0,
+            "water": 144.3528,
+            "superplasticizer": 21.784,
+            "coarse_agg": 1010.6399,
+            "fine_agg": 838.0084,
+            "age": 305.3581
           },
-          "predicted_mean": 65.53,
-          "predicted_std": 10.63,
-          "acq_score": 86.796,
-          "measured": 63.23
+          "predicted_mean": 66.9402,
+          "predicted_std": 10.7782,
+          "acq_score": 88.4966,
+          "measured": 72.8305
         },
         {
           "x": {
-            "cement": 530.27,
-            "slag": 2.79,
-            "fly_ash": 148.19,
-            "water": 234.97,
-            "superplasticizer": 13.77,
-            "coarse_agg": 1121.78,
-            "fine_agg": 899.04,
-            "age": 142.76
+            "cement": 123.4516,
+            "slag": 136.2528,
+            "fly_ash": 200.0,
+            "water": 143.7159,
+            "superplasticizer": 19.6029,
+            "coarse_agg": 986.257,
+            "fine_agg": 893.4187,
+            "age": 305.9352
           },
-          "predicted_mean": 67.59,
-          "predicted_std": 9.1,
-          "acq_score": 85.787,
-          "measured": 53.56
+          "predicted_mean": 66.613,
+          "predicted_std": 10.8979,
+          "acq_score": 88.4088,
+          "measured": 75.4555
         },
         {
           "x": {
-            "cement": 498.18,
-            "slag": 41.42,
-            "fly_ash": 198.77,
-            "water": 190.63,
-            "superplasticizer": 12.57,
-            "coarse_agg": 881.06,
-            "fine_agg": 606.93,
-            "age": 58.47
+            "cement": 188.6666,
+            "slag": 168.5048,
+            "fly_ash": 200.0,
+            "water": 145.1714,
+            "superplasticizer": 20.2969,
+            "coarse_agg": 963.1891,
+            "fine_agg": 947.1654,
+            "age": 343.7943
           },
-          "predicted_mean": 66.17,
-          "predicted_std": 9.56,
-          "acq_score": 85.283,
-          "measured": 54.88
+          "predicted_mean": 67.3744,
+          "predicted_std": 10.4826,
+          "acq_score": 88.3395,
+          "measured": 71.0511
         }
       ]
     },
     {
       "round_idx": 4,
       "budget_used": 26,
-      "best_value": 75.39126305179092,
+      "best_value": 75.45552262359034,
       "decision": {
         "acquisition": "ucb",
         "surrogate": "gaussian_process",
@@ -383,421 +446,421 @@
       "selected": [
         {
           "x": {
-            "cement": 392.0,
-            "slag": 357.67,
-            "fly_ash": 177.89,
-            "water": 250.0,
-            "superplasticizer": 21.27,
-            "coarse_agg": 922.52,
-            "fine_agg": 922.73,
-            "age": 365.0
+            "cement": 532.2862,
+            "slag": 143.5523,
+            "fly_ash": 88.6792,
+            "water": 249.1216,
+            "superplasticizer": 15.7917,
+            "coarse_agg": 1106.564,
+            "fine_agg": 689.8964,
+            "age": 351.7151
           },
-          "predicted_mean": 75.5,
-          "predicted_std": 2.78,
-          "acq_score": 78.283,
-          "measured": 69.87
+          "predicted_mean": 76.0924,
+          "predicted_std": 10.4068,
+          "acq_score": 86.4992,
+          "measured": 68.139
         },
         {
           "x": {
-            "cement": 280.5,
-            "slag": 360.0,
-            "fly_ash": 200.0,
-            "water": 239.97,
-            "superplasticizer": 21.22,
-            "coarse_agg": 805.41,
-            "fine_agg": 900.93,
-            "age": 281.31
+            "cement": 515.4033,
+            "slag": 122.1618,
+            "fly_ash": 114.841,
+            "water": 247.5703,
+            "superplasticizer": 1.5731,
+            "coarse_agg": 998.6836,
+            "fine_agg": 987.6982,
+            "age": 342.3234
           },
-          "predicted_mean": 75.59,
-          "predicted_std": 2.69,
-          "acq_score": 78.28,
-          "measured": 71.11
+          "predicted_mean": 76.1972,
+          "predicted_std": 9.2444,
+          "acq_score": 85.4416,
+          "measured": 52.9676
         },
         {
           "x": {
-            "cement": 286.31,
-            "slag": 346.15,
-            "fly_ash": 200.0,
-            "water": 250.0,
-            "superplasticizer": 23.67,
-            "coarse_agg": 810.0,
-            "fine_agg": 912.83,
-            "age": 306.95
+            "cement": 536.3577,
+            "slag": 236.7957,
+            "fly_ash": 74.299,
+            "water": 247.3151,
+            "superplasticizer": 1.7928,
+            "coarse_agg": 1097.006,
+            "fine_agg": 695.017,
+            "age": 349.3396
           },
-          "predicted_mean": 75.41,
-          "predicted_std": 2.77,
-          "acq_score": 78.176,
-          "measured": 72.0
+          "predicted_mean": 72.7751,
+          "predicted_std": 10.9454,
+          "acq_score": 83.7205,
+          "measured": 59.8018
         },
         {
           "x": {
-            "cement": 295.6,
-            "slag": 360.0,
-            "fly_ash": 200.0,
-            "water": 249.06,
-            "superplasticizer": 21.39,
-            "coarse_agg": 859.92,
-            "fine_agg": 896.84,
-            "age": 303.26
+            "cement": 502.32,
+            "slag": 124.8268,
+            "fly_ash": 130.4209,
+            "water": 243.4574,
+            "superplasticizer": 0.622,
+            "coarse_agg": 868.8599,
+            "fine_agg": 923.2877,
+            "age": 312.1719
           },
-          "predicted_mean": 75.61,
-          "predicted_std": 2.56,
-          "acq_score": 78.17,
-          "measured": 72.93
+          "predicted_mean": 75.4174,
+          "predicted_std": 7.6684,
+          "acq_score": 83.0858,
+          "measured": 52.2789
         }
       ]
     },
     {
       "round_idx": 5,
       "budget_used": 29,
-      "best_value": 75.39126305179092,
+      "best_value": 75.45552262359034,
       "decision": {
         "acquisition": "ucb",
         "surrogate": "gaussian_process",
-        "kappa": 2.5,
+        "kappa": 1.0,
         "batch_size": 3,
-        "rationale": "stalled for 2 rounds: one exploration burst (raise kappa) to escape the current basin; using gaussian_process (n=26 observations); batch=3.",
+        "rationale": "mid phase: balance explore/exploit with a moderate UCB kappa; using gaussian_process (n=26 observations); batch=3.",
         "source": "heuristic"
       },
       "selected": [
         {
           "x": {
-            "cement": 182.15,
-            "slag": 25.96,
-            "fly_ash": 92.23,
-            "water": 182.54,
-            "superplasticizer": 18.5,
-            "coarse_agg": 1125.3,
-            "fine_agg": 885.63,
-            "age": 349.27
+            "cement": 260.3265,
+            "slag": 357.0941,
+            "fly_ash": 85.2524,
+            "water": 187.675,
+            "superplasticizer": 7.3333,
+            "coarse_agg": 1087.3824,
+            "fine_agg": 901.7062,
+            "age": 343.868
           },
-          "predicted_mean": 65.92,
-          "predicted_std": 11.69,
-          "acq_score": 95.136,
-          "measured": 31.89
+          "predicted_mean": 84.9158,
+          "predicted_std": 8.5959,
+          "acq_score": 93.5117,
+          "measured": 62.5399
         },
         {
           "x": {
-            "cement": 207.56,
-            "slag": 21.96,
-            "fly_ash": 8.75,
-            "water": 150.01,
-            "superplasticizer": 17.31,
-            "coarse_agg": 836.49,
-            "fine_agg": 985.79,
-            "age": 357.64
+            "cement": 372.7655,
+            "slag": 352.6038,
+            "fly_ash": 6.0563,
+            "water": 188.3841,
+            "superplasticizer": 13.9959,
+            "coarse_agg": 1132.427,
+            "fine_agg": 738.4291,
+            "age": 31.4927
           },
-          "predicted_mean": 65.46,
-          "predicted_std": 11.85,
-          "acq_score": 95.088,
-          "measured": 24.25
+          "predicted_mean": 83.5679,
+          "predicted_std": 8.713,
+          "acq_score": 92.2809,
+          "measured": 47.955
         },
         {
           "x": {
-            "cement": 138.07,
-            "slag": 119.58,
-            "fly_ash": 46.77,
-            "water": 249.84,
-            "superplasticizer": 18.44,
-            "coarse_agg": 807.45,
-            "fine_agg": 599.48,
-            "age": 282.75
+            "cement": 510.7916,
+            "slag": 354.1512,
+            "fly_ash": 43.1612,
+            "water": 234.88,
+            "superplasticizer": 23.5869,
+            "coarse_agg": 927.1813,
+            "fine_agg": 908.244,
+            "age": 172.7609
           },
-          "predicted_mean": 71.47,
-          "predicted_std": 9.02,
-          "acq_score": 94.013,
-          "measured": 23.29
+          "predicted_mean": 80.9431,
+          "predicted_std": 10.9945,
+          "acq_score": 91.9375,
+          "measured": 61.944
         }
       ]
     },
     {
       "round_idx": 6,
       "budget_used": 33,
-      "best_value": 75.39126305179092,
+      "best_value": 75.45552262359034,
       "decision": {
         "acquisition": "ucb",
         "surrogate": "gaussian_process",
-        "kappa": 1.0,
+        "kappa": 2.5,
         "batch_size": 4,
-        "rationale": "mid phase: balance explore/exploit with a moderate UCB kappa; using gaussian_process (n=29 observations); batch=4.",
+        "rationale": "stalled for 2 rounds: one exploration burst (raise kappa) to escape the current basin; using gaussian_process (n=29 observations); batch=4.",
         "source": "heuristic"
       },
       "selected": [
         {
           "x": {
-            "cement": 352.01,
-            "slag": 355.52,
-            "fly_ash": 159.24,
-            "water": 240.45,
-            "superplasticizer": 18.11,
-            "coarse_agg": 1138.5,
-            "fine_agg": 704.48,
-            "age": 90.12
+            "cement": 143.8469,
+            "slag": 43.7482,
+            "fly_ash": 116.5635,
+            "water": 150.3747,
+            "superplasticizer": 1.5337,
+            "coarse_agg": 962.4154,
+            "fine_agg": 687.4783,
+            "age": 244.5291
           },
-          "predicted_mean": 74.88,
-          "predicted_std": 5.73,
-          "acq_score": 80.608,
-          "measured": 61.88
+          "predicted_mean": 72.4156,
+          "predicted_std": 10.0259,
+          "acq_score": 97.4804,
+          "measured": 37.0983
         },
         {
           "x": {
-            "cement": 320.83,
-            "slag": 331.59,
-            "fly_ash": 184.01,
-            "water": 223.64,
-            "superplasticizer": 13.44,
-            "coarse_agg": 1095.57,
-            "fine_agg": 848.07,
-            "age": 190.85
+            "cement": 145.5855,
+            "slag": 33.8951,
+            "fly_ash": 129.0052,
+            "water": 145.1033,
+            "superplasticizer": 3.2654,
+            "coarse_agg": 1079.7429,
+            "fine_agg": 634.1431,
+            "age": 219.0396
           },
-          "predicted_mean": 75.51,
-          "predicted_std": 4.33,
-          "acq_score": 79.842,
-          "measured": 61.54
+          "predicted_mean": 71.5245,
+          "predicted_std": 10.0327,
+          "acq_score": 96.6063,
+          "measured": 37.1046
         },
         {
           "x": {
-            "cement": 249.05,
-            "slag": 348.36,
-            "fly_ash": 184.95,
-            "water": 237.97,
-            "superplasticizer": 20.31,
-            "coarse_agg": 1026.01,
-            "fine_agg": 638.88,
-            "age": 147.91
+            "cement": 212.9295,
+            "slag": 28.1476,
+            "fly_ash": 131.5562,
+            "water": 148.5835,
+            "superplasticizer": 1.6776,
+            "coarse_agg": 1056.2216,
+            "fine_agg": 662.1197,
+            "age": 342.3803
           },
-          "predicted_mean": 74.62,
-          "predicted_std": 4.02,
-          "acq_score": 78.637,
-          "measured": 70.07
+          "predicted_mean": 69.5491,
+          "predicted_std": 10.5521,
+          "acq_score": 95.9294,
+          "measured": 45.5204
         },
         {
           "x": {
-            "cement": 208.6,
-            "slag": 352.57,
-            "fly_ash": 154.34,
-            "water": 210.84,
-            "superplasticizer": 18.21,
-            "coarse_agg": 1103.83,
-            "fine_agg": 602.93,
-            "age": 275.94
+            "cement": 187.9483,
+            "slag": 70.558,
+            "fly_ash": 38.2161,
+            "water": 145.2233,
+            "superplasticizer": 7.3409,
+            "coarse_agg": 899.0313,
+            "fine_agg": 882.9714,
+            "age": 215.7999
           },
-          "predicted_mean": 74.54,
-          "predicted_std": 3.62,
-          "acq_score": 78.161,
-          "measured": 73.16
+          "predicted_mean": 72.0638,
+          "predicted_std": 8.6182,
+          "acq_score": 93.6093,
+          "measured": 34.9032
         }
       ]
     },
     {
       "round_idx": 7,
       "budget_used": 36,
-      "best_value": 75.39126305179092,
+      "best_value": 75.45552262359034,
       "decision": {
         "acquisition": "ucb",
         "surrogate": "gaussian_process",
-        "kappa": 2.5,
+        "kappa": 1.0,
         "batch_size": 3,
-        "rationale": "stalled for 4 rounds: one exploration burst (raise kappa) to escape the current basin; using gaussian_process (n=33 observations); batch=3.",
+        "rationale": "mid phase: balance explore/exploit with a moderate UCB kappa; using gaussian_process (n=33 observations); batch=3.",
         "source": "heuristic"
       },
       "selected": [
         {
           "x": {
-            "cement": 529.45,
-            "slag": 20.26,
-            "fly_ash": 98.6,
-            "water": 178.38,
-            "superplasticizer": 2.03,
-            "coarse_agg": 947.63,
-            "fine_agg": 663.34,
-            "age": 302.78
+            "cement": 344.6112,
+            "slag": 359.5083,
+            "fly_ash": 181.3861,
+            "water": 221.4765,
+            "superplasticizer": 22.7054,
+            "coarse_agg": 941.5024,
+            "fine_agg": 691.6433,
+            "age": 354.3923
           },
-          "predicted_mean": 58.75,
-          "predicted_std": 12.06,
-          "acq_score": 88.907,
-          "measured": 56.99
+          "predicted_mean": 77.1577,
+          "predicted_std": 4.2515,
+          "acq_score": 81.4092,
+          "measured": 70.9185
         },
         {
           "x": {
-            "cement": 426.6,
-            "slag": 18.12,
-            "fly_ash": 37.58,
-            "water": 140.44,
-            "superplasticizer": 0.32,
-            "coarse_agg": 849.02,
-            "fine_agg": 632.92,
-            "age": 321.57
+            "cement": 185.5467,
+            "slag": 153.3902,
+            "fly_ash": 200.0,
+            "water": 138.6312,
+            "superplasticizer": 17.8575,
+            "coarse_agg": 1005.5768,
+            "fine_agg": 811.496,
+            "age": 340.047
           },
-          "predicted_mean": 51.86,
-          "predicted_std": 14.14,
-          "acq_score": 87.203,
-          "measured": 51.99
+          "predicted_mean": 75.9103,
+          "predicted_std": 3.6622,
+          "acq_score": 79.5726,
+          "measured": 69.3227
         },
         {
           "x": {
-            "cement": 499.69,
-            "slag": 240.29,
-            "fly_ash": 13.15,
-            "water": 199.81,
-            "superplasticizer": 0.37,
-            "coarse_agg": 870.32,
-            "fine_agg": 771.93,
-            "age": 356.44
+            "cement": 216.0704,
+            "slag": 143.3807,
+            "fly_ash": 196.8833,
+            "water": 143.1009,
+            "superplasticizer": 20.3758,
+            "coarse_agg": 1041.9073,
+            "fine_agg": 818.4522,
+            "age": 320.763
           },
-          "predicted_mean": 50.55,
-          "predicted_std": 14.1,
-          "acq_score": 85.809,
-          "measured": 59.91
+          "predicted_mean": 75.846,
+          "predicted_std": 3.6121,
+          "acq_score": 79.4581,
+          "measured": 69.4768
         }
       ]
     },
     {
       "round_idx": 8,
       "budget_used": 40,
-      "best_value": 75.39126305179092,
+      "best_value": 75.45552262359034,
       "decision": {
-        "acquisition": "ei",
+        "acquisition": "ucb",
         "surrogate": "gaussian_process",
-        "kappa": 0.0,
+        "kappa": 2.5,
         "batch_size": 4,
-        "rationale": "late phase: refine the best region with Expected Improvement; using gaussian_process (n=36 observations); batch=4.",
+        "rationale": "stalled for 4 rounds: one exploration burst (raise kappa) to escape the current basin; using gaussian_process (n=36 observations); batch=4.",
         "source": "heuristic"
       },
       "selected": [
         {
           "x": {
-            "cement": 225.02,
-            "slag": 331.32,
-            "fly_ash": 178.94,
-            "water": 210.88,
-            "superplasticizer": 21.09,
-            "coarse_agg": 868.67,
-            "fine_agg": 634.23,
-            "age": 355.88
+            "cement": 537.5378,
+            "slag": 192.5138,
+            "fly_ash": 15.4505,
+            "water": 204.1435,
+            "superplasticizer": 26.5887,
+            "coarse_agg": 971.6984,
+            "fine_agg": 687.5513,
+            "age": 62.8422
           },
-          "predicted_mean": 73.87,
-          "predicted_std": 2.6,
-          "acq_score": 0.445,
-          "measured": 73.86
+          "predicted_mean": 60.8969,
+          "predicted_std": 11.1026,
+          "acq_score": 88.6535,
+          "measured": 51.6115
         },
         {
           "x": {
-            "cement": 134.19,
-            "slag": 331.61,
-            "fly_ash": 190.2,
-            "water": 174.97,
-            "superplasticizer": 24.43,
-            "coarse_agg": 932.71,
-            "fine_agg": 719.24,
-            "age": 113.76
+            "cement": 528.9682,
+            "slag": 136.0059,
+            "fly_ash": 31.0001,
+            "water": 176.7179,
+            "superplasticizer": 14.0687,
+            "coarse_agg": 869.6253,
+            "fine_agg": 597.3496,
+            "age": 120.6826
           },
-          "predicted_mean": 68.87,
-          "predicted_std": 5.97,
-          "acq_score": 0.415,
-          "measured": 60.81
+          "predicted_mean": 66.698,
+          "predicted_std": 8.6607,
+          "acq_score": 88.3497,
+          "measured": 56.4518
         },
         {
           "x": {
-            "cement": 343.36,
-            "slag": 274.45,
-            "fly_ash": 151.31,
-            "water": 194.6,
-            "superplasticizer": 19.1,
-            "coarse_agg": 1006.53,
-            "fine_agg": 942.86,
-            "age": 326.92
+            "cement": 125.3462,
+            "slag": 32.9138,
+            "fly_ash": 169.0645,
+            "water": 124.9451,
+            "superplasticizer": 31.4514,
+            "coarse_agg": 1007.3921,
+            "fine_agg": 861.415,
+            "age": 84.8689
           },
-          "predicted_mean": 72.85,
-          "predicted_std": 3.14,
-          "acq_score": 0.37,
-          "measured": 69.72
+          "predicted_mean": 59.6777,
+          "predicted_std": 11.3252,
+          "acq_score": 87.9906,
+          "measured": 44.7964
         },
         {
           "x": {
-            "cement": 208.44,
-            "slag": 356.6,
-            "fly_ash": 158.67,
-            "water": 203.38,
-            "superplasticizer": 19.58,
-            "coarse_agg": 1099.32,
-            "fine_agg": 595.79,
-            "age": 279.01
+            "cement": 533.9865,
+            "slag": 246.2477,
+            "fly_ash": 152.685,
+            "water": 245.6912,
+            "superplasticizer": 20.4024,
+            "coarse_agg": 1136.5894,
+            "fine_agg": 626.5305,
+            "age": 298.5664
           },
-          "predicted_mean": 73.7,
-          "predicted_std": 2.26,
-          "acq_score": 0.293,
-          "measured": 74.05
+          "predicted_mean": 68.4872,
+          "predicted_std": 7.7763,
+          "acq_score": 87.9278,
+          "measured": 71.4881
         }
       ]
     },
     {
       "round_idx": 9,
       "budget_used": 43,
-      "best_value": 75.39126305179092,
+      "best_value": 77.12191149771361,
       "decision": {
-        "acquisition": "ucb",
+        "acquisition": "ei",
         "surrogate": "random_forest",
-        "kappa": 2.5,
+        "kappa": 0.0,
         "batch_size": 3,
-        "rationale": "stalled for 6 rounds: one exploration burst (raise kappa) to escape the current basin; using random_forest (n=40 observations); batch=3.",
+        "rationale": "late phase: refine the best region with Expected Improvement; using random_forest (n=40 observations); batch=3.",
         "source": "heuristic"
       },
       "selected": [
         {
           "x": {
-            "cement": 129.65,
-            "slag": 350.6,
-            "fly_ash": 64.13,
-            "water": 241.7,
-            "superplasticizer": 19.49,
-            "coarse_agg": 885.64,
-            "fine_agg": 764.05,
-            "age": 351.56
+            "cement": 127.0373,
+            "slag": 135.85,
+            "fly_ash": 200.0,
+            "water": 147.9523,
+            "superplasticizer": 19.1091,
+            "coarse_agg": 991.877,
+            "fine_agg": 891.3827,
+            "age": 293.4289
           },
-          "predicted_mean": 55.88,
-          "predicted_std": 21.45,
-          "acq_score": 109.51,
-          "measured": 45.96
+          "predicted_mean": 70.0859,
+          "predicted_std": 10.4681,
+          "acq_score": 2.026,
+          "measured": 72.8558
         },
         {
           "x": {
-            "cement": 187.0,
-            "slag": 345.28,
-            "fly_ash": 83.91,
-            "water": 219.16,
-            "superplasticizer": 20.65,
-            "coarse_agg": 829.38,
-            "fine_agg": 723.58,
-            "age": 232.76
+            "cement": 130.3377,
+            "slag": 134.2198,
+            "fly_ash": 200.0,
+            "water": 147.5308,
+            "superplasticizer": 18.7493,
+            "coarse_agg": 981.1767,
+            "fine_agg": 894.359,
+            "age": 295.1663
           },
-          "predicted_mean": 55.8,
-          "predicted_std": 19.66,
-          "acq_score": 104.944,
-          "measured": 65.37
+          "predicted_mean": 70.0667,
+          "predicted_std": 10.4634,
+          "acq_score": 2.0185,
+          "measured": 76.8748
         },
         {
           "x": {
-            "cement": 191.5,
-            "slag": 340.26,
-            "fly_ash": 53.26,
-            "water": 191.75,
-            "superplasticizer": 20.13,
-            "coarse_agg": 881.77,
-            "fine_agg": 882.26,
-            "age": 204.24
+            "cement": 131.7479,
+            "slag": 134.8567,
+            "fly_ash": 194.7886,
+            "water": 143.2651,
+            "superplasticizer": 20.9154,
+            "coarse_agg": 982.4953,
+            "fine_agg": 891.1174,
+            "age": 296.5061
           },
-          "predicted_mean": 53.84,
-          "predicted_std": 20.28,
-          "acq_score": 104.54,
-          "measured": 72.14
+          "predicted_mean": 69.6091,
+          "predicted_std": 10.8516,
+          "acq_score": 2.0165,
+          "measured": 77.1219
         }
       ]
     },
     {
       "round_idx": 10,
       "budget_used": 47,
-      "best_value": 75.39126305179092,
+      "best_value": 77.12191149771361,
       "decision": {
         "acquisition": "ei",
         "surrogate": "random_forest",
@@ -809,130 +872,130 @@
       "selected": [
         {
           "x": {
-            "cement": 207.0,
-            "slag": 331.06,
-            "fly_ash": 47.46,
-            "water": 236.02,
-            "superplasticizer": 18.87,
-            "coarse_agg": 810.42,
-            "fine_agg": 698.36,
-            "age": 288.63
+            "cement": 128.6601,
+            "slag": 115.3167,
+            "fly_ash": 191.3588,
+            "water": 142.567,
+            "superplasticizer": 20.696,
+            "coarse_agg": 982.8098,
+            "fine_agg": 875.6302,
+            "age": 294.9808
           },
-          "predicted_mean": 62.55,
-          "predicted_std": 13.91,
-          "acq_score": 1.336,
-          "measured": 51.9
+          "predicted_mean": 72.3137,
+          "predicted_std": 10.1659,
+          "acq_score": 2.0937,
+          "measured": 74.7384
         },
         {
           "x": {
-            "cement": 362.09,
-            "slag": 349.7,
-            "fly_ash": 89.47,
-            "water": 205.82,
-            "superplasticizer": 5.18,
-            "coarse_agg": 802.91,
-            "fine_agg": 591.33,
-            "age": 361.93
+            "cement": 130.2347,
+            "slag": 112.4284,
+            "fly_ash": 193.9114,
+            "water": 141.5197,
+            "superplasticizer": 20.978,
+            "coarse_agg": 980.8226,
+            "fine_agg": 877.5193,
+            "age": 283.1641
           },
-          "predicted_mean": 64.59,
-          "predicted_std": 12.3,
-          "acq_score": 1.283,
-          "measured": 65.11
+          "predicted_mean": 72.163,
+          "predicted_std": 10.121,
+          "acq_score": 2.0303,
+          "measured": 74.0532
         },
         {
           "x": {
-            "cement": 192.62,
-            "slag": 336.26,
-            "fly_ash": 50.94,
-            "water": 207.83,
-            "superplasticizer": 15.8,
-            "coarse_agg": 1082.9,
-            "fine_agg": 819.26,
-            "age": 327.14
+            "cement": 120.0,
+            "slag": 126.4329,
+            "fly_ash": 193.8679,
+            "water": 142.8766,
+            "superplasticizer": 20.7739,
+            "coarse_agg": 983.7647,
+            "fine_agg": 889.4073,
+            "age": 296.6123
           },
-          "predicted_mean": 63.73,
-          "predicted_std": 12.44,
-          "acq_score": 1.164,
-          "measured": 60.99
+          "predicted_mean": 72.7369,
+          "predicted_std": 9.5522,
+          "acq_score": 2.0097,
+          "measured": 73.7117
         },
         {
           "x": {
-            "cement": 274.92,
-            "slag": 341.21,
-            "fly_ash": 12.2,
-            "water": 230.12,
-            "superplasticizer": 24.73,
-            "coarse_agg": 1008.17,
-            "fine_agg": 609.72,
-            "age": 362.82
+            "cement": 125.962,
+            "slag": 122.087,
+            "fly_ash": 191.8666,
+            "water": 142.26,
+            "superplasticizer": 21.1258,
+            "coarse_agg": 981.4608,
+            "fine_agg": 884.8941,
+            "age": 296.4809
           },
-          "predicted_mean": 64.62,
-          "predicted_std": 11.67,
-          "acq_score": 1.122,
-          "measured": 61.57
+          "predicted_mean": 72.6594,
+          "predicted_std": 9.5688,
+          "acq_score": 1.9907,
+          "measured": 76.2775
         }
       ]
     },
     {
       "round_idx": 11,
       "budget_used": 50,
-      "best_value": 80.58993946882286,
+      "best_value": 77.8073305012195,
       "decision": {
-        "acquisition": "ucb",
+        "acquisition": "ei",
         "surrogate": "random_forest",
-        "kappa": 2.5,
+        "kappa": 0.0,
         "batch_size": 3,
-        "rationale": "stalled for 8 rounds: one exploration burst (raise kappa) to escape the current basin; using random_forest (n=47 observations); batch=3.",
+        "rationale": "late phase: refine the best region with Expected Improvement; using random_forest (n=47 observations); batch=3.",
         "source": "heuristic"
       },
       "selected": [
         {
           "x": {
-            "cement": 227.7,
-            "slag": 251.66,
-            "fly_ash": 200.0,
-            "water": 215.52,
-            "superplasticizer": 18.75,
-            "coarse_agg": 817.29,
-            "fine_agg": 620.15,
-            "age": 365.0
+            "cement": 141.4246,
+            "slag": 129.1392,
+            "fly_ash": 186.6568,
+            "water": 143.0129,
+            "superplasticizer": 21.2878,
+            "coarse_agg": 977.2097,
+            "fine_agg": 860.7708,
+            "age": 296.7732
           },
-          "predicted_mean": 57.24,
-          "predicted_std": 15.74,
-          "acq_score": 96.587,
-          "measured": 80.59
+          "predicted_mean": 71.4987,
+          "predicted_std": 9.93,
+          "acq_score": 1.7658,
+          "measured": 77.8073
         },
         {
           "x": {
-            "cement": 120.0,
-            "slag": 360.0,
-            "fly_ash": 183.69,
-            "water": 189.11,
-            "superplasticizer": 19.84,
-            "coarse_agg": 836.74,
-            "fine_agg": 621.51,
-            "age": 313.61
+            "cement": 134.5846,
+            "slag": 122.5062,
+            "fly_ash": 185.6514,
+            "water": 143.0161,
+            "superplasticizer": 21.229,
+            "coarse_agg": 979.3007,
+            "fine_agg": 892.8088,
+            "age": 290.7623
           },
-          "predicted_mean": 62.92,
-          "predicted_std": 13.23,
-          "acq_score": 96.005,
-          "measured": 76.39
+          "predicted_mean": 72.0046,
+          "predicted_std": 9.352,
+          "acq_score": 1.7144,
+          "measured": 76.4769
         },
         {
           "x": {
-            "cement": 172.12,
-            "slag": 250.94,
-            "fly_ash": 173.09,
-            "water": 209.95,
-            "superplasticizer": 22.12,
-            "coarse_agg": 877.51,
-            "fine_agg": 642.76,
-            "age": 344.15
+            "cement": 131.15,
+            "slag": 119.1206,
+            "fly_ash": 181.1901,
+            "water": 138.4388,
+            "superplasticizer": 21.2033,
+            "coarse_agg": 982.1035,
+            "fine_agg": 897.2911,
+            "age": 298.6559
           },
-          "predicted_mean": 56.15,
-          "predicted_std": 15.75,
-          "acq_score": 95.517,
-          "measured": 69.11
+          "predicted_mean": 71.9339,
+          "predicted_std": 9.2648,
+          "acq_score": 1.6641,
+          "measured": 76.175
         }
       ]
     }

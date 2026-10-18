@@ -9,4 +9,4 @@ The included example oracle is a benign materials-engineering task
 evaluator (a simulation, an assay, a docking run) without touching the agent.
 """
 
-__version__ = "0.1.0"
+__version__ = "0.2.0"
