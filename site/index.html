@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Docking Bench</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='11' cy='12' r='5' fill='%2368b7c9'/%3E%3Ccircle cx='21' cy='20' r='5' fill='%23e2a03f'/%3E%3Cpath d='M11 12 L21 20' stroke='%2393a3b5' stroke-width='2.5'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+/* Instrument console: structure viewport left, campaign readout right. */
+:root {
+  --bg:#0e1319; --panel:#161d26; --panel-2:#1d2733; --line:#2b3745;
+  --ink:#e7edf3; --muted:#93a3b5; --faint:#67768a;
+  --accent:#e2a03f; --cyan:#68b7c9; --good:#58a883; --bad:#c96a5e; --violet:#9a86c4;
+  --font-sans:"IBM Plex Sans",ui-sans-serif,system-ui,sans-serif;
+  --font-mono:"IBM Plex Mono",ui-monospace,"SF Mono",Menlo,monospace;
+  color-scheme: dark;
+}
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) {
+    --bg:#f3f1ec; --panel:#fff; --panel-2:#f7f5f1; --line:#ddd8cf;
+    --ink:#1d242c; --muted:#5d6874; --faint:#8b95a1;
+    --accent:#9a6511; --cyan:#2c6f80; --good:#2f7355; --bad:#9c3f35; --violet:#5f4b8b;
+    color-scheme: light;
+  }
+}
+:root[data-theme="light"] {
+  --bg:#f3f1ec; --panel:#fff; --panel-2:#f7f5f1; --line:#ddd8cf;
+  --ink:#1d242c; --muted:#5d6874; --faint:#8b95a1;
+  --accent:#9a6511; --cyan:#2c6f80; --good:#2f7355; --bad:#9c3f35; --violet:#5f4b8b;
+  color-scheme: light;
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--bg);color:var(--ink);font-family:var(--font-sans);font-size:15px;line-height:1.55;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));
+  padding-block:28px 56px}
+.wrap{max-width:1240px;margin:0 auto;display:flex;flex-direction:column;gap:22px}
+h1{font-size:clamp(1.5rem,1.1rem + 1.4vw,2.1rem);font-weight:600;margin:0;letter-spacing:-.02em;text-wrap:balance}
+h2{font-size:1.02rem;font-weight:600;margin:0;letter-spacing:-.01em}
+h3{font-size:.82rem;font-weight:600;margin:0;color:var(--muted);text-transform:uppercase;letter-spacing:.08em}
+p{margin:0}
+.lede{color:var(--muted);max-width:68ch}
+.mono{font-family:var(--font-mono);font-variant-numeric:tabular-nums}
+header{display:flex;flex-direction:column;gap:8px;border-bottom:1px solid var(--line);padding-bottom:18px}
+.cols{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,1fr);gap:20px;align-items:start}
+@media (max-width:920px){.cols{grid-template-columns:minmax(0,1fr)}}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px;
+  display:flex;flex-direction:column;gap:14px;min-width:0}
+#viewport{width:100%;aspect-ratio:4/3;max-width:100%;border-radius:8px;background:var(--panel-2);
+  position:relative;overflow:hidden;border:1px solid var(--line)}
+@media (max-width:920px){#viewport{aspect-ratio:1/1}}
+.vp-status{position:absolute;left:10px;bottom:10px;z-index:3;font-family:var(--font-mono);font-size:.72rem;
+  color:var(--muted);background:color-mix(in srgb,var(--panel) 86%,transparent);border:1px solid var(--line);
+  border-radius:6px;padding:4px 8px;max-width:calc(100% - 20px)}
+.bar-top{position:absolute;left:0;right:0;top:0;height:3px;background:transparent;z-index:4}
+.bar-top i{display:block;height:100%;width:0;background:var(--accent);transition:width .2s}
+.row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+button{font:inherit;font-size:.84rem;font-weight:500;color:var(--ink);background:var(--panel-2);
+  border:1px solid var(--line);border-radius:7px;padding:7px 12px;cursor:pointer;transition:border-color .15s}
+button:hover:not(:disabled){border-color:var(--accent)}
+button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+button:disabled{opacity:.45;cursor:not-allowed}
+button.primary{background:var(--accent);border-color:var(--accent);color:#12161b;font-weight:600}
+:root[data-theme="light"] button.primary,:root:not([data-theme="dark"]) button.primary{color:#fff}
+button.sel{border-color:var(--accent);color:var(--accent)}
+.metrics{display:grid;grid-template-columns:repeat(auto-fit,minmax(118px,1fr));gap:10px}
+.metric{background:var(--panel-2);border:1px solid var(--line);border-radius:8px;padding:10px 11px;
+  display:flex;flex-direction:column;gap:2px;min-width:0}
+.metric .v{font-family:var(--font-mono);font-size:1.22rem;font-weight:600;font-variant-numeric:tabular-nums}
+.metric .k{font-size:.68rem;color:var(--faint);text-transform:uppercase;letter-spacing:.07em}
+.ladder{display:flex;flex-direction:column;gap:7px}
+.lad{display:grid;grid-template-columns:86px 1fr auto;gap:9px;align-items:center;font-size:.78rem}
+.lad .bar{height:7px;border-radius:4px;background:var(--panel-2);overflow:hidden}
+.lad .bar i{display:block;height:100%;border-radius:4px}
+.tbl-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:8px}
+table{border-collapse:collapse;width:100%;font-size:.8rem}
+th{text-align:left;font-weight:600;font-size:.68rem;text-transform:uppercase;letter-spacing:.06em;color:var(--faint);
+  padding:8px 9px;border-bottom:1px solid var(--line);white-space:nowrap;background:var(--panel-2);position:sticky;top:0}
+td{padding:7px 9px;border-bottom:1px solid var(--line);vertical-align:middle}
+tr:last-child td{border-bottom:0}
+tr.active td{background:color-mix(in srgb,var(--accent) 12%,transparent)}
+td.num{font-family:var(--font-mono);font-variant-numeric:tabular-nums;text-align:right;white-space:nowrap}
+td.smi{font-family:var(--font-mono);font-size:.72rem;color:var(--muted);max-width:190px;overflow:hidden;
+  text-overflow:ellipsis;white-space:nowrap}
+.pill{display:inline-block;font-family:var(--font-mono);font-size:.66rem;font-weight:600;padding:2px 6px;
+  border-radius:4px;border:1px solid currentColor;white-space:nowrap}
+.pill.hit{color:var(--good)}.pill.miss{color:var(--faint)}.pill.act{color:var(--cyan)}
+details{border:1px solid var(--line);border-radius:8px;background:var(--panel-2)}
+summary{cursor:pointer;padding:10px 13px;font-size:.84rem;font-weight:500}
+summary::marker{color:var(--accent)}
+details > div{padding:0 13px 13px}
+.note{border-left:2px solid var(--accent);padding:2px 0 2px 13px;color:var(--muted);font-size:.84rem}
+.warn{border-left-color:var(--bad)}
+.scoreline{display:flex;flex-wrap:wrap;gap:14px;align-items:baseline;font-family:var(--font-mono);font-size:.82rem}
+.scoreline b{font-size:1.1rem;font-weight:600}
+footer{color:var(--faint);font-size:.78rem;border-top:1px solid var(--line);padding-top:16px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1>Docking Bench</h1>
+  <p class="lede">A virtual-screening campaign and a real docking calculation, side by side. The right
+  panel is the output of an agentic active-learning run over a library of real molecules; the left is a
+  rigid-body docking engine running in your browser against a crystal structure.</p>
+</header>
+
+<div class="cols">
+  <div class="panel">
+    <div class="row" style="justify-content:space-between">
+      <h2 id="structTitle">Structure</h2>
+      <div class="row" id="structTabs"></div>
+    </div>
+    <div id="viewport">
+      <div class="bar-top"><i id="progBar"></i></div>
+      <div class="vp-status" id="vpStatus">loading&hellip;</div>
+    </div>
+    <div class="row">
+      <button id="btnDock" class="primary" disabled>Dock selected compound</button>
+      <button id="btnValidate" disabled>Redock crystal ligand</button>
+      <button id="btnSurface" class="sel">Pocket surface</button>
+      <button id="btnReset">Reset view</button>
+    </div>
+    <div class="scoreline" id="scoreLine"><span style="color:var(--faint)">No pose computed yet.</span></div>
+    <p class="note" id="dockNote">Vina-style scoring terms on precomputed interaction grids, searched by a
+    coarse scan over cavity space then annealing and local descent. Scores are in those terms' arbitrary
+    units &mdash; <b>not</b> kcal/mol, and not affinity predictions.</p>
+    <details>
+      <summary>What this calculation does and does not do</summary>
+      <div style="display:flex;flex-direction:column;gap:9px;font-size:.84rem;color:var(--muted)">
+        <p><b style="color:var(--ink)">The ligand is rigid.</b> Its conformation is fixed at whatever was
+        generated for it, so torsional flexibility &mdash; most of what makes docking hard &mdash; is not
+        searched. The receptor is rigid too, and desolvation and electrostatics are absent.</p>
+        <p><b style="color:var(--ink)">It can be checked.</b> On ABL1, &ldquo;Redock crystal ligand&rdquo;
+        removes imatinib from its known position and asks the engine to find it again. Across ten seeds
+        offline it recovered the crystallographic pose to about 0.3&nbsp;&Aring; in eight runs and fell into
+        a secondary pocket in two. You see whichever you get.</p>
+        <p><b style="color:var(--ink)">Pocket detection is crude.</b> For structures fetched live, the search
+        box is centred on the largest non-solvent heteroatom group in the file &mdash; usually the
+        co-crystallised ligand, but not guaranteed. If a structure has no bound ligand there is nothing to
+        centre on and that target is unavailable.</p>
+      </div>
+    </details>
+  </div>
+
+  <div class="panel">
+    <div class="row" style="justify-content:space-between">
+      <h2>Screening campaign</h2>
+      <div class="row" id="targetTabs"></div>
+    </div>
+    <p id="targetDesc" class="mono" style="font-size:.74rem;color:var(--faint)"></p>
+    <div class="metrics" id="metrics"></div>
+    <div><h3 style="margin-bottom:8px">Where the budget went</h3><div class="ladder" id="ladder"></div></div>
+    <div>
+      <h3 style="margin-bottom:8px">Shortlist &mdash; what the campaign would hand a chemist</h3>
+      <div class="tbl-wrap" style="max-height:330px;overflow-y:auto">
+        <table><thead><tr><th>Compound</th><th class="num">Est.</th><th class="num">True</th>
+        <th>Verdict</th><th></th></tr></thead><tbody id="cmpBody"></tbody></table>
+      </div>
+    </div>
+    <details><summary>Round-by-round decisions</summary>
+      <div class="tbl-wrap" style="max-height:260px;overflow-y:auto;margin-top:4px">
+        <table><thead><tr><th class="num">#</th><th>Method</th><th class="num">n</th><th class="num">Cost</th>
+        <th class="num">Recall</th></tr></thead><tbody id="roundBody"></tbody></table></div>
+      <p style="font-size:.76rem;color:var(--faint);margin-top:9px" id="rationaleNote"></p>
+    </details>
+    <details><summary>Medicinal-chemistry vetoes</summary>
+      <div><div class="tbl-wrap" style="max-height:220px;overflow-y:auto;margin-top:4px">
+      <table><thead><tr><th>Compound</th><th>Reason rejected</th></tr></thead><tbody id="vetoBody"></tbody></table></div>
+      <p style="font-size:.76rem;color:var(--faint);margin-top:9px">A rule-based stand-in for expert triage:
+      RDKit's PAINS substructure alerts plus property limits. Every veto is logged, and vetoed compounds are
+      not proposed again.</p></div>
+    </details>
+  </div>
+</div>
+
+<footer>
+  <p><b style="color:var(--muted)">What is real and what is modelled.</b> The molecules are real: published
+  ligand sets for EGFR, CDK2 and c-Met screened against NCI library compounds, with fingerprint similarity
+  computed as it would be in practice. Protein structures and crystallographic ligand poses are real. The
+  affinity values driving the campaign are <b>not</b> measured &mdash; apart from 24 c-Met ligands carrying
+  experimental free energies, they come from a documented structural-and-property model standing in for a
+  docking engine, so that decision rules can be compared offline. No number here is a prediction about any
+  compound.</p>
+  <p style="margin-top:10px">© 2026 Arif Onur Alp. All rights reserved. Source visible for review;
+  not licensed for reuse — see <a href="./LICENSE" style="color:var(--muted)">LICENSE</a> and
+  <a href="./THIRD_PARTY_NOTICES.md" style="color:var(--muted)">third-party notices</a>.
+  3Dmol.js © 2014 University of Pittsburgh, BSD-3-Clause.</p>
+</footer>
+</div>
+
+<script src="./vendor/3Dmol-min.js"></script>
+<script src="./app.js"></script>
+</body>
+</html>

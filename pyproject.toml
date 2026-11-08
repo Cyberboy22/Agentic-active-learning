@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agentic-active-learning"
+version = "0.3.0"
+description = "Agentic active learning for expensive experiments, with a cost-aware multi-fidelity screening campaign and an honest benchmark harness"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "Proprietary — all rights reserved; see LICENSE" }
+dependencies = [
+  "numpy>=1.24",
+  "scipy>=1.10",
+  "scikit-learn>=1.3",
+  "matplotlib>=3.7",
+]
+
+[project.optional-dependencies]
+chem = ["rdkit>=2023.9"]
+llm = ["anthropic>=0.40"]
+dev = ["pytest>=7.4", "ruff>=0.4"]
+
+[project.scripts]
+aal-run = "run:main"
+aal-benchmark = "benchmark:main"
+
+[tool.setuptools]
+packages = ["src", "src.objectives"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP", "B"]
+# B905: zip(strict=) is 3.10+, and these zips are all equal-length by construction.
+ignore = ["E501", "B008", "B905"]

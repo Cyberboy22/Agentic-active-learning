@@ -1,0 +1,42 @@
+# Static site: nothing to build, just publish the folder.
+[build]
+  publish = "."
+  command = ""
+
+# The docking search is a Web Worker doing heavy numeric work. Nothing here
+# needs cross-origin isolation, but the data files are large and immutable, so
+# cache them hard and leave the HTML always-fresh.
+[[headers]]
+  for = "/data/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/vendor/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+# Security headers.
+#
+# The Content-Security-Policy is the one that matters: it is a second line of
+# defence behind escaping, so that a bug in the page cannot turn campaign data
+# into executing script. Everything the app needs is same-origin, except the
+# Google Fonts stylesheet and the structure files fetched from RCSB, so those
+# two hosts are the only exceptions and nothing else can be contacted.
+#
+# 'unsafe-inline' is present for style-src only, because the page sets inline
+# style attributes for chart bars; no inline *script* is allowed, which is what
+# blocks an injected onerror= handler.
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Content-Security-Policy = "default-src 'self'; script-src 'self'; worker-src 'self' blob:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: blob:; connect-src 'self' https://files.rcsb.org; frame-ancestors 'none'; base-uri 'none'; form-action 'none'; object-src 'none'"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "no-referrer"
+    X-Frame-Options = "DENY"
+    Permissions-Policy = "geolocation=(), microphone=(), camera=(), payment=(), usb=()"

@@ -91,7 +91,7 @@ class RunManifest:
         if not self.started_at:
             self.started_at = datetime.now(timezone.utc).isoformat(timespec="seconds")
 
-    def finish(self) -> "RunManifest":
+    def finish(self) -> RunManifest:
         self.finished_at = datetime.now(timezone.utc).isoformat(timespec="seconds")
         return self
 
@@ -100,7 +100,7 @@ class RunManifest:
         path.write_text(json.dumps(asdict(self), indent=2, default=str))
 
     @staticmethod
-    def load(path: Path) -> "RunManifest":
+    def load(path: Path) -> RunManifest:
         data = json.loads(Path(path).read_text())
         return RunManifest(**data)
 
@@ -141,7 +141,7 @@ class Checkpoint:
         tmp.replace(path)  # atomic: a crash mid-write cannot corrupt the checkpoint
 
     @staticmethod
-    def load(path: Path) -> "Checkpoint":
+    def load(path: Path) -> Checkpoint:
         return Checkpoint(**json.loads(Path(path).read_text()))
 
     @staticmethod

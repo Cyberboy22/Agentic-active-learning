@@ -1,0 +1,36 @@
+Copyright (c) 2026 Arif Onur Alp. All rights reserved.
+
+This source code is made publicly visible so that it can be read, reviewed and
+evaluated — for example by prospective supervisors, collaborators and
+employers. Publishing it here does not place it in the public domain and does
+not grant a licence to use it.
+
+No permission is granted to copy, modify, merge, publish, distribute,
+sublicense, sell, or create derivative works from this software, in whole or
+in part, without the prior written permission of the copyright holder.
+
+You may:
+  - read the source and study how it works;
+  - clone the repository and run it locally for the sole purpose of evaluating
+    it or reproducing the results it reports;
+  - quote short excerpts with attribution, for review or discussion.
+
+You may not:
+  - incorporate any part of it into another project, product or publication;
+  - redistribute it, modified or unmodified;
+  - use it for commercial purposes.
+
+For any use beyond the above, ask. Permission is usually given for academic and
+research use; the point of this notice is that it is given, not assumed.
+
+Third-party components bundled with this project are covered by their own
+licences and are NOT subject to the restrictions above. See
+THIRD_PARTY_NOTICES.md — in particular 3Dmol.js, which is BSD-3-Clause and
+remains freely reusable under its own terms.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHOR BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN
+ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.

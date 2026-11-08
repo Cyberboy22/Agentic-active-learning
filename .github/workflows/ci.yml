@@ -1,0 +1,41 @@
+name: tests
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.10", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: pip
+      - name: Install
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e ".[chem,dev]"
+      - name: Lint
+        run: ruff check src tests experiments tools
+      - name: Core tests (box objectives, provenance, resume)
+        run: python tests/test_pipeline.py
+      - name: Screening tests (pool, cost ledger, metrics, campaign)
+        run: python tests/test_screening.py
+      - name: Smoke-run a campaign and a screening campaign
+        run: |
+          python run.py --planner heuristic --objective branin --budget 24 --out /tmp/smoke
+          python -c "
+          from src.objectives.screening import VirtualScreeningObjective
+          from src.screening_campaign import run_screening_campaign
+          o = VirtualScreeningObjective('cdk2', n_decoys=400)
+          r = run_screening_campaign(objective=o, planner='cascade', budget=50, n_rounds=8, verbose=False)
+          print('recall', r.metrics['recall_at_k'], 'cost', r.metrics['cost_spent'])
+          "

@@ -1,0 +1,5876 @@
+[
+  {
+    "target": "egfr#0",
+    "planner": "always_docking",
+    "seed": 0,
+    "recall": 0.46,
+    "ef_1pct": 20.283333333333335,
+    "bedroc_20": 0.5762403509239886,
+    "cost": 200.0,
+    "n_confirmed": 200,
+    "cost_to_recall_25": 112.0,
+    "cost_to_recall_50": 134.0,
+    "by_evaluator": {
+      "docking": 200.0
+    }
+  },
+  {
+    "target": "egfr#0",
+    "planner": "always_docking",
+    "seed": 1,
+    "recall": 0.42,
+    "ef_1pct": 20.283333333333335,
+    "bedroc_20": 0.5832115406031458,
+    "cost": 200.0,
+    "n_confirmed": 200,
+    "cost_to_recall_25": 59.0,
+    "cost_to_recall_50": 84.0,
+    "by_evaluator": {
+      "docking": 200.0
+    }
+  },
+  {
+    "target": "egfr#0",
+    "planner": "always_docking",
+    "seed": 2,
+    "recall": 0.42,
+    "ef_1pct": 18.255,
+    "bedroc_20": 0.524727890880669,
+    "cost": 200.0,
+    "n_confirmed": 200,
+    "cost_to_recall_25": 136.0,
+    "cost_to_recall_50": 165.0,
+    "by_evaluator": {
+      "docking": 200.0
+    }
+  },
+  {
+    "target": "egfr#0",
+    "planner": "always_docking",
+    "seed": 3,
+    "recall": 0.42,
+    "ef_1pct": 20.283333333333335,
+    "bedroc_20": 0.5553404821407816,
+    "cost": 200.0,
+    "n_confirmed": 200,
+    "cost_to_recall_25": 95.0,
+    "cost_to_recall_50": 133.0,
+    "by_evaluator": {
+      "docking": 200.0
+    }
+  },
+  {
+    "target": "egfr#0",
+    "planner": "always_docking",
+    "seed": 4,
+    "recall": 0.38,
+    "ef_1pct": 16.226666666666667,
+    "bedroc_20": 0.47970376799576825,
+    "cost": 200.0,
+    "n_confirmed": 200,
+    "cost_to_recall_25": 160.0,
+    "cost_to_recall_50": 196.0,
+    "by_evaluator": {
+      "docking": 200.0
+    }
+  },
+  {
+    "target": "egfr#0",
+    "planner": "always_docking",
+    "seed": 5,
+    "recall": 0.44,
+    "ef_1pct": 16.226666666666667,
+    "bedroc_20": 0.5662662177694743,
+    "cost": 200.0,
+    "n_confirmed": 200,
+    "cost_to_recall_25": 109.0,
+    "cost_to_recall_50": 127.0,
+    "by_evaluator": {
+      "docking": 200.0
+    }
+  },
+  {
+    "target": "egfr#0",
+    "planner": "always_cofolding",
+    "seed": 0,
+    "recall": 0.02,
+    "ef_1pct": 2.0283333333333333,
+    "bedroc_20": 0.3439962008136762,
+    "cost": 204.0,
+    "n_confirmed": 36,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 192.0,
+      "docking": 12.0
+    }
+  },
+  {
+    "target": "egfr#0",
+    "planner": "always_cofolding",
+    "seed": 1,
+    "recall": 0.1,
+    "ef_1pct": 6.085,
+    "bedroc_20": 0.40483812653084816,
+    "cost": 204.0,
+    "n_confirmed": 36,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 192.0,
+      "docking": 12.0
+    }
+  },
+  {
+    "target": "egfr#0",
+    "planner": "always_cofolding",
+    "seed": 2,
+    "recall": 0.0,
+    "ef_1pct": 0.0,
+    "bedroc_20": 0.33435566914723197,
+    "cost": 204.0,
+    "n_confirmed": 33,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 192.0,
+      "docking": 12.0
+    }
+  },
+  {
+    "target": "egfr#0",
+    "planner": "always_cofolding",
+    "seed": 3,
+    "recall": 0.04,
+    "ef_1pct": 4.056666666666667,
+    "bedroc_20": 0.36459852543792404,
+    "cost": 204.0,
+    "n_confirmed": 34,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 192.0,
+      "docking": 12.0
+    }
+  },
+  {
+    "target": "egfr#0",
+    "planner": "always_cofolding",
+    "seed": 4,
+    "recall": 0.02,
+    "ef_1pct": 0.0,
+    "bedroc_20": 0.3409047993620466,
+    "cost": 204.0,
+    "n_confirmed": 36,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 192.0,
+      "docking": 12.0
+    }
+  },
+  {
+    "target": "egfr#0",
+    "planner": "always_cofolding",
+    "seed": 5,
+    "recall": 0.02,
+    "ef_1pct": 0.0,
+    "bedroc_20": 0.3467043087073961,
+    "cost": 204.0,
+    "n_confirmed": 35,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 192.0,
+      "docking": 12.0
+    }
+  },
+  {
+    "target": "egfr#0",
+    "planner": "always_ml_score",
+    "seed": 0,
+    "recall": 0.0,
+    "ef_1pct": 20.283333333333335,
+    "bedroc_20": 0.5594881311398587,
+    "cost": 46.7,
+    "n_confirmed": 12,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "docking": 12.0,
+      "ml_score": 34.7
+    }
+  },
+  {
+    "target": "egfr#0",
+    "planner": "always_ml_score",
+    "seed": 1,
+    "recall": 0.0,
+    "ef_1pct": 20.283333333333335,
+    "bedroc_20": 0.5677885219657568,
+    "cost": 46.7,
+    "n_confirmed": 12,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "docking": 12.0,
+      "ml_score": 34.7
+    }
+  },
+  {
+    "target": "egfr#0",
+    "planner": "always_ml_score",
+    "seed": 2,
+    "recall": 0.0,
+    "ef_1pct": 20.283333333333335,
+    "bedroc_20": 0.5761234964819537,
+    "cost": 46.7,
+    "n_confirmed": 12,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "docking": 12.0,
+      "ml_score": 34.7
+    }
+  },
+  {
+    "target": "egfr#0",
+    "planner": "always_ml_score",
+    "seed": 3,
+    "recall": 0.0,
+    "ef_1pct": 24.34,
+    "bedroc_20": 0.6016792563404876,
+    "cost": 46.7,
+    "n_confirmed": 12,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "docking": 12.0,
+      "ml_score": 34.7
+    }
+  },
+  {
+    "target": "egfr#0",
+    "planner": "always_ml_score",
+    "seed": 4,
+    "recall": 0.02,
+    "ef_1pct": 20.283333333333335,
+    "bedroc_20": 0.531675645378413,
+    "cost": 46.7,
+    "n_confirmed": 12,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "docking": 12.0,
+      "ml_score": 34.7
+    }
+  },
+  {
+    "target": "egfr#0",
+    "planner": "always_ml_score",
+    "seed": 5,
+    "recall": 0.02,
+    "ef_1pct": 14.198333333333334,
+    "bedroc_20": 0.47077031103029277,
+    "cost": 46.7,
+    "n_confirmed": 12,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "docking": 12.0,
+      "ml_score": 34.7
+    }
+  },
+  {
+    "target": "egfr#0",
+    "planner": "cascade",
+    "seed": 0,
+    "recall": 0.38,
+    "ef_1pct": 22.311666666666664,
+    "bedroc_20": 0.4521574409137842,
+    "cost": 179.258,
+    "n_confirmed": 116,
+    "cost_to_recall_25": 97.65799999999878,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "docking": 116.0,
+      "ml_score": 60.85,
+      "retrieval": 2.408
+    }
+  },
+  {
+    "target": "egfr#0",
+    "planner": "cascade",
+    "seed": 1,
+    "recall": 0.34,
+    "ef_1pct": 16.226666666666667,
+    "bedroc_20": 0.48797321932254273,
+    "cost": 179.26,
+    "n_confirmed": 116,
+    "cost_to_recall_25": 60.41000000000022,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "docking": 116.0,
+      "ml_score": 60.85,
+      "retrieval": 2.41
+    }
+  },
+  {
+    "target": "egfr#0",
+    "planner": "cascade",
+    "seed": 2,
+    "recall": 0.32,
+    "ef_1pct": 18.255,
+    "bedroc_20": 0.5297693663784062,
+    "cost": 179.258,
+    "n_confirmed": 116,
+    "cost_to_recall_25": 106.65799999999878,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "docking": 116.0,
+      "ml_score": 60.85,
+      "retrieval": 2.408
+    }
+  },
+  {
+    "target": "egfr#0",
+    "planner": "cascade",
+    "seed": 3,
+    "recall": 0.28,
+    "ef_1pct": 18.255,
+    "bedroc_20": 0.5441186074844451,
+    "cost": 179.258,
+    "n_confirmed": 116,
+    "cost_to_recall_25": 101.65799999999878,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "docking": 116.0,
+      "ml_score": 60.85,
+      "retrieval": 2.408
+    }
+  },
+  {
+    "target": "egfr#0",
+    "planner": "cascade",
+    "seed": 4,
+    "recall": 0.26,
+    "ef_1pct": 24.34,
+    "bedroc_20": 0.5717593618721603,
+    "cost": 179.258,
+    "n_confirmed": 116,
+    "cost_to_recall_25": 103.65799999999878,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "docking": 116.0,
+      "ml_score": 60.85,
+      "retrieval": 2.408
+    }
+  },
+  {
+    "target": "egfr#0",
+    "planner": "cascade",
+    "seed": 5,
+    "recall": 0.32,
+    "ef_1pct": 16.226666666666667,
+    "bedroc_20": 0.5276926659107704,
+    "cost": 179.26,
+    "n_confirmed": 116,
+    "cost_to_recall_25": 63.41000000000022,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "docking": 116.0,
+      "ml_score": 60.85,
+      "retrieval": 2.41
+    }
+  },
+  {
+    "target": "egfr#0",
+    "planner": "bandit",
+    "seed": 0,
+    "recall": 0.02,
+    "ef_1pct": 2.0283333333333333,
+    "bedroc_20": 0.23391188894933101,
+    "cost": 55.932,
+    "n_confirmed": 31,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 24.0,
+      "docking": 31.0,
+      "ml_score": 0.9,
+      "retrieval": 0.032
+    }
+  },
+  {
+    "target": "egfr#0",
+    "planner": "bandit",
+    "seed": 1,
+    "recall": 0.16,
+    "ef_1pct": 16.226666666666667,
+    "bedroc_20": 0.4437199570042774,
+    "cost": 55.932,
+    "n_confirmed": 33,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 24.0,
+      "docking": 31.0,
+      "ml_score": 0.9,
+      "retrieval": 0.032
+    }
+  },
+  {
+    "target": "egfr#0",
+    "planner": "bandit",
+    "seed": 2,
+    "recall": 0.02,
+    "ef_1pct": 0.0,
+    "bedroc_20": 0.2510587855081253,
+    "cost": 55.932,
+    "n_confirmed": 32,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 24.0,
+      "docking": 31.0,
+      "ml_score": 0.9,
+      "retrieval": 0.032
+    }
+  },
+  {
+    "target": "egfr#0",
+    "planner": "bandit",
+    "seed": 3,
+    "recall": 0.06,
+    "ef_1pct": 2.0283333333333333,
+    "bedroc_20": 0.2569253202760332,
+    "cost": 55.932,
+    "n_confirmed": 33,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 24.0,
+      "docking": 31.0,
+      "ml_score": 0.9,
+      "retrieval": 0.032
+    }
+  },
+  {
+    "target": "egfr#0",
+    "planner": "bandit",
+    "seed": 4,
+    "recall": 0.02,
+    "ef_1pct": 0.0,
+    "bedroc_20": 0.21672536931712763,
+    "cost": 55.932,
+    "n_confirmed": 33,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 24.0,
+      "docking": 31.0,
+      "ml_score": 0.9,
+      "retrieval": 0.032
+    }
+  },
+  {
+    "target": "egfr#0",
+    "planner": "bandit",
+    "seed": 5,
+    "recall": 0.02,
+    "ef_1pct": 2.0283333333333333,
+    "bedroc_20": 0.2600035163303126,
+    "cost": 55.932,
+    "n_confirmed": 34,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 24.0,
+      "docking": 31.0,
+      "ml_score": 0.9,
+      "retrieval": 0.032
+    }
+  },
+  {
+    "target": "egfr#1",
+    "planner": "always_docking",
+    "seed": 0,
+    "recall": 0.38,
+    "ef_1pct": 22.311666666666664,
+    "bedroc_20": 0.5516933651202839,
+    "cost": 200.0,
+    "n_confirmed": 200,
+    "cost_to_recall_25": 132.0,
+    "cost_to_recall_50": 160.0,
+    "by_evaluator": {
+      "docking": 200.0
+    }
+  },
+  {
+    "target": "egfr#1",
+    "planner": "always_docking",
+    "seed": 1,
+    "recall": 0.42,
+    "ef_1pct": 16.226666666666667,
+    "bedroc_20": 0.5569198804806043,
+    "cost": 200.0,
+    "n_confirmed": 200,
+    "cost_to_recall_25": 78.0,
+    "cost_to_recall_50": 108.0,
+    "by_evaluator": {
+      "docking": 200.0
+    }
+  },
+  {
+    "target": "egfr#1",
+    "planner": "always_docking",
+    "seed": 2,
+    "recall": 0.18,
+    "ef_1pct": 6.085,
+    "bedroc_20": 0.25378103540142033,
+    "cost": 200.0,
+    "n_confirmed": 200,
+    "cost_to_recall_25": 174.0,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "docking": 200.0
+    }
+  },
+  {
+    "target": "egfr#1",
+    "planner": "always_docking",
+    "seed": 3,
+    "recall": 0.42,
+    "ef_1pct": 22.311666666666664,
+    "bedroc_20": 0.5452824878275074,
+    "cost": 200.0,
+    "n_confirmed": 200,
+    "cost_to_recall_25": 116.0,
+    "cost_to_recall_50": 158.0,
+    "by_evaluator": {
+      "docking": 200.0
+    }
+  },
+  {
+    "target": "egfr#1",
+    "planner": "always_docking",
+    "seed": 4,
+    "recall": 0.44,
+    "ef_1pct": 22.311666666666664,
+    "bedroc_20": 0.6173861886667082,
+    "cost": 200.0,
+    "n_confirmed": 200,
+    "cost_to_recall_25": 100.0,
+    "cost_to_recall_50": 134.0,
+    "by_evaluator": {
+      "docking": 200.0
+    }
+  },
+  {
+    "target": "egfr#1",
+    "planner": "always_docking",
+    "seed": 5,
+    "recall": 0.52,
+    "ef_1pct": 24.34,
+    "bedroc_20": 0.6528757940069673,
+    "cost": 200.0,
+    "n_confirmed": 200,
+    "cost_to_recall_25": 75.0,
+    "cost_to_recall_50": 121.0,
+    "by_evaluator": {
+      "docking": 200.0
+    }
+  },
+  {
+    "target": "egfr#1",
+    "planner": "always_cofolding",
+    "seed": 0,
+    "recall": 0.0,
+    "ef_1pct": 0.0,
+    "bedroc_20": 0.32465929395852217,
+    "cost": 204.0,
+    "n_confirmed": 36,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 192.0,
+      "docking": 12.0
+    }
+  },
+  {
+    "target": "egfr#1",
+    "planner": "always_cofolding",
+    "seed": 1,
+    "recall": 0.16,
+    "ef_1pct": 14.198333333333334,
+    "bedroc_20": 0.4851494506137109,
+    "cost": 204.0,
+    "n_confirmed": 36,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 192.0,
+      "docking": 12.0
+    }
+  },
+  {
+    "target": "egfr#1",
+    "planner": "always_cofolding",
+    "seed": 2,
+    "recall": 0.0,
+    "ef_1pct": 0.0,
+    "bedroc_20": 0.329475945778463,
+    "cost": 204.0,
+    "n_confirmed": 35,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 192.0,
+      "docking": 12.0
+    }
+  },
+  {
+    "target": "egfr#1",
+    "planner": "always_cofolding",
+    "seed": 3,
+    "recall": 0.02,
+    "ef_1pct": 2.0283333333333333,
+    "bedroc_20": 0.3567240923782602,
+    "cost": 204.0,
+    "n_confirmed": 35,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 192.0,
+      "docking": 12.0
+    }
+  },
+  {
+    "target": "egfr#1",
+    "planner": "always_cofolding",
+    "seed": 4,
+    "recall": 0.02,
+    "ef_1pct": 0.0,
+    "bedroc_20": 0.3468843390174132,
+    "cost": 204.0,
+    "n_confirmed": 36,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 192.0,
+      "docking": 12.0
+    }
+  },
+  {
+    "target": "egfr#1",
+    "planner": "always_cofolding",
+    "seed": 5,
+    "recall": 0.02,
+    "ef_1pct": 2.0283333333333333,
+    "bedroc_20": 0.3577163068159847,
+    "cost": 204.0,
+    "n_confirmed": 35,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 192.0,
+      "docking": 12.0
+    }
+  },
+  {
+    "target": "egfr#1",
+    "planner": "always_ml_score",
+    "seed": 0,
+    "recall": 0.0,
+    "ef_1pct": 18.255,
+    "bedroc_20": 0.5140700041671761,
+    "cost": 46.7,
+    "n_confirmed": 12,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "docking": 12.0,
+      "ml_score": 34.7
+    }
+  },
+  {
+    "target": "egfr#1",
+    "planner": "always_ml_score",
+    "seed": 1,
+    "recall": 0.0,
+    "ef_1pct": 16.226666666666667,
+    "bedroc_20": 0.5517004864710336,
+    "cost": 46.7,
+    "n_confirmed": 12,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "docking": 12.0,
+      "ml_score": 34.7
+    }
+  },
+  {
+    "target": "egfr#1",
+    "planner": "always_ml_score",
+    "seed": 2,
+    "recall": 0.0,
+    "ef_1pct": 16.226666666666667,
+    "bedroc_20": 0.4989897538885244,
+    "cost": 46.7,
+    "n_confirmed": 12,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "docking": 12.0,
+      "ml_score": 34.7
+    }
+  },
+  {
+    "target": "egfr#1",
+    "planner": "always_ml_score",
+    "seed": 3,
+    "recall": 0.0,
+    "ef_1pct": 20.283333333333335,
+    "bedroc_20": 0.5663887779812644,
+    "cost": 46.7,
+    "n_confirmed": 12,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "docking": 12.0,
+      "ml_score": 34.7
+    }
+  },
+  {
+    "target": "egfr#1",
+    "planner": "always_ml_score",
+    "seed": 4,
+    "recall": 0.02,
+    "ef_1pct": 20.283333333333335,
+    "bedroc_20": 0.5614981127453673,
+    "cost": 46.7,
+    "n_confirmed": 12,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "docking": 12.0,
+      "ml_score": 34.7
+    }
+  },
+  {
+    "target": "egfr#1",
+    "planner": "always_ml_score",
+    "seed": 5,
+    "recall": 0.02,
+    "ef_1pct": 22.311666666666664,
+    "bedroc_20": 0.5712323489676274,
+    "cost": 46.7,
+    "n_confirmed": 12,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "docking": 12.0,
+      "ml_score": 34.7
+    }
+  },
+  {
+    "target": "egfr#1",
+    "planner": "cascade",
+    "seed": 0,
+    "recall": 0.36,
+    "ef_1pct": 18.255,
+    "bedroc_20": 0.48638899193797297,
+    "cost": 185.408,
+    "n_confirmed": 134,
+    "cost_to_recall_25": 135.40800000000021,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 56.0,
+      "docking": 127.0,
+      "retrieval": 2.408
+    }
+  },
+  {
+    "target": "egfr#1",
+    "planner": "cascade",
+    "seed": 1,
+    "recall": 0.38,
+    "ef_1pct": 14.198333333333334,
+    "bedroc_20": 0.46727235240264536,
+    "cost": 185.41,
+    "n_confirmed": 133,
+    "cost_to_recall_25": 64.41000000000022,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 56.0,
+      "docking": 127.0,
+      "retrieval": 2.41
+    }
+  },
+  {
+    "target": "egfr#1",
+    "planner": "cascade",
+    "seed": 2,
+    "recall": 0.26,
+    "ef_1pct": 20.283333333333335,
+    "bedroc_20": 0.3890078502402945,
+    "cost": 185.41,
+    "n_confirmed": 134,
+    "cost_to_recall_25": 134.41000000000022,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 56.0,
+      "docking": 127.0,
+      "retrieval": 2.41
+    }
+  },
+  {
+    "target": "egfr#1",
+    "planner": "cascade",
+    "seed": 3,
+    "recall": 0.42,
+    "ef_1pct": 18.255,
+    "bedroc_20": 0.5303396441971764,
+    "cost": 185.408,
+    "n_confirmed": 134,
+    "cost_to_recall_25": 108.40800000000021,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 56.0,
+      "docking": 127.0,
+      "retrieval": 2.408
+    }
+  },
+  {
+    "target": "egfr#1",
+    "planner": "cascade",
+    "seed": 4,
+    "recall": 0.34,
+    "ef_1pct": 16.226666666666667,
+    "bedroc_20": 0.3832232255880992,
+    "cost": 185.406,
+    "n_confirmed": 134,
+    "cost_to_recall_25": 101.4060000000002,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 56.0,
+      "docking": 127.0,
+      "retrieval": 2.406
+    }
+  },
+  {
+    "target": "egfr#1",
+    "planner": "cascade",
+    "seed": 5,
+    "recall": 0.32,
+    "ef_1pct": 20.283333333333335,
+    "bedroc_20": 0.4812359967222361,
+    "cost": 185.408,
+    "n_confirmed": 134,
+    "cost_to_recall_25": 113.40800000000021,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 56.0,
+      "docking": 127.0,
+      "retrieval": 2.408
+    }
+  },
+  {
+    "target": "egfr#1",
+    "planner": "bandit",
+    "seed": 0,
+    "recall": 0.02,
+    "ef_1pct": 0.0,
+    "bedroc_20": 0.21944234829362774,
+    "cost": 55.932,
+    "n_confirmed": 33,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 24.0,
+      "docking": 31.0,
+      "ml_score": 0.9,
+      "retrieval": 0.032
+    }
+  },
+  {
+    "target": "egfr#1",
+    "planner": "bandit",
+    "seed": 1,
+    "recall": 0.12,
+    "ef_1pct": 16.226666666666667,
+    "bedroc_20": 0.44637130972440836,
+    "cost": 55.932,
+    "n_confirmed": 33,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 24.0,
+      "docking": 31.0,
+      "ml_score": 0.9,
+      "retrieval": 0.032
+    }
+  },
+  {
+    "target": "egfr#1",
+    "planner": "bandit",
+    "seed": 2,
+    "recall": 0.0,
+    "ef_1pct": 2.0283333333333333,
+    "bedroc_20": 0.2241793705058123,
+    "cost": 55.932,
+    "n_confirmed": 32,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 24.0,
+      "docking": 31.0,
+      "ml_score": 0.9,
+      "retrieval": 0.032
+    }
+  },
+  {
+    "target": "egfr#1",
+    "planner": "bandit",
+    "seed": 3,
+    "recall": 0.02,
+    "ef_1pct": 2.0283333333333333,
+    "bedroc_20": 0.22969582202497585,
+    "cost": 55.932,
+    "n_confirmed": 34,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 24.0,
+      "docking": 31.0,
+      "ml_score": 0.9,
+      "retrieval": 0.032
+    }
+  },
+  {
+    "target": "egfr#1",
+    "planner": "bandit",
+    "seed": 4,
+    "recall": 0.02,
+    "ef_1pct": 0.0,
+    "bedroc_20": 0.23068261853429042,
+    "cost": 55.932,
+    "n_confirmed": 32,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 24.0,
+      "docking": 31.0,
+      "ml_score": 0.9,
+      "retrieval": 0.032
+    }
+  },
+  {
+    "target": "egfr#1",
+    "planner": "bandit",
+    "seed": 5,
+    "recall": 0.06,
+    "ef_1pct": 6.085,
+    "bedroc_20": 0.29398896026681387,
+    "cost": 55.932,
+    "n_confirmed": 32,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 24.0,
+      "docking": 31.0,
+      "ml_score": 0.9,
+      "retrieval": 0.032
+    }
+  },
+  {
+    "target": "egfr#2",
+    "planner": "always_docking",
+    "seed": 0,
+    "recall": 0.56,
+    "ef_1pct": 22.311666666666664,
+    "bedroc_20": 0.6914367294344406,
+    "cost": 200.0,
+    "n_confirmed": 200,
+    "cost_to_recall_25": 65.0,
+    "cost_to_recall_50": 89.0,
+    "by_evaluator": {
+      "docking": 200.0
+    }
+  },
+  {
+    "target": "egfr#2",
+    "planner": "always_docking",
+    "seed": 1,
+    "recall": 0.5,
+    "ef_1pct": 20.283333333333335,
+    "bedroc_20": 0.6540742502769332,
+    "cost": 200.0,
+    "n_confirmed": 200,
+    "cost_to_recall_25": 47.0,
+    "cost_to_recall_50": 77.0,
+    "by_evaluator": {
+      "docking": 200.0
+    }
+  },
+  {
+    "target": "egfr#2",
+    "planner": "always_docking",
+    "seed": 2,
+    "recall": 0.48,
+    "ef_1pct": 22.311666666666664,
+    "bedroc_20": 0.647214042203297,
+    "cost": 200.0,
+    "n_confirmed": 200,
+    "cost_to_recall_25": 117.0,
+    "cost_to_recall_50": 138.0,
+    "by_evaluator": {
+      "docking": 200.0
+    }
+  },
+  {
+    "target": "egfr#2",
+    "planner": "always_docking",
+    "seed": 3,
+    "recall": 0.52,
+    "ef_1pct": 22.311666666666664,
+    "bedroc_20": 0.6865360568499093,
+    "cost": 200.0,
+    "n_confirmed": 200,
+    "cost_to_recall_25": 133.0,
+    "cost_to_recall_50": 150.0,
+    "by_evaluator": {
+      "docking": 200.0
+    }
+  },
+  {
+    "target": "egfr#2",
+    "planner": "always_docking",
+    "seed": 4,
+    "recall": 0.52,
+    "ef_1pct": 24.34,
+    "bedroc_20": 0.6922505460682417,
+    "cost": 200.0,
+    "n_confirmed": 200,
+    "cost_to_recall_25": 114.0,
+    "cost_to_recall_50": 127.0,
+    "by_evaluator": {
+      "docking": 200.0
+    }
+  },
+  {
+    "target": "egfr#2",
+    "planner": "always_docking",
+    "seed": 5,
+    "recall": 0.48,
+    "ef_1pct": 22.311666666666664,
+    "bedroc_20": 0.6346811959895035,
+    "cost": 200.0,
+    "n_confirmed": 200,
+    "cost_to_recall_25": 97.0,
+    "cost_to_recall_50": 118.0,
+    "by_evaluator": {
+      "docking": 200.0
+    }
+  },
+  {
+    "target": "egfr#2",
+    "planner": "always_cofolding",
+    "seed": 0,
+    "recall": 0.12,
+    "ef_1pct": 12.17,
+    "bedroc_20": 0.42877767269336325,
+    "cost": 204.0,
+    "n_confirmed": 36,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 192.0,
+      "docking": 12.0
+    }
+  },
+  {
+    "target": "egfr#2",
+    "planner": "always_cofolding",
+    "seed": 1,
+    "recall": 0.16,
+    "ef_1pct": 12.17,
+    "bedroc_20": 0.46595762972347143,
+    "cost": 204.0,
+    "n_confirmed": 36,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 192.0,
+      "docking": 12.0
+    }
+  },
+  {
+    "target": "egfr#2",
+    "planner": "always_cofolding",
+    "seed": 2,
+    "recall": 0.0,
+    "ef_1pct": 0.0,
+    "bedroc_20": 0.32184789927317464,
+    "cost": 204.0,
+    "n_confirmed": 36,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 192.0,
+      "docking": 12.0
+    }
+  },
+  {
+    "target": "egfr#2",
+    "planner": "always_cofolding",
+    "seed": 3,
+    "recall": 0.08,
+    "ef_1pct": 8.113333333333333,
+    "bedroc_20": 0.43402511777315317,
+    "cost": 204.0,
+    "n_confirmed": 35,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 192.0,
+      "docking": 12.0
+    }
+  },
+  {
+    "target": "egfr#2",
+    "planner": "always_cofolding",
+    "seed": 4,
+    "recall": 0.02,
+    "ef_1pct": 2.0283333333333333,
+    "bedroc_20": 0.34908918554348667,
+    "cost": 204.0,
+    "n_confirmed": 36,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 192.0,
+      "docking": 12.0
+    }
+  },
+  {
+    "target": "egfr#2",
+    "planner": "always_cofolding",
+    "seed": 5,
+    "recall": 0.04,
+    "ef_1pct": 4.056666666666667,
+    "bedroc_20": 0.3761241612287558,
+    "cost": 204.0,
+    "n_confirmed": 36,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 192.0,
+      "docking": 12.0
+    }
+  },
+  {
+    "target": "egfr#2",
+    "planner": "always_ml_score",
+    "seed": 0,
+    "recall": 0.02,
+    "ef_1pct": 20.283333333333335,
+    "bedroc_20": 0.5651633705626705,
+    "cost": 46.7,
+    "n_confirmed": 12,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "docking": 12.0,
+      "ml_score": 34.7
+    }
+  },
+  {
+    "target": "egfr#2",
+    "planner": "always_ml_score",
+    "seed": 1,
+    "recall": 0.0,
+    "ef_1pct": 16.226666666666667,
+    "bedroc_20": 0.581824037995373,
+    "cost": 46.7,
+    "n_confirmed": 12,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "docking": 12.0,
+      "ml_score": 34.7
+    }
+  },
+  {
+    "target": "egfr#2",
+    "planner": "always_ml_score",
+    "seed": 2,
+    "recall": 0.0,
+    "ef_1pct": 18.255,
+    "bedroc_20": 0.5671891803891126,
+    "cost": 46.7,
+    "n_confirmed": 12,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "docking": 12.0,
+      "ml_score": 34.7
+    }
+  },
+  {
+    "target": "egfr#2",
+    "planner": "always_ml_score",
+    "seed": 3,
+    "recall": 0.0,
+    "ef_1pct": 16.226666666666667,
+    "bedroc_20": 0.4968007430591583,
+    "cost": 46.7,
+    "n_confirmed": 12,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "docking": 12.0,
+      "ml_score": 34.7
+    }
+  },
+  {
+    "target": "egfr#2",
+    "planner": "always_ml_score",
+    "seed": 4,
+    "recall": 0.0,
+    "ef_1pct": 18.255,
+    "bedroc_20": 0.5615204235731255,
+    "cost": 46.7,
+    "n_confirmed": 12,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "docking": 12.0,
+      "ml_score": 34.7
+    }
+  },
+  {
+    "target": "egfr#2",
+    "planner": "always_ml_score",
+    "seed": 5,
+    "recall": 0.02,
+    "ef_1pct": 16.226666666666667,
+    "bedroc_20": 0.5086613059573736,
+    "cost": 46.7,
+    "n_confirmed": 12,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "docking": 12.0,
+      "ml_score": 34.7
+    }
+  },
+  {
+    "target": "egfr#2",
+    "planner": "cascade",
+    "seed": 0,
+    "recall": 0.5,
+    "ef_1pct": 22.311666666666664,
+    "bedroc_20": 0.5939917774530535,
+    "cost": 185.406,
+    "n_confirmed": 134,
+    "cost_to_recall_25": 39.047999999999774,
+    "cost_to_recall_50": 135.4060000000002,
+    "by_evaluator": {
+      "cofolding": 56.0,
+      "docking": 127.0,
+      "retrieval": 2.406
+    }
+  },
+  {
+    "target": "egfr#2",
+    "planner": "cascade",
+    "seed": 1,
+    "recall": 0.3,
+    "ef_1pct": 20.283333333333335,
+    "bedroc_20": 0.4553379436414246,
+    "cost": 185.408,
+    "n_confirmed": 134,
+    "cost_to_recall_25": 99.40800000000021,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 56.0,
+      "docking": 127.0,
+      "retrieval": 2.408
+    }
+  },
+  {
+    "target": "egfr#2",
+    "planner": "cascade",
+    "seed": 2,
+    "recall": 0.28,
+    "ef_1pct": 14.198333333333334,
+    "bedroc_20": 0.40517386873779654,
+    "cost": 185.406,
+    "n_confirmed": 134,
+    "cost_to_recall_25": 112.4060000000002,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 56.0,
+      "docking": 127.0,
+      "retrieval": 2.406
+    }
+  },
+  {
+    "target": "egfr#2",
+    "planner": "cascade",
+    "seed": 3,
+    "recall": 0.42,
+    "ef_1pct": 20.283333333333335,
+    "bedroc_20": 0.5456272430613316,
+    "cost": 185.41,
+    "n_confirmed": 134,
+    "cost_to_recall_25": 107.41000000000022,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 56.0,
+      "docking": 127.0,
+      "retrieval": 2.41
+    }
+  },
+  {
+    "target": "egfr#2",
+    "planner": "cascade",
+    "seed": 4,
+    "recall": 0.34,
+    "ef_1pct": 22.311666666666664,
+    "bedroc_20": 0.4376898805934439,
+    "cost": 185.41,
+    "n_confirmed": 134,
+    "cost_to_recall_25": 61.41000000000022,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 56.0,
+      "docking": 127.0,
+      "retrieval": 2.41
+    }
+  },
+  {
+    "target": "egfr#2",
+    "planner": "cascade",
+    "seed": 5,
+    "recall": 0.46,
+    "ef_1pct": 22.311666666666664,
+    "bedroc_20": 0.5361120319271037,
+    "cost": 185.41,
+    "n_confirmed": 134,
+    "cost_to_recall_25": 79.41000000000022,
+    "cost_to_recall_50": 178.41000000000022,
+    "by_evaluator": {
+      "cofolding": 56.0,
+      "docking": 127.0,
+      "retrieval": 2.41
+    }
+  },
+  {
+    "target": "egfr#2",
+    "planner": "bandit",
+    "seed": 0,
+    "recall": 0.22,
+    "ef_1pct": 22.311666666666664,
+    "bedroc_20": 0.580119665753349,
+    "cost": 55.932,
+    "n_confirmed": 32,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 24.0,
+      "docking": 31.0,
+      "ml_score": 0.9,
+      "retrieval": 0.032
+    }
+  },
+  {
+    "target": "egfr#2",
+    "planner": "bandit",
+    "seed": 1,
+    "recall": 0.04,
+    "ef_1pct": 6.085,
+    "bedroc_20": 0.3695578277648149,
+    "cost": 55.932,
+    "n_confirmed": 34,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 24.0,
+      "docking": 31.0,
+      "ml_score": 0.9,
+      "retrieval": 0.032
+    }
+  },
+  {
+    "target": "egfr#2",
+    "planner": "bandit",
+    "seed": 2,
+    "recall": 0.04,
+    "ef_1pct": 2.0283333333333333,
+    "bedroc_20": 0.2336148234045441,
+    "cost": 55.932,
+    "n_confirmed": 33,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 24.0,
+      "docking": 31.0,
+      "ml_score": 0.9,
+      "retrieval": 0.032
+    }
+  },
+  {
+    "target": "egfr#2",
+    "planner": "bandit",
+    "seed": 3,
+    "recall": 0.02,
+    "ef_1pct": 2.0283333333333333,
+    "bedroc_20": 0.22482088872598624,
+    "cost": 55.932,
+    "n_confirmed": 33,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 24.0,
+      "docking": 31.0,
+      "ml_score": 0.9,
+      "retrieval": 0.032
+    }
+  },
+  {
+    "target": "egfr#2",
+    "planner": "bandit",
+    "seed": 4,
+    "recall": 0.0,
+    "ef_1pct": 0.0,
+    "bedroc_20": 0.2032080036131001,
+    "cost": 55.932,
+    "n_confirmed": 32,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 24.0,
+      "docking": 31.0,
+      "ml_score": 0.9,
+      "retrieval": 0.032
+    }
+  },
+  {
+    "target": "egfr#2",
+    "planner": "bandit",
+    "seed": 5,
+    "recall": 0.02,
+    "ef_1pct": 2.0283333333333333,
+    "bedroc_20": 0.26919727778457253,
+    "cost": 55.932,
+    "n_confirmed": 32,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 24.0,
+      "docking": 31.0,
+      "ml_score": 0.9,
+      "retrieval": 0.032
+    }
+  },
+  {
+    "target": "egfr#3",
+    "planner": "always_docking",
+    "seed": 0,
+    "recall": 0.64,
+    "ef_1pct": 24.34,
+    "bedroc_20": 0.7781679143557274,
+    "cost": 200.0,
+    "n_confirmed": 200,
+    "cost_to_recall_25": 74.0,
+    "cost_to_recall_50": 97.0,
+    "by_evaluator": {
+      "docking": 200.0
+    }
+  },
+  {
+    "target": "egfr#3",
+    "planner": "always_docking",
+    "seed": 1,
+    "recall": 0.58,
+    "ef_1pct": 24.34,
+    "bedroc_20": 0.7488516229136574,
+    "cost": 200.0,
+    "n_confirmed": 200,
+    "cost_to_recall_25": 110.0,
+    "cost_to_recall_50": 129.0,
+    "by_evaluator": {
+      "docking": 200.0
+    }
+  },
+  {
+    "target": "egfr#3",
+    "planner": "always_docking",
+    "seed": 2,
+    "recall": 0.66,
+    "ef_1pct": 24.34,
+    "bedroc_20": 0.7756847509208216,
+    "cost": 200.0,
+    "n_confirmed": 200,
+    "cost_to_recall_25": 81.0,
+    "cost_to_recall_50": 114.0,
+    "by_evaluator": {
+      "docking": 200.0
+    }
+  },
+  {
+    "target": "egfr#3",
+    "planner": "always_docking",
+    "seed": 3,
+    "recall": 0.4,
+    "ef_1pct": 24.34,
+    "bedroc_20": 0.5020815154185532,
+    "cost": 200.0,
+    "n_confirmed": 200,
+    "cost_to_recall_25": 176.0,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "docking": 200.0
+    }
+  },
+  {
+    "target": "egfr#3",
+    "planner": "always_docking",
+    "seed": 4,
+    "recall": 0.6,
+    "ef_1pct": 24.34,
+    "bedroc_20": 0.7432330481487531,
+    "cost": 200.0,
+    "n_confirmed": 200,
+    "cost_to_recall_25": 85.0,
+    "cost_to_recall_50": 101.0,
+    "by_evaluator": {
+      "docking": 200.0
+    }
+  },
+  {
+    "target": "egfr#3",
+    "planner": "always_docking",
+    "seed": 5,
+    "recall": 0.6,
+    "ef_1pct": 24.34,
+    "bedroc_20": 0.7693602287925931,
+    "cost": 200.0,
+    "n_confirmed": 200,
+    "cost_to_recall_25": 84.0,
+    "cost_to_recall_50": 100.0,
+    "by_evaluator": {
+      "docking": 200.0
+    }
+  },
+  {
+    "target": "egfr#3",
+    "planner": "always_cofolding",
+    "seed": 0,
+    "recall": 0.14,
+    "ef_1pct": 14.198333333333334,
+    "bedroc_20": 0.46762158545311455,
+    "cost": 204.0,
+    "n_confirmed": 36,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 192.0,
+      "docking": 12.0
+    }
+  },
+  {
+    "target": "egfr#3",
+    "planner": "always_cofolding",
+    "seed": 1,
+    "recall": 0.16,
+    "ef_1pct": 16.226666666666667,
+    "bedroc_20": 0.5053300725343861,
+    "cost": 204.0,
+    "n_confirmed": 36,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 192.0,
+      "docking": 12.0
+    }
+  },
+  {
+    "target": "egfr#3",
+    "planner": "always_cofolding",
+    "seed": 2,
+    "recall": 0.1,
+    "ef_1pct": 8.113333333333333,
+    "bedroc_20": 0.4505465426190893,
+    "cost": 204.0,
+    "n_confirmed": 36,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 192.0,
+      "docking": 12.0
+    }
+  },
+  {
+    "target": "egfr#3",
+    "planner": "always_cofolding",
+    "seed": 3,
+    "recall": 0.08,
+    "ef_1pct": 6.085,
+    "bedroc_20": 0.4210115737324754,
+    "cost": 204.0,
+    "n_confirmed": 36,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 192.0,
+      "docking": 12.0
+    }
+  },
+  {
+    "target": "egfr#3",
+    "planner": "always_cofolding",
+    "seed": 4,
+    "recall": 0.14,
+    "ef_1pct": 14.198333333333334,
+    "bedroc_20": 0.4788431151305913,
+    "cost": 204.0,
+    "n_confirmed": 36,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 192.0,
+      "docking": 12.0
+    }
+  },
+  {
+    "target": "egfr#3",
+    "planner": "always_cofolding",
+    "seed": 5,
+    "recall": 0.1,
+    "ef_1pct": 10.141666666666667,
+    "bedroc_20": 0.4492616923588231,
+    "cost": 204.0,
+    "n_confirmed": 36,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 192.0,
+      "docking": 12.0
+    }
+  },
+  {
+    "target": "egfr#3",
+    "planner": "always_ml_score",
+    "seed": 0,
+    "recall": 0.02,
+    "ef_1pct": 24.34,
+    "bedroc_20": 0.5894110474637302,
+    "cost": 46.7,
+    "n_confirmed": 12,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "docking": 12.0,
+      "ml_score": 34.7
+    }
+  },
+  {
+    "target": "egfr#3",
+    "planner": "always_ml_score",
+    "seed": 1,
+    "recall": 0.0,
+    "ef_1pct": 22.311666666666664,
+    "bedroc_20": 0.6518455570089083,
+    "cost": 46.7,
+    "n_confirmed": 12,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "docking": 12.0,
+      "ml_score": 34.7
+    }
+  },
+  {
+    "target": "egfr#3",
+    "planner": "always_ml_score",
+    "seed": 2,
+    "recall": 0.0,
+    "ef_1pct": 18.255,
+    "bedroc_20": 0.5156386267916125,
+    "cost": 46.7,
+    "n_confirmed": 12,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "docking": 12.0,
+      "ml_score": 34.7
+    }
+  },
+  {
+    "target": "egfr#3",
+    "planner": "always_ml_score",
+    "seed": 3,
+    "recall": 0.0,
+    "ef_1pct": 22.311666666666664,
+    "bedroc_20": 0.6458143332248278,
+    "cost": 46.7,
+    "n_confirmed": 12,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "docking": 12.0,
+      "ml_score": 34.7
+    }
+  },
+  {
+    "target": "egfr#3",
+    "planner": "always_ml_score",
+    "seed": 4,
+    "recall": 0.02,
+    "ef_1pct": 20.283333333333335,
+    "bedroc_20": 0.6302007489804864,
+    "cost": 46.7,
+    "n_confirmed": 12,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "docking": 12.0,
+      "ml_score": 34.7
+    }
+  },
+  {
+    "target": "egfr#3",
+    "planner": "always_ml_score",
+    "seed": 5,
+    "recall": 0.02,
+    "ef_1pct": 20.283333333333335,
+    "bedroc_20": 0.6184659532214584,
+    "cost": 46.7,
+    "n_confirmed": 12,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "docking": 12.0,
+      "ml_score": 34.7
+    }
+  },
+  {
+    "target": "egfr#3",
+    "planner": "cascade",
+    "seed": 0,
+    "recall": 0.56,
+    "ef_1pct": 24.34,
+    "bedroc_20": 0.6278972083533451,
+    "cost": 191.402,
+    "n_confirmed": 189,
+    "cost_to_recall_25": 45.047999999999774,
+    "cost_to_recall_50": 107.40200000000021,
+    "by_evaluator": {
+      "docking": 189.0,
+      "retrieval": 2.402
+    }
+  },
+  {
+    "target": "egfr#3",
+    "planner": "cascade",
+    "seed": 1,
+    "recall": 0.52,
+    "ef_1pct": 24.34,
+    "bedroc_20": 0.6388020245555988,
+    "cost": 191.408,
+    "n_confirmed": 189,
+    "cost_to_recall_25": 45.047999999999774,
+    "cost_to_recall_50": 100.40800000000021,
+    "by_evaluator": {
+      "docking": 189.0,
+      "retrieval": 2.408
+    }
+  },
+  {
+    "target": "egfr#3",
+    "planner": "cascade",
+    "seed": 2,
+    "recall": 0.68,
+    "ef_1pct": 24.34,
+    "bedroc_20": 0.714121252955749,
+    "cost": 191.408,
+    "n_confirmed": 189,
+    "cost_to_recall_25": 50.047999999999774,
+    "cost_to_recall_50": 105.40800000000021,
+    "by_evaluator": {
+      "docking": 189.0,
+      "retrieval": 2.408
+    }
+  },
+  {
+    "target": "egfr#3",
+    "planner": "cascade",
+    "seed": 3,
+    "recall": 0.48,
+    "ef_1pct": 24.34,
+    "bedroc_20": 0.6228981430657099,
+    "cost": 191.406,
+    "n_confirmed": 189,
+    "cost_to_recall_25": 51.40600000000021,
+    "cost_to_recall_50": 146.4060000000002,
+    "by_evaluator": {
+      "docking": 189.0,
+      "retrieval": 2.406
+    }
+  },
+  {
+    "target": "egfr#3",
+    "planner": "cascade",
+    "seed": 4,
+    "recall": 0.6,
+    "ef_1pct": 24.34,
+    "bedroc_20": 0.6762548325973831,
+    "cost": 191.41,
+    "n_confirmed": 189,
+    "cost_to_recall_25": 44.047999999999774,
+    "cost_to_recall_50": 100.41000000000022,
+    "by_evaluator": {
+      "docking": 189.0,
+      "retrieval": 2.41
+    }
+  },
+  {
+    "target": "egfr#3",
+    "planner": "cascade",
+    "seed": 5,
+    "recall": 0.62,
+    "ef_1pct": 24.34,
+    "bedroc_20": 0.6919741973569885,
+    "cost": 191.402,
+    "n_confirmed": 189,
+    "cost_to_recall_25": 58.40200000000021,
+    "cost_to_recall_50": 121.40200000000021,
+    "by_evaluator": {
+      "docking": 189.0,
+      "retrieval": 2.402
+    }
+  },
+  {
+    "target": "egfr#3",
+    "planner": "bandit",
+    "seed": 0,
+    "recall": 0.34,
+    "ef_1pct": 24.34,
+    "bedroc_20": 0.5723896509006067,
+    "cost": 55.932,
+    "n_confirmed": 34,
+    "cost_to_recall_25": 26.932000000000023,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 24.0,
+      "docking": 31.0,
+      "ml_score": 0.9,
+      "retrieval": 0.032
+    }
+  },
+  {
+    "target": "egfr#3",
+    "planner": "bandit",
+    "seed": 1,
+    "recall": 0.0,
+    "ef_1pct": 0.0,
+    "bedroc_20": 0.20889201616987885,
+    "cost": 55.932,
+    "n_confirmed": 34,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 24.0,
+      "docking": 31.0,
+      "ml_score": 0.9,
+      "retrieval": 0.032
+    }
+  },
+  {
+    "target": "egfr#3",
+    "planner": "bandit",
+    "seed": 2,
+    "recall": 0.0,
+    "ef_1pct": 0.0,
+    "bedroc_20": 0.22901480868628388,
+    "cost": 55.932,
+    "n_confirmed": 34,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 24.0,
+      "docking": 31.0,
+      "ml_score": 0.9,
+      "retrieval": 0.032
+    }
+  },
+  {
+    "target": "egfr#3",
+    "planner": "bandit",
+    "seed": 3,
+    "recall": 0.02,
+    "ef_1pct": 2.0283333333333333,
+    "bedroc_20": 0.24516032827797293,
+    "cost": 55.932,
+    "n_confirmed": 34,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 24.0,
+      "docking": 31.0,
+      "ml_score": 0.9,
+      "retrieval": 0.032
+    }
+  },
+  {
+    "target": "egfr#3",
+    "planner": "bandit",
+    "seed": 4,
+    "recall": 0.04,
+    "ef_1pct": 4.056666666666667,
+    "bedroc_20": 0.26787323281867575,
+    "cost": 55.932,
+    "n_confirmed": 34,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 24.0,
+      "docking": 31.0,
+      "ml_score": 0.9,
+      "retrieval": 0.032
+    }
+  },
+  {
+    "target": "egfr#3",
+    "planner": "bandit",
+    "seed": 5,
+    "recall": 0.02,
+    "ef_1pct": 2.0283333333333333,
+    "bedroc_20": 0.2312205178208533,
+    "cost": 55.932,
+    "n_confirmed": 34,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 24.0,
+      "docking": 31.0,
+      "ml_score": 0.9,
+      "retrieval": 0.032
+    }
+  },
+  {
+    "target": "cdk2#0",
+    "planner": "always_docking",
+    "seed": 0,
+    "recall": 0.38,
+    "ef_1pct": 18.255,
+    "bedroc_20": 0.5297785871565182,
+    "cost": 200.0,
+    "n_confirmed": 200,
+    "cost_to_recall_25": 95.0,
+    "cost_to_recall_50": 161.0,
+    "by_evaluator": {
+      "docking": 200.0
+    }
+  },
+  {
+    "target": "cdk2#0",
+    "planner": "always_docking",
+    "seed": 1,
+    "recall": 0.5,
+    "ef_1pct": 18.255,
+    "bedroc_20": 0.6607037272731908,
+    "cost": 200.0,
+    "n_confirmed": 200,
+    "cost_to_recall_25": 95.0,
+    "cost_to_recall_50": 121.0,
+    "by_evaluator": {
+      "docking": 200.0
+    }
+  },
+  {
+    "target": "cdk2#0",
+    "planner": "always_docking",
+    "seed": 2,
+    "recall": 0.38,
+    "ef_1pct": 18.255,
+    "bedroc_20": 0.5084875514085876,
+    "cost": 200.0,
+    "n_confirmed": 200,
+    "cost_to_recall_25": 115.0,
+    "cost_to_recall_50": 157.0,
+    "by_evaluator": {
+      "docking": 200.0
+    }
+  },
+  {
+    "target": "cdk2#0",
+    "planner": "always_docking",
+    "seed": 3,
+    "recall": 0.24,
+    "ef_1pct": 12.17,
+    "bedroc_20": 0.3226873732386368,
+    "cost": 200.0,
+    "n_confirmed": 200,
+    "cost_to_recall_25": 180.0,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "docking": 200.0
+    }
+  },
+  {
+    "target": "cdk2#0",
+    "planner": "always_docking",
+    "seed": 4,
+    "recall": 0.48,
+    "ef_1pct": 22.311666666666664,
+    "bedroc_20": 0.6169085734494512,
+    "cost": 200.0,
+    "n_confirmed": 200,
+    "cost_to_recall_25": 130.0,
+    "cost_to_recall_50": 165.0,
+    "by_evaluator": {
+      "docking": 200.0
+    }
+  },
+  {
+    "target": "cdk2#0",
+    "planner": "always_docking",
+    "seed": 5,
+    "recall": 0.44,
+    "ef_1pct": 20.283333333333335,
+    "bedroc_20": 0.6219865137927965,
+    "cost": 200.0,
+    "n_confirmed": 200,
+    "cost_to_recall_25": 28.0,
+    "cost_to_recall_50": 96.0,
+    "by_evaluator": {
+      "docking": 200.0
+    }
+  },
+  {
+    "target": "cdk2#0",
+    "planner": "always_cofolding",
+    "seed": 0,
+    "recall": 0.12,
+    "ef_1pct": 12.17,
+    "bedroc_20": 0.3935739205502345,
+    "cost": 204.0,
+    "n_confirmed": 36,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 192.0,
+      "docking": 12.0
+    }
+  },
+  {
+    "target": "cdk2#0",
+    "planner": "always_cofolding",
+    "seed": 1,
+    "recall": 0.08,
+    "ef_1pct": 8.113333333333333,
+    "bedroc_20": 0.3613437874752253,
+    "cost": 204.0,
+    "n_confirmed": 36,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 192.0,
+      "docking": 12.0
+    }
+  },
+  {
+    "target": "cdk2#0",
+    "planner": "always_cofolding",
+    "seed": 2,
+    "recall": 0.0,
+    "ef_1pct": 0.0,
+    "bedroc_20": 0.2873111154658777,
+    "cost": 204.0,
+    "n_confirmed": 35,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 192.0,
+      "docking": 12.0
+    }
+  },
+  {
+    "target": "cdk2#0",
+    "planner": "always_cofolding",
+    "seed": 3,
+    "recall": 0.0,
+    "ef_1pct": 0.0,
+    "bedroc_20": 0.2871326357415684,
+    "cost": 204.0,
+    "n_confirmed": 35,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 192.0,
+      "docking": 12.0
+    }
+  },
+  {
+    "target": "cdk2#0",
+    "planner": "always_cofolding",
+    "seed": 4,
+    "recall": 0.0,
+    "ef_1pct": 0.0,
+    "bedroc_20": 0.282545449256822,
+    "cost": 204.0,
+    "n_confirmed": 36,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 192.0,
+      "docking": 12.0
+    }
+  },
+  {
+    "target": "cdk2#0",
+    "planner": "always_cofolding",
+    "seed": 5,
+    "recall": 0.2,
+    "ef_1pct": 20.283333333333335,
+    "bedroc_20": 0.47346765089981796,
+    "cost": 204.0,
+    "n_confirmed": 36,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 192.0,
+      "docking": 12.0
+    }
+  },
+  {
+    "target": "cdk2#0",
+    "planner": "always_ml_score",
+    "seed": 0,
+    "recall": 0.02,
+    "ef_1pct": 16.226666666666667,
+    "bedroc_20": 0.6043692147893529,
+    "cost": 46.7,
+    "n_confirmed": 12,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "docking": 12.0,
+      "ml_score": 34.7
+    }
+  },
+  {
+    "target": "cdk2#0",
+    "planner": "always_ml_score",
+    "seed": 1,
+    "recall": 0.0,
+    "ef_1pct": 10.141666666666667,
+    "bedroc_20": 0.45309743065759217,
+    "cost": 46.7,
+    "n_confirmed": 12,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "docking": 12.0,
+      "ml_score": 34.7
+    }
+  },
+  {
+    "target": "cdk2#0",
+    "planner": "always_ml_score",
+    "seed": 2,
+    "recall": 0.0,
+    "ef_1pct": 8.113333333333333,
+    "bedroc_20": 0.42545359032580143,
+    "cost": 46.7,
+    "n_confirmed": 12,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "docking": 12.0,
+      "ml_score": 34.7
+    }
+  },
+  {
+    "target": "cdk2#0",
+    "planner": "always_ml_score",
+    "seed": 3,
+    "recall": 0.0,
+    "ef_1pct": 12.17,
+    "bedroc_20": 0.45987669860813746,
+    "cost": 46.7,
+    "n_confirmed": 12,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "docking": 12.0,
+      "ml_score": 34.7
+    }
+  },
+  {
+    "target": "cdk2#0",
+    "planner": "always_ml_score",
+    "seed": 4,
+    "recall": 0.0,
+    "ef_1pct": 14.198333333333334,
+    "bedroc_20": 0.5316219587447276,
+    "cost": 46.7,
+    "n_confirmed": 12,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "docking": 12.0,
+      "ml_score": 34.7
+    }
+  },
+  {
+    "target": "cdk2#0",
+    "planner": "always_ml_score",
+    "seed": 5,
+    "recall": 0.04,
+    "ef_1pct": 14.198333333333334,
+    "bedroc_20": 0.47713034562277007,
+    "cost": 46.7,
+    "n_confirmed": 12,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "docking": 12.0,
+      "ml_score": 34.7
+    }
+  },
+  {
+    "target": "cdk2#0",
+    "planner": "cascade",
+    "seed": 0,
+    "recall": 0.26,
+    "ef_1pct": 12.17,
+    "bedroc_20": 0.4083202405135431,
+    "cost": 185.41,
+    "n_confirmed": 134,
+    "cost_to_recall_25": 56.41000000000022,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 56.0,
+      "docking": 127.0,
+      "retrieval": 2.41
+    }
+  },
+  {
+    "target": "cdk2#0",
+    "planner": "cascade",
+    "seed": 1,
+    "recall": 0.4,
+    "ef_1pct": 20.283333333333335,
+    "bedroc_20": 0.4846106797771858,
+    "cost": 185.402,
+    "n_confirmed": 134,
+    "cost_to_recall_25": 52.40200000000021,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 56.0,
+      "docking": 127.0,
+      "retrieval": 2.402
+    }
+  },
+  {
+    "target": "cdk2#0",
+    "planner": "cascade",
+    "seed": 2,
+    "recall": 0.3,
+    "ef_1pct": 18.255,
+    "bedroc_20": 0.41943549658615215,
+    "cost": 185.41,
+    "n_confirmed": 134,
+    "cost_to_recall_25": 114.41000000000022,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 56.0,
+      "docking": 127.0,
+      "retrieval": 2.41
+    }
+  },
+  {
+    "target": "cdk2#0",
+    "planner": "cascade",
+    "seed": 3,
+    "recall": 0.38,
+    "ef_1pct": 12.17,
+    "bedroc_20": 0.4290305490934421,
+    "cost": 185.41,
+    "n_confirmed": 134,
+    "cost_to_recall_25": 66.41000000000022,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 56.0,
+      "docking": 127.0,
+      "retrieval": 2.41
+    }
+  },
+  {
+    "target": "cdk2#0",
+    "planner": "cascade",
+    "seed": 4,
+    "recall": 0.32,
+    "ef_1pct": 20.283333333333335,
+    "bedroc_20": 0.45566796264596593,
+    "cost": 185.41,
+    "n_confirmed": 134,
+    "cost_to_recall_25": 70.41000000000022,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 56.0,
+      "docking": 127.0,
+      "retrieval": 2.41
+    }
+  },
+  {
+    "target": "cdk2#0",
+    "planner": "cascade",
+    "seed": 5,
+    "recall": 0.38,
+    "ef_1pct": 18.255,
+    "bedroc_20": 0.48350687772245,
+    "cost": 185.41,
+    "n_confirmed": 134,
+    "cost_to_recall_25": 99.41000000000022,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 56.0,
+      "docking": 127.0,
+      "retrieval": 2.41
+    }
+  },
+  {
+    "target": "cdk2#0",
+    "planner": "bandit",
+    "seed": 0,
+    "recall": 0.18,
+    "ef_1pct": 14.198333333333334,
+    "bedroc_20": 0.3772186890313197,
+    "cost": 55.932,
+    "n_confirmed": 32,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 24.0,
+      "docking": 31.0,
+      "ml_score": 0.9,
+      "retrieval": 0.032
+    }
+  },
+  {
+    "target": "cdk2#0",
+    "planner": "bandit",
+    "seed": 1,
+    "recall": 0.0,
+    "ef_1pct": 6.085,
+    "bedroc_20": 0.3001911384908789,
+    "cost": 55.932,
+    "n_confirmed": 33,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 24.0,
+      "docking": 31.0,
+      "ml_score": 0.9,
+      "retrieval": 0.032
+    }
+  },
+  {
+    "target": "cdk2#0",
+    "planner": "bandit",
+    "seed": 2,
+    "recall": 0.0,
+    "ef_1pct": 0.0,
+    "bedroc_20": 0.178415448989066,
+    "cost": 55.932,
+    "n_confirmed": 32,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 24.0,
+      "docking": 31.0,
+      "ml_score": 0.9,
+      "retrieval": 0.032
+    }
+  },
+  {
+    "target": "cdk2#0",
+    "planner": "bandit",
+    "seed": 3,
+    "recall": 0.0,
+    "ef_1pct": 2.0283333333333333,
+    "bedroc_20": 0.22358806350394025,
+    "cost": 55.932,
+    "n_confirmed": 32,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 24.0,
+      "docking": 31.0,
+      "ml_score": 0.9,
+      "retrieval": 0.032
+    }
+  },
+  {
+    "target": "cdk2#0",
+    "planner": "bandit",
+    "seed": 4,
+    "recall": 0.0,
+    "ef_1pct": 0.0,
+    "bedroc_20": 0.19410818558759663,
+    "cost": 55.932,
+    "n_confirmed": 33,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 24.0,
+      "docking": 31.0,
+      "ml_score": 0.9,
+      "retrieval": 0.032
+    }
+  },
+  {
+    "target": "cdk2#0",
+    "planner": "bandit",
+    "seed": 5,
+    "recall": 0.16,
+    "ef_1pct": 12.17,
+    "bedroc_20": 0.4981533290695654,
+    "cost": 55.932,
+    "n_confirmed": 34,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 24.0,
+      "docking": 31.0,
+      "ml_score": 0.9,
+      "retrieval": 0.032
+    }
+  },
+  {
+    "target": "cdk2#1",
+    "planner": "always_docking",
+    "seed": 0,
+    "recall": 0.68,
+    "ef_1pct": 24.34,
+    "bedroc_20": 0.8164416228804208,
+    "cost": 200.0,
+    "n_confirmed": 200,
+    "cost_to_recall_25": 39.0,
+    "cost_to_recall_50": 78.0,
+    "by_evaluator": {
+      "docking": 200.0
+    }
+  },
+  {
+    "target": "cdk2#1",
+    "planner": "always_docking",
+    "seed": 1,
+    "recall": 0.72,
+    "ef_1pct": 24.34,
+    "bedroc_20": 0.8536642840492354,
+    "cost": 200.0,
+    "n_confirmed": 200,
+    "cost_to_recall_25": 67.0,
+    "cost_to_recall_50": 85.0,
+    "by_evaluator": {
+      "docking": 200.0
+    }
+  },
+  {
+    "target": "cdk2#1",
+    "planner": "always_docking",
+    "seed": 2,
+    "recall": 0.64,
+    "ef_1pct": 20.283333333333335,
+    "bedroc_20": 0.7712401281553922,
+    "cost": 200.0,
+    "n_confirmed": 200,
+    "cost_to_recall_25": 86.0,
+    "cost_to_recall_50": 112.0,
+    "by_evaluator": {
+      "docking": 200.0
+    }
+  },
+  {
+    "target": "cdk2#1",
+    "planner": "always_docking",
+    "seed": 3,
+    "recall": 0.7,
+    "ef_1pct": 24.34,
+    "bedroc_20": 0.8016829740431785,
+    "cost": 200.0,
+    "n_confirmed": 200,
+    "cost_to_recall_25": 97.0,
+    "cost_to_recall_50": 122.0,
+    "by_evaluator": {
+      "docking": 200.0
+    }
+  },
+  {
+    "target": "cdk2#1",
+    "planner": "always_docking",
+    "seed": 4,
+    "recall": 0.72,
+    "ef_1pct": 24.34,
+    "bedroc_20": 0.8512191831368063,
+    "cost": 200.0,
+    "n_confirmed": 200,
+    "cost_to_recall_25": 74.0,
+    "cost_to_recall_50": 98.0,
+    "by_evaluator": {
+      "docking": 200.0
+    }
+  },
+  {
+    "target": "cdk2#1",
+    "planner": "always_docking",
+    "seed": 5,
+    "recall": 0.58,
+    "ef_1pct": 20.283333333333335,
+    "bedroc_20": 0.7570100738167161,
+    "cost": 200.0,
+    "n_confirmed": 200,
+    "cost_to_recall_25": 76.0,
+    "cost_to_recall_50": 98.0,
+    "by_evaluator": {
+      "docking": 200.0
+    }
+  },
+  {
+    "target": "cdk2#1",
+    "planner": "always_cofolding",
+    "seed": 0,
+    "recall": 0.18,
+    "ef_1pct": 18.255,
+    "bedroc_20": 0.4371004752858271,
+    "cost": 204.0,
+    "n_confirmed": 36,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 192.0,
+      "docking": 12.0
+    }
+  },
+  {
+    "target": "cdk2#1",
+    "planner": "always_cofolding",
+    "seed": 1,
+    "recall": 0.06,
+    "ef_1pct": 6.085,
+    "bedroc_20": 0.32329664853860673,
+    "cost": 204.0,
+    "n_confirmed": 36,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 192.0,
+      "docking": 12.0
+    }
+  },
+  {
+    "target": "cdk2#1",
+    "planner": "always_cofolding",
+    "seed": 2,
+    "recall": 0.08,
+    "ef_1pct": 8.113333333333333,
+    "bedroc_20": 0.3685742722420723,
+    "cost": 204.0,
+    "n_confirmed": 36,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 192.0,
+      "docking": 12.0
+    }
+  },
+  {
+    "target": "cdk2#1",
+    "planner": "always_cofolding",
+    "seed": 3,
+    "recall": 0.0,
+    "ef_1pct": 0.0,
+    "bedroc_20": 0.27042074783201936,
+    "cost": 204.0,
+    "n_confirmed": 36,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 192.0,
+      "docking": 12.0
+    }
+  },
+  {
+    "target": "cdk2#1",
+    "planner": "always_cofolding",
+    "seed": 4,
+    "recall": 0.1,
+    "ef_1pct": 10.141666666666667,
+    "bedroc_20": 0.3745590927208949,
+    "cost": 204.0,
+    "n_confirmed": 36,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 192.0,
+      "docking": 12.0
+    }
+  },
+  {
+    "target": "cdk2#1",
+    "planner": "always_cofolding",
+    "seed": 5,
+    "recall": 0.2,
+    "ef_1pct": 16.226666666666667,
+    "bedroc_20": 0.4787386515587396,
+    "cost": 204.0,
+    "n_confirmed": 36,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 192.0,
+      "docking": 12.0
+    }
+  },
+  {
+    "target": "cdk2#1",
+    "planner": "always_ml_score",
+    "seed": 0,
+    "recall": 0.04,
+    "ef_1pct": 12.17,
+    "bedroc_20": 0.5207009173938316,
+    "cost": 46.7,
+    "n_confirmed": 12,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "docking": 12.0,
+      "ml_score": 34.7
+    }
+  },
+  {
+    "target": "cdk2#1",
+    "planner": "always_ml_score",
+    "seed": 1,
+    "recall": 0.0,
+    "ef_1pct": 6.085,
+    "bedroc_20": 0.4606407786217325,
+    "cost": 46.7,
+    "n_confirmed": 12,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "docking": 12.0,
+      "ml_score": 34.7
+    }
+  },
+  {
+    "target": "cdk2#1",
+    "planner": "always_ml_score",
+    "seed": 2,
+    "recall": 0.0,
+    "ef_1pct": 10.141666666666667,
+    "bedroc_20": 0.43825099150554286,
+    "cost": 46.7,
+    "n_confirmed": 12,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "docking": 12.0,
+      "ml_score": 34.7
+    }
+  },
+  {
+    "target": "cdk2#1",
+    "planner": "always_ml_score",
+    "seed": 3,
+    "recall": 0.0,
+    "ef_1pct": 12.17,
+    "bedroc_20": 0.45559274554839063,
+    "cost": 46.7,
+    "n_confirmed": 12,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "docking": 12.0,
+      "ml_score": 34.7
+    }
+  },
+  {
+    "target": "cdk2#1",
+    "planner": "always_ml_score",
+    "seed": 4,
+    "recall": 0.0,
+    "ef_1pct": 16.226666666666667,
+    "bedroc_20": 0.41865980560837823,
+    "cost": 46.7,
+    "n_confirmed": 12,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "docking": 12.0,
+      "ml_score": 34.7
+    }
+  },
+  {
+    "target": "cdk2#1",
+    "planner": "always_ml_score",
+    "seed": 5,
+    "recall": 0.02,
+    "ef_1pct": 18.255,
+    "bedroc_20": 0.5063308536277993,
+    "cost": 46.7,
+    "n_confirmed": 12,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "docking": 12.0,
+      "ml_score": 34.7
+    }
+  },
+  {
+    "target": "cdk2#1",
+    "planner": "cascade",
+    "seed": 0,
+    "recall": 0.4,
+    "ef_1pct": 22.311666666666664,
+    "bedroc_20": 0.4766221043600606,
+    "cost": 191.41,
+    "n_confirmed": 189,
+    "cost_to_recall_25": 97.41000000000022,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "docking": 189.0,
+      "retrieval": 2.41
+    }
+  },
+  {
+    "target": "cdk2#1",
+    "planner": "cascade",
+    "seed": 1,
+    "recall": 0.38,
+    "ef_1pct": 22.311666666666664,
+    "bedroc_20": 0.49681366058106124,
+    "cost": 191.41,
+    "n_confirmed": 189,
+    "cost_to_recall_25": 60.41000000000022,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "docking": 189.0,
+      "retrieval": 2.41
+    }
+  },
+  {
+    "target": "cdk2#1",
+    "planner": "cascade",
+    "seed": 2,
+    "recall": 0.44,
+    "ef_1pct": 20.283333333333335,
+    "bedroc_20": 0.5417257835375878,
+    "cost": 191.408,
+    "n_confirmed": 189,
+    "cost_to_recall_25": 114.40800000000021,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "docking": 189.0,
+      "retrieval": 2.408
+    }
+  },
+  {
+    "target": "cdk2#1",
+    "planner": "cascade",
+    "seed": 3,
+    "recall": 0.44,
+    "ef_1pct": 22.311666666666664,
+    "bedroc_20": 0.5750502866876628,
+    "cost": 191.41,
+    "n_confirmed": 189,
+    "cost_to_recall_25": 106.41000000000022,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "docking": 189.0,
+      "retrieval": 2.41
+    }
+  },
+  {
+    "target": "cdk2#1",
+    "planner": "cascade",
+    "seed": 4,
+    "recall": 0.4,
+    "ef_1pct": 22.311666666666664,
+    "bedroc_20": 0.5712601005407709,
+    "cost": 191.41,
+    "n_confirmed": 189,
+    "cost_to_recall_25": 108.41000000000022,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "docking": 189.0,
+      "retrieval": 2.41
+    }
+  },
+  {
+    "target": "cdk2#1",
+    "planner": "cascade",
+    "seed": 5,
+    "recall": 0.5,
+    "ef_1pct": 24.34,
+    "bedroc_20": 0.6819287361507804,
+    "cost": 191.41,
+    "n_confirmed": 189,
+    "cost_to_recall_25": 54.41000000000022,
+    "cost_to_recall_50": 162.41000000000022,
+    "by_evaluator": {
+      "docking": 189.0,
+      "retrieval": 2.41
+    }
+  },
+  {
+    "target": "cdk2#1",
+    "planner": "bandit",
+    "seed": 0,
+    "recall": 0.22,
+    "ef_1pct": 18.255,
+    "bedroc_20": 0.39839765956446455,
+    "cost": 55.932,
+    "n_confirmed": 34,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 24.0,
+      "docking": 31.0,
+      "ml_score": 0.9,
+      "retrieval": 0.032
+    }
+  },
+  {
+    "target": "cdk2#1",
+    "planner": "bandit",
+    "seed": 1,
+    "recall": 0.02,
+    "ef_1pct": 4.056666666666667,
+    "bedroc_20": 0.2849089087649398,
+    "cost": 55.932,
+    "n_confirmed": 34,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 24.0,
+      "docking": 31.0,
+      "ml_score": 0.9,
+      "retrieval": 0.032
+    }
+  },
+  {
+    "target": "cdk2#1",
+    "planner": "bandit",
+    "seed": 2,
+    "recall": 0.0,
+    "ef_1pct": 0.0,
+    "bedroc_20": 0.18839650937278574,
+    "cost": 55.932,
+    "n_confirmed": 34,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 24.0,
+      "docking": 31.0,
+      "ml_score": 0.9,
+      "retrieval": 0.032
+    }
+  },
+  {
+    "target": "cdk2#1",
+    "planner": "bandit",
+    "seed": 3,
+    "recall": 0.02,
+    "ef_1pct": 2.0283333333333333,
+    "bedroc_20": 0.1908258072682218,
+    "cost": 55.932,
+    "n_confirmed": 34,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 24.0,
+      "docking": 31.0,
+      "ml_score": 0.9,
+      "retrieval": 0.032
+    }
+  },
+  {
+    "target": "cdk2#1",
+    "planner": "bandit",
+    "seed": 4,
+    "recall": 0.02,
+    "ef_1pct": 4.056666666666667,
+    "bedroc_20": 0.21262456077073066,
+    "cost": 55.932,
+    "n_confirmed": 34,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 24.0,
+      "docking": 31.0,
+      "ml_score": 0.9,
+      "retrieval": 0.032
+    }
+  },
+  {
+    "target": "cdk2#1",
+    "planner": "bandit",
+    "seed": 5,
+    "recall": 0.04,
+    "ef_1pct": 4.056666666666667,
+    "bedroc_20": 0.2706902809011926,
+    "cost": 55.932,
+    "n_confirmed": 34,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 24.0,
+      "docking": 31.0,
+      "ml_score": 0.9,
+      "retrieval": 0.032
+    }
+  },
+  {
+    "target": "cdk2#2",
+    "planner": "always_docking",
+    "seed": 0,
+    "recall": 0.5,
+    "ef_1pct": 20.283333333333335,
+    "bedroc_20": 0.6324519641145128,
+    "cost": 200.0,
+    "n_confirmed": 200,
+    "cost_to_recall_25": 59.0,
+    "cost_to_recall_50": 99.0,
+    "by_evaluator": {
+      "docking": 200.0
+    }
+  },
+  {
+    "target": "cdk2#2",
+    "planner": "always_docking",
+    "seed": 1,
+    "recall": 0.4,
+    "ef_1pct": 16.226666666666667,
+    "bedroc_20": 0.5074228980660228,
+    "cost": 200.0,
+    "n_confirmed": 200,
+    "cost_to_recall_25": 142.0,
+    "cost_to_recall_50": 165.0,
+    "by_evaluator": {
+      "docking": 200.0
+    }
+  },
+  {
+    "target": "cdk2#2",
+    "planner": "always_docking",
+    "seed": 2,
+    "recall": 0.38,
+    "ef_1pct": 14.198333333333334,
+    "bedroc_20": 0.5013612714407861,
+    "cost": 200.0,
+    "n_confirmed": 200,
+    "cost_to_recall_25": 136.0,
+    "cost_to_recall_50": 174.0,
+    "by_evaluator": {
+      "docking": 200.0
+    }
+  },
+  {
+    "target": "cdk2#2",
+    "planner": "always_docking",
+    "seed": 3,
+    "recall": 0.42,
+    "ef_1pct": 16.226666666666667,
+    "bedroc_20": 0.5317229283323657,
+    "cost": 200.0,
+    "n_confirmed": 200,
+    "cost_to_recall_25": 120.0,
+    "cost_to_recall_50": 153.0,
+    "by_evaluator": {
+      "docking": 200.0
+    }
+  },
+  {
+    "target": "cdk2#2",
+    "planner": "always_docking",
+    "seed": 4,
+    "recall": 0.52,
+    "ef_1pct": 20.283333333333335,
+    "bedroc_20": 0.6517689231374395,
+    "cost": 200.0,
+    "n_confirmed": 200,
+    "cost_to_recall_25": 132.0,
+    "cost_to_recall_50": 169.0,
+    "by_evaluator": {
+      "docking": 200.0
+    }
+  },
+  {
+    "target": "cdk2#2",
+    "planner": "always_docking",
+    "seed": 5,
+    "recall": 0.26,
+    "ef_1pct": 8.113333333333333,
+    "bedroc_20": 0.34756173604551305,
+    "cost": 200.0,
+    "n_confirmed": 200,
+    "cost_to_recall_25": 144.0,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "docking": 200.0
+    }
+  },
+  {
+    "target": "cdk2#2",
+    "planner": "always_cofolding",
+    "seed": 0,
+    "recall": 0.14,
+    "ef_1pct": 14.198333333333334,
+    "bedroc_20": 0.3626463754550059,
+    "cost": 204.0,
+    "n_confirmed": 36,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 192.0,
+      "docking": 12.0
+    }
+  },
+  {
+    "target": "cdk2#2",
+    "planner": "always_cofolding",
+    "seed": 1,
+    "recall": 0.06,
+    "ef_1pct": 4.056666666666667,
+    "bedroc_20": 0.3205018434830056,
+    "cost": 204.0,
+    "n_confirmed": 36,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 192.0,
+      "docking": 12.0
+    }
+  },
+  {
+    "target": "cdk2#2",
+    "planner": "always_cofolding",
+    "seed": 2,
+    "recall": 0.0,
+    "ef_1pct": 0.0,
+    "bedroc_20": 0.24463539422989783,
+    "cost": 204.0,
+    "n_confirmed": 36,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 192.0,
+      "docking": 12.0
+    }
+  },
+  {
+    "target": "cdk2#2",
+    "planner": "always_cofolding",
+    "seed": 3,
+    "recall": 0.0,
+    "ef_1pct": 0.0,
+    "bedroc_20": 0.24442590529058925,
+    "cost": 204.0,
+    "n_confirmed": 36,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 192.0,
+      "docking": 12.0
+    }
+  },
+  {
+    "target": "cdk2#2",
+    "planner": "always_cofolding",
+    "seed": 4,
+    "recall": 0.04,
+    "ef_1pct": 4.056666666666667,
+    "bedroc_20": 0.2915647741616283,
+    "cost": 204.0,
+    "n_confirmed": 36,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 192.0,
+      "docking": 12.0
+    }
+  },
+  {
+    "target": "cdk2#2",
+    "planner": "always_cofolding",
+    "seed": 5,
+    "recall": 0.06,
+    "ef_1pct": 4.056666666666667,
+    "bedroc_20": 0.31473471956622834,
+    "cost": 204.0,
+    "n_confirmed": 36,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 192.0,
+      "docking": 12.0
+    }
+  },
+  {
+    "target": "cdk2#2",
+    "planner": "always_ml_score",
+    "seed": 0,
+    "recall": 0.02,
+    "ef_1pct": 14.198333333333334,
+    "bedroc_20": 0.5100589716056361,
+    "cost": 46.7,
+    "n_confirmed": 12,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "docking": 12.0,
+      "ml_score": 34.7
+    }
+  },
+  {
+    "target": "cdk2#2",
+    "planner": "always_ml_score",
+    "seed": 1,
+    "recall": 0.0,
+    "ef_1pct": 12.17,
+    "bedroc_20": 0.4464090009121368,
+    "cost": 46.7,
+    "n_confirmed": 12,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "docking": 12.0,
+      "ml_score": 34.7
+    }
+  },
+  {
+    "target": "cdk2#2",
+    "planner": "always_ml_score",
+    "seed": 2,
+    "recall": 0.0,
+    "ef_1pct": 10.141666666666667,
+    "bedroc_20": 0.44038808284077235,
+    "cost": 46.7,
+    "n_confirmed": 12,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "docking": 12.0,
+      "ml_score": 34.7
+    }
+  },
+  {
+    "target": "cdk2#2",
+    "planner": "always_ml_score",
+    "seed": 3,
+    "recall": 0.0,
+    "ef_1pct": 2.0283333333333333,
+    "bedroc_20": 0.28406384930217793,
+    "cost": 46.7,
+    "n_confirmed": 12,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "docking": 12.0,
+      "ml_score": 34.7
+    }
+  },
+  {
+    "target": "cdk2#2",
+    "planner": "always_ml_score",
+    "seed": 4,
+    "recall": 0.0,
+    "ef_1pct": 16.226666666666667,
+    "bedroc_20": 0.53505209416925,
+    "cost": 46.7,
+    "n_confirmed": 12,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "docking": 12.0,
+      "ml_score": 34.7
+    }
+  },
+  {
+    "target": "cdk2#2",
+    "planner": "always_ml_score",
+    "seed": 5,
+    "recall": 0.0,
+    "ef_1pct": 16.226666666666667,
+    "bedroc_20": 0.5679726022827438,
+    "cost": 46.7,
+    "n_confirmed": 12,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "docking": 12.0,
+      "ml_score": 34.7
+    }
+  },
+  {
+    "target": "cdk2#2",
+    "planner": "cascade",
+    "seed": 0,
+    "recall": 0.38,
+    "ef_1pct": 14.198333333333334,
+    "bedroc_20": 0.4426286134214833,
+    "cost": 191.41,
+    "n_confirmed": 189,
+    "cost_to_recall_25": 62.41000000000022,
+    "cost_to_recall_50": 190.41000000000022,
+    "by_evaluator": {
+      "docking": 189.0,
+      "retrieval": 2.41
+    }
+  },
+  {
+    "target": "cdk2#2",
+    "planner": "cascade",
+    "seed": 1,
+    "recall": 0.32,
+    "ef_1pct": 18.255,
+    "bedroc_20": 0.42735528969281333,
+    "cost": 191.408,
+    "n_confirmed": 189,
+    "cost_to_recall_25": 126.40800000000021,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "docking": 189.0,
+      "retrieval": 2.408
+    }
+  },
+  {
+    "target": "cdk2#2",
+    "planner": "cascade",
+    "seed": 2,
+    "recall": 0.46,
+    "ef_1pct": 20.283333333333335,
+    "bedroc_20": 0.5585739106626152,
+    "cost": 191.404,
+    "n_confirmed": 189,
+    "cost_to_recall_25": 67.40400000000021,
+    "cost_to_recall_50": 154.40400000000022,
+    "by_evaluator": {
+      "docking": 189.0,
+      "retrieval": 2.404
+    }
+  },
+  {
+    "target": "cdk2#2",
+    "planner": "cascade",
+    "seed": 3,
+    "recall": 0.42,
+    "ef_1pct": 16.226666666666667,
+    "bedroc_20": 0.48940998733529484,
+    "cost": 191.402,
+    "n_confirmed": 189,
+    "cost_to_recall_25": 98.40200000000021,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "docking": 189.0,
+      "retrieval": 2.402
+    }
+  },
+  {
+    "target": "cdk2#2",
+    "planner": "cascade",
+    "seed": 4,
+    "recall": 0.32,
+    "ef_1pct": 8.113333333333333,
+    "bedroc_20": 0.44454060513092675,
+    "cost": 191.408,
+    "n_confirmed": 189,
+    "cost_to_recall_25": 126.40800000000021,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "docking": 189.0,
+      "retrieval": 2.408
+    }
+  },
+  {
+    "target": "cdk2#2",
+    "planner": "cascade",
+    "seed": 5,
+    "recall": 0.32,
+    "ef_1pct": 16.226666666666667,
+    "bedroc_20": 0.4621843157894799,
+    "cost": 191.406,
+    "n_confirmed": 189,
+    "cost_to_recall_25": 88.4060000000002,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "docking": 189.0,
+      "retrieval": 2.406
+    }
+  },
+  {
+    "target": "cdk2#2",
+    "planner": "bandit",
+    "seed": 0,
+    "recall": 0.12,
+    "ef_1pct": 10.141666666666667,
+    "bedroc_20": 0.29557241143886526,
+    "cost": 55.932,
+    "n_confirmed": 34,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 24.0,
+      "docking": 31.0,
+      "ml_score": 0.9,
+      "retrieval": 0.032
+    }
+  },
+  {
+    "target": "cdk2#2",
+    "planner": "bandit",
+    "seed": 1,
+    "recall": 0.0,
+    "ef_1pct": 0.0,
+    "bedroc_20": 0.15229687199030098,
+    "cost": 55.932,
+    "n_confirmed": 34,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 24.0,
+      "docking": 31.0,
+      "ml_score": 0.9,
+      "retrieval": 0.032
+    }
+  },
+  {
+    "target": "cdk2#2",
+    "planner": "bandit",
+    "seed": 2,
+    "recall": 0.08,
+    "ef_1pct": 4.056666666666667,
+    "bedroc_20": 0.23062744839443558,
+    "cost": 55.932,
+    "n_confirmed": 34,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 24.0,
+      "docking": 31.0,
+      "ml_score": 0.9,
+      "retrieval": 0.032
+    }
+  },
+  {
+    "target": "cdk2#2",
+    "planner": "bandit",
+    "seed": 3,
+    "recall": 0.0,
+    "ef_1pct": 2.0283333333333333,
+    "bedroc_20": 0.1892059105439487,
+    "cost": 55.932,
+    "n_confirmed": 34,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 24.0,
+      "docking": 31.0,
+      "ml_score": 0.9,
+      "retrieval": 0.032
+    }
+  },
+  {
+    "target": "cdk2#2",
+    "planner": "bandit",
+    "seed": 4,
+    "recall": 0.02,
+    "ef_1pct": 4.056666666666667,
+    "bedroc_20": 0.18870548512702437,
+    "cost": 55.932,
+    "n_confirmed": 34,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 24.0,
+      "docking": 31.0,
+      "ml_score": 0.9,
+      "retrieval": 0.032
+    }
+  },
+  {
+    "target": "cdk2#2",
+    "planner": "bandit",
+    "seed": 5,
+    "recall": 0.02,
+    "ef_1pct": 2.0283333333333333,
+    "bedroc_20": 0.17319696869240758,
+    "cost": 55.932,
+    "n_confirmed": 34,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 24.0,
+      "docking": 31.0,
+      "ml_score": 0.9,
+      "retrieval": 0.032
+    }
+  },
+  {
+    "target": "cdk2#3",
+    "planner": "always_docking",
+    "seed": 0,
+    "recall": 0.62,
+    "ef_1pct": 22.311666666666664,
+    "bedroc_20": 0.7329988473545207,
+    "cost": 200.0,
+    "n_confirmed": 200,
+    "cost_to_recall_25": 53.0,
+    "cost_to_recall_50": 92.0,
+    "by_evaluator": {
+      "docking": 200.0
+    }
+  },
+  {
+    "target": "cdk2#3",
+    "planner": "always_docking",
+    "seed": 1,
+    "recall": 0.62,
+    "ef_1pct": 22.311666666666664,
+    "bedroc_20": 0.751262193910655,
+    "cost": 200.0,
+    "n_confirmed": 200,
+    "cost_to_recall_25": 64.0,
+    "cost_to_recall_50": 100.0,
+    "by_evaluator": {
+      "docking": 200.0
+    }
+  },
+  {
+    "target": "cdk2#3",
+    "planner": "always_docking",
+    "seed": 2,
+    "recall": 0.52,
+    "ef_1pct": 24.34,
+    "bedroc_20": 0.6494769387373901,
+    "cost": 200.0,
+    "n_confirmed": 200,
+    "cost_to_recall_25": 114.0,
+    "cost_to_recall_50": 143.0,
+    "by_evaluator": {
+      "docking": 200.0
+    }
+  },
+  {
+    "target": "cdk2#3",
+    "planner": "always_docking",
+    "seed": 3,
+    "recall": 0.56,
+    "ef_1pct": 24.34,
+    "bedroc_20": 0.7238049293822241,
+    "cost": 200.0,
+    "n_confirmed": 200,
+    "cost_to_recall_25": 57.0,
+    "cost_to_recall_50": 96.0,
+    "by_evaluator": {
+      "docking": 200.0
+    }
+  },
+  {
+    "target": "cdk2#3",
+    "planner": "always_docking",
+    "seed": 4,
+    "recall": 0.6,
+    "ef_1pct": 24.34,
+    "bedroc_20": 0.7342109287996628,
+    "cost": 200.0,
+    "n_confirmed": 200,
+    "cost_to_recall_25": 94.0,
+    "cost_to_recall_50": 124.0,
+    "by_evaluator": {
+      "docking": 200.0
+    }
+  },
+  {
+    "target": "cdk2#3",
+    "planner": "always_docking",
+    "seed": 5,
+    "recall": 0.58,
+    "ef_1pct": 24.34,
+    "bedroc_20": 0.72496987220474,
+    "cost": 200.0,
+    "n_confirmed": 200,
+    "cost_to_recall_25": 46.0,
+    "cost_to_recall_50": 77.0,
+    "by_evaluator": {
+      "docking": 200.0
+    }
+  },
+  {
+    "target": "cdk2#3",
+    "planner": "always_cofolding",
+    "seed": 0,
+    "recall": 0.1,
+    "ef_1pct": 10.141666666666667,
+    "bedroc_20": 0.40636311681085724,
+    "cost": 204.0,
+    "n_confirmed": 36,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 192.0,
+      "docking": 12.0
+    }
+  },
+  {
+    "target": "cdk2#3",
+    "planner": "always_cofolding",
+    "seed": 1,
+    "recall": 0.12,
+    "ef_1pct": 12.17,
+    "bedroc_20": 0.43704313702569025,
+    "cost": 204.0,
+    "n_confirmed": 34,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 192.0,
+      "docking": 12.0
+    }
+  },
+  {
+    "target": "cdk2#3",
+    "planner": "always_cofolding",
+    "seed": 2,
+    "recall": 0.08,
+    "ef_1pct": 8.113333333333333,
+    "bedroc_20": 0.40852181564692114,
+    "cost": 204.0,
+    "n_confirmed": 36,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 192.0,
+      "docking": 12.0
+    }
+  },
+  {
+    "target": "cdk2#3",
+    "planner": "always_cofolding",
+    "seed": 3,
+    "recall": 0.0,
+    "ef_1pct": 0.0,
+    "bedroc_20": 0.30793826508746597,
+    "cost": 204.0,
+    "n_confirmed": 36,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 192.0,
+      "docking": 12.0
+    }
+  },
+  {
+    "target": "cdk2#3",
+    "planner": "always_cofolding",
+    "seed": 4,
+    "recall": 0.06,
+    "ef_1pct": 6.085,
+    "bedroc_20": 0.3598983011188611,
+    "cost": 204.0,
+    "n_confirmed": 36,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 192.0,
+      "docking": 12.0
+    }
+  },
+  {
+    "target": "cdk2#3",
+    "planner": "always_cofolding",
+    "seed": 5,
+    "recall": 0.16,
+    "ef_1pct": 16.226666666666667,
+    "bedroc_20": 0.4476812492486636,
+    "cost": 204.0,
+    "n_confirmed": 36,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 192.0,
+      "docking": 12.0
+    }
+  },
+  {
+    "target": "cdk2#3",
+    "planner": "always_ml_score",
+    "seed": 0,
+    "recall": 0.02,
+    "ef_1pct": 20.283333333333335,
+    "bedroc_20": 0.5831311245246216,
+    "cost": 46.7,
+    "n_confirmed": 12,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "docking": 12.0,
+      "ml_score": 34.7
+    }
+  },
+  {
+    "target": "cdk2#3",
+    "planner": "always_ml_score",
+    "seed": 1,
+    "recall": 0.0,
+    "ef_1pct": 16.226666666666667,
+    "bedroc_20": 0.47591996899260325,
+    "cost": 46.7,
+    "n_confirmed": 12,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "docking": 12.0,
+      "ml_score": 34.7
+    }
+  },
+  {
+    "target": "cdk2#3",
+    "planner": "always_ml_score",
+    "seed": 2,
+    "recall": 0.0,
+    "ef_1pct": 16.226666666666667,
+    "bedroc_20": 0.4532587588510992,
+    "cost": 46.7,
+    "n_confirmed": 12,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "docking": 12.0,
+      "ml_score": 34.7
+    }
+  },
+  {
+    "target": "cdk2#3",
+    "planner": "always_ml_score",
+    "seed": 3,
+    "recall": 0.0,
+    "ef_1pct": 18.255,
+    "bedroc_20": 0.4612068347137893,
+    "cost": 46.7,
+    "n_confirmed": 12,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "docking": 12.0,
+      "ml_score": 34.7
+    }
+  },
+  {
+    "target": "cdk2#3",
+    "planner": "always_ml_score",
+    "seed": 4,
+    "recall": 0.0,
+    "ef_1pct": 10.141666666666667,
+    "bedroc_20": 0.446562573546765,
+    "cost": 46.7,
+    "n_confirmed": 12,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "docking": 12.0,
+      "ml_score": 34.7
+    }
+  },
+  {
+    "target": "cdk2#3",
+    "planner": "always_ml_score",
+    "seed": 5,
+    "recall": 0.02,
+    "ef_1pct": 12.17,
+    "bedroc_20": 0.48476180393195173,
+    "cost": 46.7,
+    "n_confirmed": 12,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "docking": 12.0,
+      "ml_score": 34.7
+    }
+  },
+  {
+    "target": "cdk2#3",
+    "planner": "cascade",
+    "seed": 0,
+    "recall": 0.46,
+    "ef_1pct": 20.283333333333335,
+    "bedroc_20": 0.603233408552418,
+    "cost": 185.41,
+    "n_confirmed": 134,
+    "cost_to_recall_25": 97.41000000000022,
+    "cost_to_recall_50": 183.41000000000022,
+    "by_evaluator": {
+      "cofolding": 56.0,
+      "docking": 127.0,
+      "retrieval": 2.41
+    }
+  },
+  {
+    "target": "cdk2#3",
+    "planner": "cascade",
+    "seed": 1,
+    "recall": 0.48,
+    "ef_1pct": 24.34,
+    "bedroc_20": 0.5659388751687577,
+    "cost": 185.408,
+    "n_confirmed": 134,
+    "cost_to_recall_25": 99.40800000000021,
+    "cost_to_recall_50": 158.40800000000021,
+    "by_evaluator": {
+      "cofolding": 56.0,
+      "docking": 127.0,
+      "retrieval": 2.408
+    }
+  },
+  {
+    "target": "cdk2#3",
+    "planner": "cascade",
+    "seed": 2,
+    "recall": 0.4,
+    "ef_1pct": 22.311666666666664,
+    "bedroc_20": 0.4749489124525244,
+    "cost": 185.406,
+    "n_confirmed": 134,
+    "cost_to_recall_25": 100.4060000000002,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 56.0,
+      "docking": 127.0,
+      "retrieval": 2.406
+    }
+  },
+  {
+    "target": "cdk2#3",
+    "planner": "cascade",
+    "seed": 3,
+    "recall": 0.54,
+    "ef_1pct": 22.311666666666664,
+    "bedroc_20": 0.5568504865304215,
+    "cost": 185.408,
+    "n_confirmed": 134,
+    "cost_to_recall_25": 59.408000000000214,
+    "cost_to_recall_50": 158.40800000000021,
+    "by_evaluator": {
+      "cofolding": 56.0,
+      "docking": 127.0,
+      "retrieval": 2.408
+    }
+  },
+  {
+    "target": "cdk2#3",
+    "planner": "cascade",
+    "seed": 4,
+    "recall": 0.36,
+    "ef_1pct": 20.283333333333335,
+    "bedroc_20": 0.43408451916103064,
+    "cost": 185.404,
+    "n_confirmed": 134,
+    "cost_to_recall_25": 70.40400000000021,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 56.0,
+      "docking": 127.0,
+      "retrieval": 2.404
+    }
+  },
+  {
+    "target": "cdk2#3",
+    "planner": "cascade",
+    "seed": 5,
+    "recall": 0.52,
+    "ef_1pct": 22.311666666666664,
+    "bedroc_20": 0.6488809681655882,
+    "cost": 185.408,
+    "n_confirmed": 134,
+    "cost_to_recall_25": 61.408000000000214,
+    "cost_to_recall_50": 144.40800000000021,
+    "by_evaluator": {
+      "cofolding": 56.0,
+      "docking": 127.0,
+      "retrieval": 2.408
+    }
+  },
+  {
+    "target": "cdk2#3",
+    "planner": "bandit",
+    "seed": 0,
+    "recall": 0.14,
+    "ef_1pct": 18.255,
+    "bedroc_20": 0.43538896919028713,
+    "cost": 55.932,
+    "n_confirmed": 32,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 24.0,
+      "docking": 31.0,
+      "ml_score": 0.9,
+      "retrieval": 0.032
+    }
+  },
+  {
+    "target": "cdk2#3",
+    "planner": "bandit",
+    "seed": 1,
+    "recall": 0.0,
+    "ef_1pct": 0.0,
+    "bedroc_20": 0.19086258221874167,
+    "cost": 55.932,
+    "n_confirmed": 34,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 24.0,
+      "docking": 31.0,
+      "ml_score": 0.9,
+      "retrieval": 0.032
+    }
+  },
+  {
+    "target": "cdk2#3",
+    "planner": "bandit",
+    "seed": 2,
+    "recall": 0.02,
+    "ef_1pct": 2.0283333333333333,
+    "bedroc_20": 0.21182365908825926,
+    "cost": 55.932,
+    "n_confirmed": 34,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 24.0,
+      "docking": 31.0,
+      "ml_score": 0.9,
+      "retrieval": 0.032
+    }
+  },
+  {
+    "target": "cdk2#3",
+    "planner": "bandit",
+    "seed": 3,
+    "recall": 0.0,
+    "ef_1pct": 0.0,
+    "bedroc_20": 0.18450611443497705,
+    "cost": 55.932,
+    "n_confirmed": 33,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 24.0,
+      "docking": 31.0,
+      "ml_score": 0.9,
+      "retrieval": 0.032
+    }
+  },
+  {
+    "target": "cdk2#3",
+    "planner": "bandit",
+    "seed": 4,
+    "recall": 0.0,
+    "ef_1pct": 0.0,
+    "bedroc_20": 0.1846789136673613,
+    "cost": 55.932,
+    "n_confirmed": 34,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 24.0,
+      "docking": 31.0,
+      "ml_score": 0.9,
+      "retrieval": 0.032
+    }
+  },
+  {
+    "target": "cdk2#3",
+    "planner": "bandit",
+    "seed": 5,
+    "recall": 0.02,
+    "ef_1pct": 12.17,
+    "bedroc_20": 0.4717472155859736,
+    "cost": 55.932,
+    "n_confirmed": 33,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 24.0,
+      "docking": 31.0,
+      "ml_score": 0.9,
+      "retrieval": 0.032
+    }
+  },
+  {
+    "target": "cmet#0",
+    "planner": "always_docking",
+    "seed": 0,
+    "recall": 0.34,
+    "ef_1pct": 14.198333333333334,
+    "bedroc_20": 0.5291929302602264,
+    "cost": 200.0,
+    "n_confirmed": 200,
+    "cost_to_recall_25": 36.0,
+    "cost_to_recall_50": 103.0,
+    "by_evaluator": {
+      "docking": 200.0
+    }
+  },
+  {
+    "target": "cmet#0",
+    "planner": "always_docking",
+    "seed": 1,
+    "recall": 0.48,
+    "ef_1pct": 18.255,
+    "bedroc_20": 0.6309630053157382,
+    "cost": 200.0,
+    "n_confirmed": 200,
+    "cost_to_recall_25": 41.0,
+    "cost_to_recall_50": 94.0,
+    "by_evaluator": {
+      "docking": 200.0
+    }
+  },
+  {
+    "target": "cmet#0",
+    "planner": "always_docking",
+    "seed": 2,
+    "recall": 0.28,
+    "ef_1pct": 14.198333333333334,
+    "bedroc_20": 0.3729554922340284,
+    "cost": 200.0,
+    "n_confirmed": 200,
+    "cost_to_recall_25": 178.0,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "docking": 200.0
+    }
+  },
+  {
+    "target": "cmet#0",
+    "planner": "always_docking",
+    "seed": 3,
+    "recall": 0.48,
+    "ef_1pct": 16.226666666666667,
+    "bedroc_20": 0.6163067776491794,
+    "cost": 200.0,
+    "n_confirmed": 200,
+    "cost_to_recall_25": 106.0,
+    "cost_to_recall_50": 150.0,
+    "by_evaluator": {
+      "docking": 200.0
+    }
+  },
+  {
+    "target": "cmet#0",
+    "planner": "always_docking",
+    "seed": 4,
+    "recall": 0.48,
+    "ef_1pct": 20.283333333333335,
+    "bedroc_20": 0.5861931738977645,
+    "cost": 200.0,
+    "n_confirmed": 200,
+    "cost_to_recall_25": 135.0,
+    "cost_to_recall_50": 156.0,
+    "by_evaluator": {
+      "docking": 200.0
+    }
+  },
+  {
+    "target": "cmet#0",
+    "planner": "always_docking",
+    "seed": 5,
+    "recall": 0.48,
+    "ef_1pct": 16.226666666666667,
+    "bedroc_20": 0.6163637939071503,
+    "cost": 200.0,
+    "n_confirmed": 200,
+    "cost_to_recall_25": 90.0,
+    "cost_to_recall_50": 137.0,
+    "by_evaluator": {
+      "docking": 200.0
+    }
+  },
+  {
+    "target": "cmet#0",
+    "planner": "always_cofolding",
+    "seed": 0,
+    "recall": 0.16,
+    "ef_1pct": 16.226666666666667,
+    "bedroc_20": 0.38743945058373963,
+    "cost": 204.0,
+    "n_confirmed": 35,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 192.0,
+      "docking": 12.0
+    }
+  },
+  {
+    "target": "cmet#0",
+    "planner": "always_cofolding",
+    "seed": 1,
+    "recall": 0.12,
+    "ef_1pct": 12.17,
+    "bedroc_20": 0.38967751062386735,
+    "cost": 204.0,
+    "n_confirmed": 35,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 192.0,
+      "docking": 12.0
+    }
+  },
+  {
+    "target": "cmet#0",
+    "planner": "always_cofolding",
+    "seed": 2,
+    "recall": 0.1,
+    "ef_1pct": 6.085,
+    "bedroc_20": 0.35724610527021017,
+    "cost": 204.0,
+    "n_confirmed": 35,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 192.0,
+      "docking": 12.0
+    }
+  },
+  {
+    "target": "cmet#0",
+    "planner": "always_cofolding",
+    "seed": 3,
+    "recall": 0.0,
+    "ef_1pct": 0.0,
+    "bedroc_20": 0.23186062537121702,
+    "cost": 204.0,
+    "n_confirmed": 35,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 192.0,
+      "docking": 12.0
+    }
+  },
+  {
+    "target": "cmet#0",
+    "planner": "always_cofolding",
+    "seed": 4,
+    "recall": 0.0,
+    "ef_1pct": 0.0,
+    "bedroc_20": 0.22733106043467496,
+    "cost": 204.0,
+    "n_confirmed": 36,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 192.0,
+      "docking": 12.0
+    }
+  },
+  {
+    "target": "cmet#0",
+    "planner": "always_cofolding",
+    "seed": 5,
+    "recall": 0.08,
+    "ef_1pct": 8.113333333333333,
+    "bedroc_20": 0.323955938319525,
+    "cost": 204.0,
+    "n_confirmed": 36,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 192.0,
+      "docking": 12.0
+    }
+  },
+  {
+    "target": "cmet#0",
+    "planner": "always_ml_score",
+    "seed": 0,
+    "recall": 0.06,
+    "ef_1pct": 16.226666666666667,
+    "bedroc_20": 0.5568405564026583,
+    "cost": 46.7,
+    "n_confirmed": 12,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "docking": 12.0,
+      "ml_score": 34.7
+    }
+  },
+  {
+    "target": "cmet#0",
+    "planner": "always_ml_score",
+    "seed": 1,
+    "recall": 0.02,
+    "ef_1pct": 12.17,
+    "bedroc_20": 0.5282872768144473,
+    "cost": 46.7,
+    "n_confirmed": 12,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "docking": 12.0,
+      "ml_score": 34.7
+    }
+  },
+  {
+    "target": "cmet#0",
+    "planner": "always_ml_score",
+    "seed": 2,
+    "recall": 0.0,
+    "ef_1pct": 16.226666666666667,
+    "bedroc_20": 0.5837670881094651,
+    "cost": 46.7,
+    "n_confirmed": 12,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "docking": 12.0,
+      "ml_score": 34.7
+    }
+  },
+  {
+    "target": "cmet#0",
+    "planner": "always_ml_score",
+    "seed": 3,
+    "recall": 0.0,
+    "ef_1pct": 16.226666666666667,
+    "bedroc_20": 0.5215813825871359,
+    "cost": 46.7,
+    "n_confirmed": 12,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "docking": 12.0,
+      "ml_score": 34.7
+    }
+  },
+  {
+    "target": "cmet#0",
+    "planner": "always_ml_score",
+    "seed": 4,
+    "recall": 0.0,
+    "ef_1pct": 18.255,
+    "bedroc_20": 0.5308426480483446,
+    "cost": 46.7,
+    "n_confirmed": 12,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "docking": 12.0,
+      "ml_score": 34.7
+    }
+  },
+  {
+    "target": "cmet#0",
+    "planner": "always_ml_score",
+    "seed": 5,
+    "recall": 0.02,
+    "ef_1pct": 20.283333333333335,
+    "bedroc_20": 0.5471300091084385,
+    "cost": 46.7,
+    "n_confirmed": 12,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "docking": 12.0,
+      "ml_score": 34.7
+    }
+  },
+  {
+    "target": "cmet#0",
+    "planner": "cascade",
+    "seed": 0,
+    "recall": 0.4,
+    "ef_1pct": 20.283333333333335,
+    "bedroc_20": 0.525566234582342,
+    "cost": 185.406,
+    "n_confirmed": 132,
+    "cost_to_recall_25": 50.047999999999774,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 56.0,
+      "docking": 127.0,
+      "retrieval": 2.406
+    }
+  },
+  {
+    "target": "cmet#0",
+    "planner": "cascade",
+    "seed": 1,
+    "recall": 0.36,
+    "ef_1pct": 16.226666666666667,
+    "bedroc_20": 0.4486189427177899,
+    "cost": 185.4,
+    "n_confirmed": 134,
+    "cost_to_recall_25": 59.400000000000205,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 56.0,
+      "docking": 127.0,
+      "retrieval": 2.4
+    }
+  },
+  {
+    "target": "cmet#0",
+    "planner": "cascade",
+    "seed": 2,
+    "recall": 0.36,
+    "ef_1pct": 18.255,
+    "bedroc_20": 0.47740250341548085,
+    "cost": 185.408,
+    "n_confirmed": 133,
+    "cost_to_recall_25": 108.40800000000021,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 56.0,
+      "docking": 127.0,
+      "retrieval": 2.408
+    }
+  },
+  {
+    "target": "cmet#0",
+    "planner": "cascade",
+    "seed": 3,
+    "recall": 0.3,
+    "ef_1pct": 16.226666666666667,
+    "bedroc_20": 0.46680498207290794,
+    "cost": 185.398,
+    "n_confirmed": 134,
+    "cost_to_recall_25": 65.3980000000002,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 56.0,
+      "docking": 127.0,
+      "retrieval": 2.398
+    }
+  },
+  {
+    "target": "cmet#0",
+    "planner": "cascade",
+    "seed": 4,
+    "recall": 0.32,
+    "ef_1pct": 14.198333333333334,
+    "bedroc_20": 0.42687102551435346,
+    "cost": 185.41,
+    "n_confirmed": 134,
+    "cost_to_recall_25": 106.41000000000022,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 56.0,
+      "docking": 127.0,
+      "retrieval": 2.41
+    }
+  },
+  {
+    "target": "cmet#0",
+    "planner": "cascade",
+    "seed": 5,
+    "recall": 0.32,
+    "ef_1pct": 14.198333333333334,
+    "bedroc_20": 0.5478604430952747,
+    "cost": 185.41,
+    "n_confirmed": 134,
+    "cost_to_recall_25": 60.41000000000022,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 56.0,
+      "docking": 127.0,
+      "retrieval": 2.41
+    }
+  },
+  {
+    "target": "cmet#0",
+    "planner": "bandit",
+    "seed": 0,
+    "recall": 0.16,
+    "ef_1pct": 22.311666666666664,
+    "bedroc_20": 0.4708371135314131,
+    "cost": 55.932,
+    "n_confirmed": 33,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 24.0,
+      "docking": 31.0,
+      "ml_score": 0.9,
+      "retrieval": 0.032
+    }
+  },
+  {
+    "target": "cmet#0",
+    "planner": "bandit",
+    "seed": 1,
+    "recall": 0.06,
+    "ef_1pct": 6.085,
+    "bedroc_20": 0.41882719281451275,
+    "cost": 55.932,
+    "n_confirmed": 34,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 24.0,
+      "docking": 31.0,
+      "ml_score": 0.9,
+      "retrieval": 0.032
+    }
+  },
+  {
+    "target": "cmet#0",
+    "planner": "bandit",
+    "seed": 2,
+    "recall": 0.0,
+    "ef_1pct": 0.0,
+    "bedroc_20": 0.1392804987907144,
+    "cost": 55.932,
+    "n_confirmed": 34,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 24.0,
+      "docking": 31.0,
+      "ml_score": 0.9,
+      "retrieval": 0.032
+    }
+  },
+  {
+    "target": "cmet#0",
+    "planner": "bandit",
+    "seed": 3,
+    "recall": 0.08,
+    "ef_1pct": 4.056666666666667,
+    "bedroc_20": 0.21769443005353442,
+    "cost": 55.932,
+    "n_confirmed": 33,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 24.0,
+      "docking": 31.0,
+      "ml_score": 0.9,
+      "retrieval": 0.032
+    }
+  },
+  {
+    "target": "cmet#0",
+    "planner": "bandit",
+    "seed": 4,
+    "recall": 0.0,
+    "ef_1pct": 0.0,
+    "bedroc_20": 0.15395316360524686,
+    "cost": 55.932,
+    "n_confirmed": 33,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 24.0,
+      "docking": 31.0,
+      "ml_score": 0.9,
+      "retrieval": 0.032
+    }
+  },
+  {
+    "target": "cmet#0",
+    "planner": "bandit",
+    "seed": 5,
+    "recall": 0.08,
+    "ef_1pct": 12.17,
+    "bedroc_20": 0.3545158915732633,
+    "cost": 55.932,
+    "n_confirmed": 33,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 24.0,
+      "docking": 31.0,
+      "ml_score": 0.9,
+      "retrieval": 0.032
+    }
+  },
+  {
+    "target": "cmet#1",
+    "planner": "always_docking",
+    "seed": 0,
+    "recall": 0.58,
+    "ef_1pct": 24.34,
+    "bedroc_20": 0.7847880543924838,
+    "cost": 200.0,
+    "n_confirmed": 200,
+    "cost_to_recall_25": 50.0,
+    "cost_to_recall_50": 88.0,
+    "by_evaluator": {
+      "docking": 200.0
+    }
+  },
+  {
+    "target": "cmet#1",
+    "planner": "always_docking",
+    "seed": 1,
+    "recall": 0.62,
+    "ef_1pct": 22.311666666666664,
+    "bedroc_20": 0.7882416851992566,
+    "cost": 200.0,
+    "n_confirmed": 200,
+    "cost_to_recall_25": 52.0,
+    "cost_to_recall_50": 80.0,
+    "by_evaluator": {
+      "docking": 200.0
+    }
+  },
+  {
+    "target": "cmet#1",
+    "planner": "always_docking",
+    "seed": 2,
+    "recall": 0.56,
+    "ef_1pct": 22.311666666666664,
+    "bedroc_20": 0.7116860712596275,
+    "cost": 200.0,
+    "n_confirmed": 200,
+    "cost_to_recall_25": 83.0,
+    "cost_to_recall_50": 106.0,
+    "by_evaluator": {
+      "docking": 200.0
+    }
+  },
+  {
+    "target": "cmet#1",
+    "planner": "always_docking",
+    "seed": 3,
+    "recall": 0.6,
+    "ef_1pct": 24.34,
+    "bedroc_20": 0.8084484395607598,
+    "cost": 200.0,
+    "n_confirmed": 200,
+    "cost_to_recall_25": 100.0,
+    "cost_to_recall_50": 147.0,
+    "by_evaluator": {
+      "docking": 200.0
+    }
+  },
+  {
+    "target": "cmet#1",
+    "planner": "always_docking",
+    "seed": 4,
+    "recall": 0.64,
+    "ef_1pct": 24.34,
+    "bedroc_20": 0.8079239737198969,
+    "cost": 200.0,
+    "n_confirmed": 200,
+    "cost_to_recall_25": 96.0,
+    "cost_to_recall_50": 120.0,
+    "by_evaluator": {
+      "docking": 200.0
+    }
+  },
+  {
+    "target": "cmet#1",
+    "planner": "always_docking",
+    "seed": 5,
+    "recall": 0.62,
+    "ef_1pct": 20.283333333333335,
+    "bedroc_20": 0.7983645049902102,
+    "cost": 200.0,
+    "n_confirmed": 200,
+    "cost_to_recall_25": 51.0,
+    "cost_to_recall_50": 80.0,
+    "by_evaluator": {
+      "docking": 200.0
+    }
+  },
+  {
+    "target": "cmet#1",
+    "planner": "always_cofolding",
+    "seed": 0,
+    "recall": 0.2,
+    "ef_1pct": 20.283333333333335,
+    "bedroc_20": 0.426382880586984,
+    "cost": 204.0,
+    "n_confirmed": 36,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 192.0,
+      "docking": 12.0
+    }
+  },
+  {
+    "target": "cmet#1",
+    "planner": "always_cofolding",
+    "seed": 1,
+    "recall": 0.16,
+    "ef_1pct": 10.141666666666667,
+    "bedroc_20": 0.4385855288342368,
+    "cost": 204.0,
+    "n_confirmed": 36,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 192.0,
+      "docking": 12.0
+    }
+  },
+  {
+    "target": "cmet#1",
+    "planner": "always_cofolding",
+    "seed": 2,
+    "recall": 0.02,
+    "ef_1pct": 0.0,
+    "bedroc_20": 0.26820174305206573,
+    "cost": 204.0,
+    "n_confirmed": 36,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 192.0,
+      "docking": 12.0
+    }
+  },
+  {
+    "target": "cmet#1",
+    "planner": "always_cofolding",
+    "seed": 3,
+    "recall": 0.0,
+    "ef_1pct": 0.0,
+    "bedroc_20": 0.24926836866716337,
+    "cost": 204.0,
+    "n_confirmed": 36,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 192.0,
+      "docking": 12.0
+    }
+  },
+  {
+    "target": "cmet#1",
+    "planner": "always_cofolding",
+    "seed": 4,
+    "recall": 0.0,
+    "ef_1pct": 0.0,
+    "bedroc_20": 0.25069859260824634,
+    "cost": 204.0,
+    "n_confirmed": 36,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 192.0,
+      "docking": 12.0
+    }
+  },
+  {
+    "target": "cmet#1",
+    "planner": "always_cofolding",
+    "seed": 5,
+    "recall": 0.18,
+    "ef_1pct": 12.17,
+    "bedroc_20": 0.44695051420539844,
+    "cost": 204.0,
+    "n_confirmed": 36,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 192.0,
+      "docking": 12.0
+    }
+  },
+  {
+    "target": "cmet#1",
+    "planner": "always_ml_score",
+    "seed": 0,
+    "recall": 0.06,
+    "ef_1pct": 20.283333333333335,
+    "bedroc_20": 0.6120481095293999,
+    "cost": 46.7,
+    "n_confirmed": 12,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "docking": 12.0,
+      "ml_score": 34.7
+    }
+  },
+  {
+    "target": "cmet#1",
+    "planner": "always_ml_score",
+    "seed": 1,
+    "recall": 0.02,
+    "ef_1pct": 14.198333333333334,
+    "bedroc_20": 0.4919221151777962,
+    "cost": 46.7,
+    "n_confirmed": 12,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "docking": 12.0,
+      "ml_score": 34.7
+    }
+  },
+  {
+    "target": "cmet#1",
+    "planner": "always_ml_score",
+    "seed": 2,
+    "recall": 0.0,
+    "ef_1pct": 14.198333333333334,
+    "bedroc_20": 0.4797615346979892,
+    "cost": 46.7,
+    "n_confirmed": 12,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "docking": 12.0,
+      "ml_score": 34.7
+    }
+  },
+  {
+    "target": "cmet#1",
+    "planner": "always_ml_score",
+    "seed": 3,
+    "recall": 0.0,
+    "ef_1pct": 18.255,
+    "bedroc_20": 0.5993201162429557,
+    "cost": 46.7,
+    "n_confirmed": 12,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "docking": 12.0,
+      "ml_score": 34.7
+    }
+  },
+  {
+    "target": "cmet#1",
+    "planner": "always_ml_score",
+    "seed": 4,
+    "recall": 0.0,
+    "ef_1pct": 16.226666666666667,
+    "bedroc_20": 0.5720285075654069,
+    "cost": 46.7,
+    "n_confirmed": 12,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "docking": 12.0,
+      "ml_score": 34.7
+    }
+  },
+  {
+    "target": "cmet#1",
+    "planner": "always_ml_score",
+    "seed": 5,
+    "recall": 0.02,
+    "ef_1pct": 10.141666666666667,
+    "bedroc_20": 0.4843276961169019,
+    "cost": 46.7,
+    "n_confirmed": 12,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "docking": 12.0,
+      "ml_score": 34.7
+    }
+  },
+  {
+    "target": "cmet#1",
+    "planner": "cascade",
+    "seed": 0,
+    "recall": 0.36,
+    "ef_1pct": 22.311666666666664,
+    "bedroc_20": 0.48358995067416394,
+    "cost": 191.404,
+    "n_confirmed": 189,
+    "cost_to_recall_25": 36.047999999999774,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "docking": 189.0,
+      "retrieval": 2.404
+    }
+  },
+  {
+    "target": "cmet#1",
+    "planner": "cascade",
+    "seed": 1,
+    "recall": 0.38,
+    "ef_1pct": 24.34,
+    "bedroc_20": 0.5211377784219384,
+    "cost": 191.406,
+    "n_confirmed": 189,
+    "cost_to_recall_25": 57.40600000000021,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "docking": 189.0,
+      "retrieval": 2.406
+    }
+  },
+  {
+    "target": "cmet#1",
+    "planner": "cascade",
+    "seed": 2,
+    "recall": 0.34,
+    "ef_1pct": 22.311666666666664,
+    "bedroc_20": 0.4570652817698321,
+    "cost": 191.402,
+    "n_confirmed": 189,
+    "cost_to_recall_25": 112.40200000000021,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "docking": 189.0,
+      "retrieval": 2.402
+    }
+  },
+  {
+    "target": "cmet#1",
+    "planner": "cascade",
+    "seed": 3,
+    "recall": 0.54,
+    "ef_1pct": 24.34,
+    "bedroc_20": 0.6753378633658692,
+    "cost": 191.406,
+    "n_confirmed": 189,
+    "cost_to_recall_25": 57.40600000000021,
+    "cost_to_recall_50": 115.4060000000002,
+    "by_evaluator": {
+      "docking": 189.0,
+      "retrieval": 2.406
+    }
+  },
+  {
+    "target": "cmet#1",
+    "planner": "cascade",
+    "seed": 4,
+    "recall": 0.44,
+    "ef_1pct": 22.311666666666664,
+    "bedroc_20": 0.5340567110010053,
+    "cost": 191.41,
+    "n_confirmed": 189,
+    "cost_to_recall_25": 90.41000000000022,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "docking": 189.0,
+      "retrieval": 2.41
+    }
+  },
+  {
+    "target": "cmet#1",
+    "planner": "cascade",
+    "seed": 5,
+    "recall": 0.58,
+    "ef_1pct": 24.34,
+    "bedroc_20": 0.640437876168618,
+    "cost": 191.406,
+    "n_confirmed": 189,
+    "cost_to_recall_25": 55.40600000000021,
+    "cost_to_recall_50": 137.4060000000002,
+    "by_evaluator": {
+      "docking": 189.0,
+      "retrieval": 2.406
+    }
+  },
+  {
+    "target": "cmet#1",
+    "planner": "bandit",
+    "seed": 0,
+    "recall": 0.26,
+    "ef_1pct": 24.34,
+    "bedroc_20": 0.5036175593314101,
+    "cost": 55.932,
+    "n_confirmed": 34,
+    "cost_to_recall_25": 55.93200000000002,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 24.0,
+      "docking": 31.0,
+      "ml_score": 0.9,
+      "retrieval": 0.032
+    }
+  },
+  {
+    "target": "cmet#1",
+    "planner": "bandit",
+    "seed": 1,
+    "recall": 0.08,
+    "ef_1pct": 14.198333333333334,
+    "bedroc_20": 0.46103045700823536,
+    "cost": 55.932,
+    "n_confirmed": 34,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 24.0,
+      "docking": 31.0,
+      "ml_score": 0.9,
+      "retrieval": 0.032
+    }
+  },
+  {
+    "target": "cmet#1",
+    "planner": "bandit",
+    "seed": 2,
+    "recall": 0.06,
+    "ef_1pct": 8.113333333333333,
+    "bedroc_20": 0.2634915748239793,
+    "cost": 55.932,
+    "n_confirmed": 34,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 24.0,
+      "docking": 31.0,
+      "ml_score": 0.9,
+      "retrieval": 0.032
+    }
+  },
+  {
+    "target": "cmet#1",
+    "planner": "bandit",
+    "seed": 3,
+    "recall": 0.0,
+    "ef_1pct": 0.0,
+    "bedroc_20": 0.14808441694955565,
+    "cost": 55.932,
+    "n_confirmed": 34,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 24.0,
+      "docking": 31.0,
+      "ml_score": 0.9,
+      "retrieval": 0.032
+    }
+  },
+  {
+    "target": "cmet#1",
+    "planner": "bandit",
+    "seed": 4,
+    "recall": 0.1,
+    "ef_1pct": 10.141666666666667,
+    "bedroc_20": 0.253384678575543,
+    "cost": 55.932,
+    "n_confirmed": 34,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 24.0,
+      "docking": 31.0,
+      "ml_score": 0.9,
+      "retrieval": 0.032
+    }
+  },
+  {
+    "target": "cmet#1",
+    "planner": "bandit",
+    "seed": 5,
+    "recall": 0.08,
+    "ef_1pct": 10.141666666666667,
+    "bedroc_20": 0.28915457043546,
+    "cost": 55.932,
+    "n_confirmed": 34,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 24.0,
+      "docking": 31.0,
+      "ml_score": 0.9,
+      "retrieval": 0.032
+    }
+  },
+  {
+    "target": "cmet#2",
+    "planner": "always_docking",
+    "seed": 0,
+    "recall": 0.8,
+    "ef_1pct": 24.34,
+    "bedroc_20": 0.8903045630585187,
+    "cost": 200.0,
+    "n_confirmed": 200,
+    "cost_to_recall_25": 67.0,
+    "cost_to_recall_50": 96.0,
+    "by_evaluator": {
+      "docking": 200.0
+    }
+  },
+  {
+    "target": "cmet#2",
+    "planner": "always_docking",
+    "seed": 1,
+    "recall": 0.68,
+    "ef_1pct": 24.34,
+    "bedroc_20": 0.7978419631912131,
+    "cost": 200.0,
+    "n_confirmed": 200,
+    "cost_to_recall_25": 44.0,
+    "cost_to_recall_50": 87.0,
+    "by_evaluator": {
+      "docking": 200.0
+    }
+  },
+  {
+    "target": "cmet#2",
+    "planner": "always_docking",
+    "seed": 2,
+    "recall": 0.68,
+    "ef_1pct": 24.34,
+    "bedroc_20": 0.8589416172063393,
+    "cost": 200.0,
+    "n_confirmed": 200,
+    "cost_to_recall_25": 80.0,
+    "cost_to_recall_50": 104.0,
+    "by_evaluator": {
+      "docking": 200.0
+    }
+  },
+  {
+    "target": "cmet#2",
+    "planner": "always_docking",
+    "seed": 3,
+    "recall": 0.62,
+    "ef_1pct": 22.311666666666664,
+    "bedroc_20": 0.7398568539418666,
+    "cost": 200.0,
+    "n_confirmed": 200,
+    "cost_to_recall_25": 93.0,
+    "cost_to_recall_50": 113.0,
+    "by_evaluator": {
+      "docking": 200.0
+    }
+  },
+  {
+    "target": "cmet#2",
+    "planner": "always_docking",
+    "seed": 4,
+    "recall": 0.72,
+    "ef_1pct": 24.34,
+    "bedroc_20": 0.8305839239255732,
+    "cost": 200.0,
+    "n_confirmed": 200,
+    "cost_to_recall_25": 101.0,
+    "cost_to_recall_50": 127.0,
+    "by_evaluator": {
+      "docking": 200.0
+    }
+  },
+  {
+    "target": "cmet#2",
+    "planner": "always_docking",
+    "seed": 5,
+    "recall": 0.68,
+    "ef_1pct": 24.34,
+    "bedroc_20": 0.8527146689310012,
+    "cost": 200.0,
+    "n_confirmed": 200,
+    "cost_to_recall_25": 40.0,
+    "cost_to_recall_50": 95.0,
+    "by_evaluator": {
+      "docking": 200.0
+    }
+  },
+  {
+    "target": "cmet#2",
+    "planner": "always_cofolding",
+    "seed": 0,
+    "recall": 0.18,
+    "ef_1pct": 16.226666666666667,
+    "bedroc_20": 0.3638123094370361,
+    "cost": 204.0,
+    "n_confirmed": 36,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 192.0,
+      "docking": 12.0
+    }
+  },
+  {
+    "target": "cmet#2",
+    "planner": "always_cofolding",
+    "seed": 1,
+    "recall": 0.14,
+    "ef_1pct": 10.141666666666667,
+    "bedroc_20": 0.34865005063263804,
+    "cost": 204.0,
+    "n_confirmed": 36,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 192.0,
+      "docking": 12.0
+    }
+  },
+  {
+    "target": "cmet#2",
+    "planner": "always_cofolding",
+    "seed": 2,
+    "recall": 0.0,
+    "ef_1pct": 0.0,
+    "bedroc_20": 0.19581841227946403,
+    "cost": 204.0,
+    "n_confirmed": 36,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 192.0,
+      "docking": 12.0
+    }
+  },
+  {
+    "target": "cmet#2",
+    "planner": "always_cofolding",
+    "seed": 3,
+    "recall": 0.0,
+    "ef_1pct": 0.0,
+    "bedroc_20": 0.19695424770381578,
+    "cost": 204.0,
+    "n_confirmed": 36,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 192.0,
+      "docking": 12.0
+    }
+  },
+  {
+    "target": "cmet#2",
+    "planner": "always_cofolding",
+    "seed": 4,
+    "recall": 0.04,
+    "ef_1pct": 4.056666666666667,
+    "bedroc_20": 0.24809080074162837,
+    "cost": 204.0,
+    "n_confirmed": 36,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 192.0,
+      "docking": 12.0
+    }
+  },
+  {
+    "target": "cmet#2",
+    "planner": "always_cofolding",
+    "seed": 5,
+    "recall": 0.16,
+    "ef_1pct": 10.141666666666667,
+    "bedroc_20": 0.3518398872749783,
+    "cost": 204.0,
+    "n_confirmed": 36,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 192.0,
+      "docking": 12.0
+    }
+  },
+  {
+    "target": "cmet#2",
+    "planner": "always_ml_score",
+    "seed": 0,
+    "recall": 0.06,
+    "ef_1pct": 16.226666666666667,
+    "bedroc_20": 0.5834677284469315,
+    "cost": 46.7,
+    "n_confirmed": 12,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "docking": 12.0,
+      "ml_score": 34.7
+    }
+  },
+  {
+    "target": "cmet#2",
+    "planner": "always_ml_score",
+    "seed": 1,
+    "recall": 0.02,
+    "ef_1pct": 14.198333333333334,
+    "bedroc_20": 0.6049963783545635,
+    "cost": 46.7,
+    "n_confirmed": 12,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "docking": 12.0,
+      "ml_score": 34.7
+    }
+  },
+  {
+    "target": "cmet#2",
+    "planner": "always_ml_score",
+    "seed": 2,
+    "recall": 0.0,
+    "ef_1pct": 14.198333333333334,
+    "bedroc_20": 0.5355615623169248,
+    "cost": 46.7,
+    "n_confirmed": 12,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "docking": 12.0,
+      "ml_score": 34.7
+    }
+  },
+  {
+    "target": "cmet#2",
+    "planner": "always_ml_score",
+    "seed": 3,
+    "recall": 0.0,
+    "ef_1pct": 14.198333333333334,
+    "bedroc_20": 0.598671123375989,
+    "cost": 46.7,
+    "n_confirmed": 12,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "docking": 12.0,
+      "ml_score": 34.7
+    }
+  },
+  {
+    "target": "cmet#2",
+    "planner": "always_ml_score",
+    "seed": 4,
+    "recall": 0.0,
+    "ef_1pct": 14.198333333333334,
+    "bedroc_20": 0.6214080868047466,
+    "cost": 46.7,
+    "n_confirmed": 12,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "docking": 12.0,
+      "ml_score": 34.7
+    }
+  },
+  {
+    "target": "cmet#2",
+    "planner": "always_ml_score",
+    "seed": 5,
+    "recall": 0.02,
+    "ef_1pct": 18.255,
+    "bedroc_20": 0.5601174591162784,
+    "cost": 46.7,
+    "n_confirmed": 12,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "docking": 12.0,
+      "ml_score": 34.7
+    }
+  },
+  {
+    "target": "cmet#2",
+    "planner": "cascade",
+    "seed": 0,
+    "recall": 0.62,
+    "ef_1pct": 24.34,
+    "bedroc_20": 0.7188342878975369,
+    "cost": 191.406,
+    "n_confirmed": 189,
+    "cost_to_recall_25": 37.047999999999774,
+    "cost_to_recall_50": 148.4060000000002,
+    "by_evaluator": {
+      "docking": 189.0,
+      "retrieval": 2.406
+    }
+  },
+  {
+    "target": "cmet#2",
+    "planner": "cascade",
+    "seed": 1,
+    "recall": 0.6,
+    "ef_1pct": 24.34,
+    "bedroc_20": 0.7334919478572024,
+    "cost": 191.404,
+    "n_confirmed": 189,
+    "cost_to_recall_25": 50.047999999999774,
+    "cost_to_recall_50": 111.40400000000021,
+    "by_evaluator": {
+      "docking": 189.0,
+      "retrieval": 2.404
+    }
+  },
+  {
+    "target": "cmet#2",
+    "planner": "cascade",
+    "seed": 2,
+    "recall": 0.52,
+    "ef_1pct": 24.34,
+    "bedroc_20": 0.6551496576145189,
+    "cost": 191.404,
+    "n_confirmed": 189,
+    "cost_to_recall_25": 62.40400000000021,
+    "cost_to_recall_50": 164.40400000000022,
+    "by_evaluator": {
+      "docking": 189.0,
+      "retrieval": 2.404
+    }
+  },
+  {
+    "target": "cmet#2",
+    "planner": "cascade",
+    "seed": 3,
+    "recall": 0.5,
+    "ef_1pct": 24.34,
+    "bedroc_20": 0.6077305029830075,
+    "cost": 191.408,
+    "n_confirmed": 189,
+    "cost_to_recall_25": 91.40800000000021,
+    "cost_to_recall_50": 184.40800000000021,
+    "by_evaluator": {
+      "docking": 189.0,
+      "retrieval": 2.408
+    }
+  },
+  {
+    "target": "cmet#2",
+    "planner": "cascade",
+    "seed": 4,
+    "recall": 0.46,
+    "ef_1pct": 24.34,
+    "bedroc_20": 0.6006886134085562,
+    "cost": 191.406,
+    "n_confirmed": 189,
+    "cost_to_recall_25": 51.40600000000021,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "docking": 189.0,
+      "retrieval": 2.406
+    }
+  },
+  {
+    "target": "cmet#2",
+    "planner": "cascade",
+    "seed": 5,
+    "recall": 0.4,
+    "ef_1pct": 24.34,
+    "bedroc_20": 0.5455635879073589,
+    "cost": 191.406,
+    "n_confirmed": 189,
+    "cost_to_recall_25": 97.4060000000002,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "docking": 189.0,
+      "retrieval": 2.406
+    }
+  },
+  {
+    "target": "cmet#2",
+    "planner": "bandit",
+    "seed": 0,
+    "recall": 0.22,
+    "ef_1pct": 24.34,
+    "bedroc_20": 0.4338874853699575,
+    "cost": 55.932,
+    "n_confirmed": 34,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 24.0,
+      "docking": 31.0,
+      "ml_score": 0.9,
+      "retrieval": 0.032
+    }
+  },
+  {
+    "target": "cmet#2",
+    "planner": "bandit",
+    "seed": 1,
+    "recall": 0.04,
+    "ef_1pct": 6.085,
+    "bedroc_20": 0.2397966901325846,
+    "cost": 55.932,
+    "n_confirmed": 34,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 24.0,
+      "docking": 31.0,
+      "ml_score": 0.9,
+      "retrieval": 0.032
+    }
+  },
+  {
+    "target": "cmet#2",
+    "planner": "bandit",
+    "seed": 2,
+    "recall": 0.06,
+    "ef_1pct": 6.085,
+    "bedroc_20": 0.199927422975264,
+    "cost": 55.932,
+    "n_confirmed": 34,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 24.0,
+      "docking": 31.0,
+      "ml_score": 0.9,
+      "retrieval": 0.032
+    }
+  },
+  {
+    "target": "cmet#2",
+    "planner": "bandit",
+    "seed": 3,
+    "recall": 0.04,
+    "ef_1pct": 2.0283333333333333,
+    "bedroc_20": 0.16590270379409208,
+    "cost": 55.932,
+    "n_confirmed": 34,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 24.0,
+      "docking": 31.0,
+      "ml_score": 0.9,
+      "retrieval": 0.032
+    }
+  },
+  {
+    "target": "cmet#2",
+    "planner": "bandit",
+    "seed": 4,
+    "recall": 0.08,
+    "ef_1pct": 8.113333333333333,
+    "bedroc_20": 0.20976315387925606,
+    "cost": 55.932,
+    "n_confirmed": 34,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 24.0,
+      "docking": 31.0,
+      "ml_score": 0.9,
+      "retrieval": 0.032
+    }
+  },
+  {
+    "target": "cmet#2",
+    "planner": "bandit",
+    "seed": 5,
+    "recall": 0.24,
+    "ef_1pct": 16.226666666666667,
+    "bedroc_20": 0.5899252344473227,
+    "cost": 55.932,
+    "n_confirmed": 34,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 24.0,
+      "docking": 31.0,
+      "ml_score": 0.9,
+      "retrieval": 0.032
+    }
+  },
+  {
+    "target": "cmet#3",
+    "planner": "always_docking",
+    "seed": 0,
+    "recall": 0.2,
+    "ef_1pct": 8.113333333333333,
+    "bedroc_20": 0.339139812717147,
+    "cost": 200.0,
+    "n_confirmed": 200,
+    "cost_to_recall_25": 125.0,
+    "cost_to_recall_50": 194.0,
+    "by_evaluator": {
+      "docking": 200.0
+    }
+  },
+  {
+    "target": "cmet#3",
+    "planner": "always_docking",
+    "seed": 1,
+    "recall": 0.16,
+    "ef_1pct": 10.141666666666667,
+    "bedroc_20": 0.22414663517324873,
+    "cost": 200.0,
+    "n_confirmed": 200,
+    "cost_to_recall_25": 189.0,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "docking": 200.0
+    }
+  },
+  {
+    "target": "cmet#3",
+    "planner": "always_docking",
+    "seed": 2,
+    "recall": 0.14,
+    "ef_1pct": 6.085,
+    "bedroc_20": 0.19753595805361093,
+    "cost": 200.0,
+    "n_confirmed": 200,
+    "cost_to_recall_25": 196.0,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "docking": 200.0
+    }
+  },
+  {
+    "target": "cmet#3",
+    "planner": "always_docking",
+    "seed": 3,
+    "recall": 0.26,
+    "ef_1pct": 10.141666666666667,
+    "bedroc_20": 0.38368471821718675,
+    "cost": 200.0,
+    "n_confirmed": 200,
+    "cost_to_recall_25": 154.0,
+    "cost_to_recall_50": 188.0,
+    "by_evaluator": {
+      "docking": 200.0
+    }
+  },
+  {
+    "target": "cmet#3",
+    "planner": "always_docking",
+    "seed": 4,
+    "recall": 0.2,
+    "ef_1pct": 8.113333333333333,
+    "bedroc_20": 0.32656070871081644,
+    "cost": 200.0,
+    "n_confirmed": 200,
+    "cost_to_recall_25": 157.0,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "docking": 200.0
+    }
+  },
+  {
+    "target": "cmet#3",
+    "planner": "always_docking",
+    "seed": 5,
+    "recall": 0.24,
+    "ef_1pct": 8.113333333333333,
+    "bedroc_20": 0.31255253549640555,
+    "cost": 200.0,
+    "n_confirmed": 200,
+    "cost_to_recall_25": 165.0,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "docking": 200.0
+    }
+  },
+  {
+    "target": "cmet#3",
+    "planner": "always_cofolding",
+    "seed": 0,
+    "recall": 0.06,
+    "ef_1pct": 6.085,
+    "bedroc_20": 0.17207312253983253,
+    "cost": 204.0,
+    "n_confirmed": 36,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 192.0,
+      "docking": 12.0
+    }
+  },
+  {
+    "target": "cmet#3",
+    "planner": "always_cofolding",
+    "seed": 1,
+    "recall": 0.06,
+    "ef_1pct": 6.085,
+    "bedroc_20": 0.20431973170761797,
+    "cost": 204.0,
+    "n_confirmed": 35,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 192.0,
+      "docking": 12.0
+    }
+  },
+  {
+    "target": "cmet#3",
+    "planner": "always_cofolding",
+    "seed": 2,
+    "recall": 0.0,
+    "ef_1pct": 0.0,
+    "bedroc_20": 0.1202567817933281,
+    "cost": 204.0,
+    "n_confirmed": 33,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 192.0,
+      "docking": 12.0
+    }
+  },
+  {
+    "target": "cmet#3",
+    "planner": "always_cofolding",
+    "seed": 3,
+    "recall": 0.0,
+    "ef_1pct": 0.0,
+    "bedroc_20": 0.11612292764044467,
+    "cost": 204.0,
+    "n_confirmed": 35,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 192.0,
+      "docking": 12.0
+    }
+  },
+  {
+    "target": "cmet#3",
+    "planner": "always_cofolding",
+    "seed": 4,
+    "recall": 0.02,
+    "ef_1pct": 0.0,
+    "bedroc_20": 0.13809222936886517,
+    "cost": 204.0,
+    "n_confirmed": 35,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 192.0,
+      "docking": 12.0
+    }
+  },
+  {
+    "target": "cmet#3",
+    "planner": "always_cofolding",
+    "seed": 5,
+    "recall": 0.0,
+    "ef_1pct": 0.0,
+    "bedroc_20": 0.1153410614697741,
+    "cost": 204.0,
+    "n_confirmed": 35,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 192.0,
+      "docking": 12.0
+    }
+  },
+  {
+    "target": "cmet#3",
+    "planner": "always_ml_score",
+    "seed": 0,
+    "recall": 0.02,
+    "ef_1pct": 4.056666666666667,
+    "bedroc_20": 0.38827668620435224,
+    "cost": 46.7,
+    "n_confirmed": 12,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "docking": 12.0,
+      "ml_score": 34.7
+    }
+  },
+  {
+    "target": "cmet#3",
+    "planner": "always_ml_score",
+    "seed": 1,
+    "recall": 0.0,
+    "ef_1pct": 10.141666666666667,
+    "bedroc_20": 0.3913533599700989,
+    "cost": 46.7,
+    "n_confirmed": 12,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "docking": 12.0,
+      "ml_score": 34.7
+    }
+  },
+  {
+    "target": "cmet#3",
+    "planner": "always_ml_score",
+    "seed": 2,
+    "recall": 0.0,
+    "ef_1pct": 8.113333333333333,
+    "bedroc_20": 0.36861213167563517,
+    "cost": 46.7,
+    "n_confirmed": 12,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "docking": 12.0,
+      "ml_score": 34.7
+    }
+  },
+  {
+    "target": "cmet#3",
+    "planner": "always_ml_score",
+    "seed": 3,
+    "recall": 0.0,
+    "ef_1pct": 4.056666666666667,
+    "bedroc_20": 0.2752684011941212,
+    "cost": 46.7,
+    "n_confirmed": 12,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "docking": 12.0,
+      "ml_score": 34.7
+    }
+  },
+  {
+    "target": "cmet#3",
+    "planner": "always_ml_score",
+    "seed": 4,
+    "recall": 0.02,
+    "ef_1pct": 10.141666666666667,
+    "bedroc_20": 0.40404102522679053,
+    "cost": 46.7,
+    "n_confirmed": 12,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "docking": 12.0,
+      "ml_score": 34.7
+    }
+  },
+  {
+    "target": "cmet#3",
+    "planner": "always_ml_score",
+    "seed": 5,
+    "recall": 0.0,
+    "ef_1pct": 16.226666666666667,
+    "bedroc_20": 0.4658418924773484,
+    "cost": 46.7,
+    "n_confirmed": 12,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "docking": 12.0,
+      "ml_score": 34.7
+    }
+  },
+  {
+    "target": "cmet#3",
+    "planner": "cascade",
+    "seed": 0,
+    "recall": 0.24,
+    "ef_1pct": 8.113333333333333,
+    "bedroc_20": 0.22912662766352435,
+    "cost": 185.408,
+    "n_confirmed": 134,
+    "cost_to_recall_25": 106.40800000000021,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 56.0,
+      "docking": 127.0,
+      "retrieval": 2.408
+    }
+  },
+  {
+    "target": "cmet#3",
+    "planner": "cascade",
+    "seed": 1,
+    "recall": 0.16,
+    "ef_1pct": 4.056666666666667,
+    "bedroc_20": 0.2628372198036145,
+    "cost": 185.406,
+    "n_confirmed": 134,
+    "cost_to_recall_25": 183.4060000000002,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 56.0,
+      "docking": 127.0,
+      "retrieval": 2.406
+    }
+  },
+  {
+    "target": "cmet#3",
+    "planner": "cascade",
+    "seed": 2,
+    "recall": 0.1,
+    "ef_1pct": 2.0283333333333333,
+    "bedroc_20": 0.1502615455313212,
+    "cost": 185.41,
+    "n_confirmed": 134,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 56.0,
+      "docking": 127.0,
+      "retrieval": 2.41
+    }
+  },
+  {
+    "target": "cmet#3",
+    "planner": "cascade",
+    "seed": 3,
+    "recall": 0.26,
+    "ef_1pct": 12.17,
+    "bedroc_20": 0.37383911084920957,
+    "cost": 185.408,
+    "n_confirmed": 133,
+    "cost_to_recall_25": 161.40800000000021,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 56.0,
+      "docking": 127.0,
+      "retrieval": 2.408
+    }
+  },
+  {
+    "target": "cmet#3",
+    "planner": "cascade",
+    "seed": 4,
+    "recall": 0.24,
+    "ef_1pct": 6.085,
+    "bedroc_20": 0.26442848730922613,
+    "cost": 185.41,
+    "n_confirmed": 134,
+    "cost_to_recall_25": 159.41000000000022,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 56.0,
+      "docking": 127.0,
+      "retrieval": 2.41
+    }
+  },
+  {
+    "target": "cmet#3",
+    "planner": "cascade",
+    "seed": 5,
+    "recall": 0.22,
+    "ef_1pct": 10.141666666666667,
+    "bedroc_20": 0.2633051232968744,
+    "cost": 185.41,
+    "n_confirmed": 134,
+    "cost_to_recall_25": 139.41000000000022,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 56.0,
+      "docking": 127.0,
+      "retrieval": 2.41
+    }
+  },
+  {
+    "target": "cmet#3",
+    "planner": "bandit",
+    "seed": 0,
+    "recall": 0.1,
+    "ef_1pct": 10.141666666666667,
+    "bedroc_20": 0.17878482523775896,
+    "cost": 55.932,
+    "n_confirmed": 33,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 24.0,
+      "docking": 31.0,
+      "ml_score": 0.9,
+      "retrieval": 0.032
+    }
+  },
+  {
+    "target": "cmet#3",
+    "planner": "bandit",
+    "seed": 1,
+    "recall": 0.0,
+    "ef_1pct": 0.0,
+    "bedroc_20": 0.13696551380753405,
+    "cost": 55.932,
+    "n_confirmed": 33,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 24.0,
+      "docking": 31.0,
+      "ml_score": 0.9,
+      "retrieval": 0.032
+    }
+  },
+  {
+    "target": "cmet#3",
+    "planner": "bandit",
+    "seed": 2,
+    "recall": 0.0,
+    "ef_1pct": 0.0,
+    "bedroc_20": 0.08043532670085458,
+    "cost": 55.932,
+    "n_confirmed": 32,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 24.0,
+      "docking": 31.0,
+      "ml_score": 0.9,
+      "retrieval": 0.032
+    }
+  },
+  {
+    "target": "cmet#3",
+    "planner": "bandit",
+    "seed": 3,
+    "recall": 0.0,
+    "ef_1pct": 0.0,
+    "bedroc_20": 0.09166657236354255,
+    "cost": 55.932,
+    "n_confirmed": 33,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 24.0,
+      "docking": 31.0,
+      "ml_score": 0.9,
+      "retrieval": 0.032
+    }
+  },
+  {
+    "target": "cmet#3",
+    "planner": "bandit",
+    "seed": 4,
+    "recall": 0.02,
+    "ef_1pct": 0.0,
+    "bedroc_20": 0.13392832959065254,
+    "cost": 55.932,
+    "n_confirmed": 32,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 24.0,
+      "docking": 31.0,
+      "ml_score": 0.9,
+      "retrieval": 0.032
+    }
+  },
+  {
+    "target": "cmet#3",
+    "planner": "bandit",
+    "seed": 5,
+    "recall": 0.0,
+    "ef_1pct": 0.0,
+    "bedroc_20": 0.06831842315619259,
+    "cost": 55.932,
+    "n_confirmed": 33,
+    "cost_to_recall_25": Infinity,
+    "cost_to_recall_50": Infinity,
+    "by_evaluator": {
+      "cofolding": 24.0,
+      "docking": 31.0,
+      "ml_score": 0.9,
+      "retrieval": 0.032
+    }
+  }
+]

@@ -51,7 +51,7 @@ class RunRecord:
     experiments_to_target: float  # nan when the target was never reached
 
     @staticmethod
-    def from_result(res, n_init: int) -> "RunRecord":
+    def from_result(res, n_init: int) -> RunRecord:
         hist = res.history_best
         init_best = float(hist[min(n_init, len(hist)) - 1])
         ref = float(res.reference_optimum)
@@ -152,7 +152,7 @@ def summarise(records: list[RunRecord], reference_planner: str = "classical_bo")
         "**Gap closed** G = (best − init_best) / (reference − init_best): 0 means a "
         "planner never improved on its starting sample, 1 means it reached the "
         "optimum. **Exp. to 90%** is how many experiments were needed to close 90% "
-        f"of that gap, with the number of runs that got there at all in brackets.\n"
+        "of that gap, with the number of runs that got there at all in brackets.\n"
     )
 
     for obj in objectives:

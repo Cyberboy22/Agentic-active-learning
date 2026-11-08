@@ -14,3 +14,10 @@ runs/
 # Checkpoints are transient run state, not artefacts to commit.
 checkpoint.json
 checkpoint.json.tmp
+
+# build / tooling
+.ruff_cache/
+.llm_cache/
+runs/
+logs/
+*.egg-info/

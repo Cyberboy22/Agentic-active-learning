@@ -153,3 +153,92 @@ def get_objective(name: str, **kwargs) -> Objective:
 
 def available_objectives() -> list[str]:
     return sorted(_REGISTRY)
+
+
+# --------------------------------------------------------------------------
+# Pool objectives: the discrete half of the interface.
+#
+# A box objective lets you invent a design anywhere inside its bounds. That is
+# the wrong model for screening, where the molecules that exist are the
+# molecules you can order and the decision is *which rows of a fixed table* to
+# pay for. A PoolObjective keeps exactly the same surface the rest of the
+# framework consumes -- var_names, bounds, sample, local_sample, evaluate -- so
+# every planner, surrogate, acquisition function and provenance record works
+# against it unchanged, while underneath it only ever returns real library
+# members.
+#
+# Two things get *better* in the discrete setting rather than worse:
+#   * the optimum is known exactly, so no Monte-Carlo reference scan is needed;
+#   * "refine around the best result" becomes analogue search -- the nearest
+#     catalogue entries to a hit -- which is a chemically meaningful move, where
+#     a Gaussian nudge in descriptor space is not.
+# --------------------------------------------------------------------------
+
+
+class PoolObjective(Objective):
+    """A finite candidate library. Designs are rows of a fixed feature matrix."""
+
+    name = "pool"
+
+    def __init__(self, pool, true_values: np.ndarray, name: str | None = None,
+                 noise_std: float = 0.0):
+        self.pool = pool
+        self.true_values = np.asarray(true_values, dtype=float)
+        if len(self.true_values) != len(pool):
+            raise ValueError("true_values must have one entry per pool member")
+        if name:
+            self.name = name
+        self.noise_std = noise_std
+
+    # -- the Objective surface --------------------------------------------
+
+    @property
+    def var_names(self) -> list[str]:
+        return list(self.pool.feature_names)
+
+    @property
+    def bounds(self) -> tuple[np.ndarray, np.ndarray]:
+        """Feature extent of the library. Advisory only -- nothing is generated."""
+        return self.pool.features.min(axis=0), self.pool.features.max(axis=0)
+
+    @property
+    def dim(self) -> int:
+        return self.pool.dim
+
+    def evaluate(self, x: np.ndarray) -> float:
+        return float(self.true_values[self.pool.index_of(x)])
+
+    def sample(self, n: int, rng: np.random.Generator) -> np.ndarray:
+        """Draw n library members uniformly, without replacement where possible."""
+        size = min(n, len(self.pool))
+        idx = rng.choice(len(self.pool), size=size, replace=False)
+        return self.pool.features[idx]
+
+    def local_sample(self, center: np.ndarray, n: int, scale: float,
+                     rng: np.random.Generator) -> np.ndarray:
+        """Analogue search: the library members most similar to `center`.
+
+        `scale` widens the neighbourhood rather than the step size -- a larger
+        scale considers more distant analogues, which is the discrete
+        counterpart of a bigger trust region.
+        """
+        width = max(int(round(n * (1.0 + 10.0 * scale))), n)
+        pool_idx = self.pool.neighbours(center, width, rng)
+        if len(pool_idx) > n:
+            pool_idx = rng.choice(pool_idx, size=n, replace=False)
+        return self.pool.features[pool_idx]
+
+    def reference_optimum(self, n_scan: int = 0, seed: int = 0) -> float:
+        """Exact -- in a finite library the best value is simply known."""
+        return float(self.true_values.max())
+
+    # -- pool-specific -----------------------------------------------------
+
+    def indices_of(self, X: np.ndarray) -> list[int]:
+        return [self.pool.index_of(row) for row in np.atleast_2d(X)]
+
+    def true_top_k(self, k: int) -> np.ndarray:
+        return np.argsort(self.true_values)[::-1][:k]
+
+    def smiles_at(self, index: int) -> str:
+        return self.pool.smiles[int(index)]

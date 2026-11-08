@@ -15,7 +15,11 @@ from src.benchmark import RunRecord, run_benchmark, summarise  # noqa: E402
 from src.campaign import run_campaign  # noqa: E402
 from src.objective import Objective, Oracle, available_objectives, get_objective  # noqa: E402
 from src.objectives import *  # noqa: F401,F403,E402
-from src.planners import CampaignState, HeuristicPlanner, available_planners, make_planner  # noqa: E402
+from src.planners import (  # noqa: E402
+    CampaignState,
+    available_planners,
+    make_planner,
+)
 from src.provenance import Checkpoint, config_hash, restore_rng, rng_state  # noqa: E402
 from src.surrogate import make_surrogate  # noqa: E402
 from src.tools import ToolRegistry  # noqa: E402
